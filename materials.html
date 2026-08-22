@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Materials & Resources | M.Sc. Advanced NLP (Semester 4051) - IUST</title>
+  <meta name="description" content="Lecture slides, reading papers, Google Colab notebooks, and NLP benchmark datasets for M.Sc. Advanced NLP (Semester 4051) at IUST.">
+  <link rel="icon" type="image/png" href="assets/images/logos/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-link">
+        <img src="assets/images/logos/logo.png" alt="IUST Logo" class="brand-logo" width="44" height="44">
+        <div class="brand-text">
+          <span class="brand-title">Advanced NLP</span>
+          <span class="brand-subtitle">M.Sc. Program • Semester 4051</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="syllabus.html" class="nav-link">Syllabus</a>
+        <a href="schedule.html" class="nav-link">Schedule</a>
+        <a href="materials.html" class="nav-link active">Materials</a>
+        <a href="assignments.html" class="nav-link">Assignments</a>
+        <a href="project.html" class="nav-link">Project</a>
+        <a href="team.html" class="nav-link">Team</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://docs.google.com/spreadsheets/d/1xAcQgxm3iPvbYyJnGXyhij0TECLUVc4HgFrenllmc_s/edit?usp=sharing" target="_blank" rel="noopener" class="nav-sheet-btn" title="Open Official Live Google Sheet">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
+          <span>Live Sheet</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button type="button" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 3.5rem;">
+      <div class="container">
+        <div class="section-header">
+          <div class="hero-pills">
+            <span class="pill-badge primary">Resource Library</span>
+            <span class="pill-badge term">M.Sc. Program</span>
+            <span class="pill-badge">Semester: 4051</span>
+          </div>
+          <h1 class="section-title">Course Materials & Downloads</h1>
+          <p class="section-subtitle">Searchable hub for lecture slide PDFs, landmark literature, hands-on PyTorch code labs, and evaluation datasets.</p>
+        </div>
+
+        <!-- Filter Tabs Controls -->
+        <div class="filter-bar">
+          <div class="resource-tabs" style="border-bottom: none; margin-bottom: 0;">
+            <button type="button" class="resource-tab-btn active" data-tab="all">All Resources (119)</button>
+            <button type="button" class="resource-tab-btn" data-tab="slides">Lecture Slides (24)</button>
+            <button type="button" class="resource-tab-btn" data-tab="papers">Reading Papers & Books (71)</button>
+            <button type="button" class="resource-tab-btn" data-tab="notebooks">Code Notebooks & Labs (20)</button>
+            <button type="button" class="resource-tab-btn" data-tab="datasets">Datasets & Benchmarks (4)</button>
+          </div>
+        </div>
+
+        <!-- Resource Cards Grid -->
+        <div class="resource-grid">
+          
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S1 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">History of NLP, Modern LLM Foundations & Paradigm Shifts</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 1 – Introduction & Fundamentals (01/13)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 1, Tue – History of NLP</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s1.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s1" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S2 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Word Representations, Distributed Semantics & Vector Embeddings (Word2Vec, GloVe)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 2 – Fundamentals: Learned Representations (01/15)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 1, Thu – Word Vectors</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s2.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s2" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S3 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Neural Network Fundamentals & Backpropagation for NLP</h3>
+          
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 2, Tue – Backpropagation and Neural Network Basics</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s3.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s3" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S4 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Autoregressive Language Modeling & Cross-Entropy Objectives</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 3 – Fundamentals: Autoregressive Language Modeling (01/20)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 2, Thu – Language Models and RNNs (Part 1)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s4.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s4" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S5 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Recurrent Sequence Encoders: RNNs, LSTMs & Gated Recurrent Units (GRUs)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 4 – Architectures I: Recurrent Neural Networks (01/22)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 2, Thu – Language Models and RNNs (Part 2)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s5.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s5" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S6 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Attention Mechanisms & Transformer Architecture (RoPE, Multi-Head Attention)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 5 – Architectures II: Attention and Transformers (01/27)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 3, Tue – Transformers</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s6.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s6" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S7 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Subword Tokenization (BPE, SentencePiece) & Multilingual Language Models</h3>
+          
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 7, Thu – Tokenization and Multilinguality (Guest: Julie Kallini)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s7.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s7" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S8 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">LLM Pretraining: Web Data Pipelines, Quality Filtering & Training Regimes</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 6 – Learning I: Pretraining (01/29)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 4, Tue – Pretraining (Scaling, Systems, Data)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s8.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s8" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S9 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Scaling Laws (Chinchilla) & In-Context Learning (ICL)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 7 – Scaling Laws and In-Context Learning (02/03)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 4, Tue – Pretraining (Scaling)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s9.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s9" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S10 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Parameter-Efficient Fine-Tuning (PEFT: LoRA, QLoRA) & Knowledge Distillation</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 8 – Learning III: Fine-tuning and Distillation (02/05)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 5, Tue – Efficient Adaptation + Week 9, Thu – Tinker and LoRA (John Schulman)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s10.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s10" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S11 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Reinforcement Learning Fundamentals in Natural Language Processing</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 16 – Reinforcement Learning I: Fundamentals (03/12)</div>
+          
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s11.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s11" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S12 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Post-Training with Human Feedback & Preference Alignment (RLHF & DPO)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 17 – Reinforcement Learning II: Applications (03/17)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 4, Thu – Post-training (RLHF, SFT, DPO)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s12.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s12" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S13 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Model Quantization (AWQ, GPTQ, FP8/INT4) & Efficient Inference</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 19 – Quantization (03/26) - Lecture 20 – Parallelism and Distributed Training (03/31)</div>
+          
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s13.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s13" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S14 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Mixture of Experts (MoE) & Efficient Attention (FlashAttention-2)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 21 – Mixture of Experts (04/02) + Lecture 22 – Scaling Sequence Length</div>
+          
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s14.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s14" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S15 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Decoding Algorithms, Sampling Strategies & Chain-of-Thought (CoT) Prompting</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 9 – Decoding Algorithms (02/10)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 6, Thu – Reasoning 1</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s15.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s15" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S16 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Advanced Reasoning, Process Supervision (PRM) & Test-Time Compute Scaling</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 23 – Test-Time Scaling (04/14)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 7, Tue – Reasoning 2</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s16.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s16" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S17 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Retrieval-Augmented Generation (RAG) & Dense Passage Retrieval (DPR, Self-RAG)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 10 – Modeling I: Retrieval and RAG (Guest: Akari Asai) (02/12)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 5, Thu – Agents, Tool Use, and RAG (Part 1)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s17.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s17" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S18 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Language Model-Based Autonomous Agents, Function Calling & Tool Use (ReAct)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 18 – Language Model-Based Agents (03/19)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 5, Thu – Agents, Tool Use, and RAG (Part 2)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s18.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s18" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S19 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">LLM Evaluation Methodologies, Benchmarks & Leaderboards (MMLU, LLM-as-a-Judge)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 13 – Evaluation Techniques (02/24)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 6, Tue – Benchmarking and Evaluation</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s19.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s19" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S20 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Mechanistic Interpretability, Safety, Bias & Adversarial Red-Teaming in LLMs</h3>
+          
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 8, Tue – Interpretability (Guest: Been Kim) + Week 8, Thu – Social Impacts (Risks)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s20.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s20" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S21 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Multimodal Vision-Language Models (CLIP, LLaVA, Cross-Modal Attention)</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 11 – Modeling II: Multimodal I (02/17) + Lecture 12 – Modeling III: Multimodal II (02/19)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 9, Tue – Multimodality (Guest: Luke Zettlemoyer)</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s21.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s21" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S22 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Diffusion Models & Flow Matching for Natural Language Generation</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 15 – Modeling IV: Diffusion and Flows (03/10)</div>
+          
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s22.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s22" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S23 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Graph Neural Networks for Natural Language Processing (GNN for NLP)</h3>
+          
+          
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s23.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s23" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="slides">
+        <div class="resource-card-header">
+          <span class="badge badge-lecture">S24 • Lecture Slide</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">PDF</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Research Skills, ACL Experimental Design & Open Research Frontiers in NLP</h3>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">CMU Ref: Lecture 14 – Research Skills and Experimental Design (02/26)</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted);">Stanford Ref: Week 10, Tue – Open Questions in NLP 2026</div>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <a href="slides/session_s24.pdf" class="btn btn-primary btn-sm" download>Download Slides</a>
+          <a href="schedule.html#session-s24" class="btn btn-secondary btn-sm">Session Details</a>
+        </div>
+      </div>
+          
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S1 • Pretraining</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Language Models are Few-Shot Learners (GPT-3)</h3>
+          <p class="resource-card-desc">Tom B. Brown et al. (NeurIPS 2020)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2005.14165" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S1 • Pretraining</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Sparks of Artificial General Intelligence: Early experiments with GPT-4</h3>
+          <p class="resource-card-desc">Sébastien Bubeck et al. (Microsoft Research 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2303.12712" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S1 • Book / Notes</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Natural Language Understanding (Eisenstein Book, Chapter 1-2)</h3>
+          <p class="resource-card-desc">Jacob Eisenstein (MIT Press)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S1 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">On the Opportunities and Risks of Foundation Models</h3>
+          <p class="resource-card-desc">Rishi Bommasani et al. (Stanford CRFM 2021)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2108.07258" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S2 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Efficient Estimation of Word Representations in Vector Space (Word2Vec)</h3>
+          <p class="resource-card-desc">Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean (ICLR 2013)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1301.3781" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S2 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">GloVe: Global Vectors for Word Representation</h3>
+          <p class="resource-card-desc">Jeffrey Pennington, Richard Socher, Christopher D. Manning (EMNLP 2014)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://nlp.stanford.edu/pubs/glove.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S2 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Distributed Representations of Words and Phrases and their Compositionality</h3>
+          <p class="resource-card-desc">Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean (NeurIPS 2013)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1310.4546" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S2 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Enriching Word Vectors with Subword Information (fastText)</h3>
+          <p class="resource-card-desc">Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov (TACL 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1607.04606" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S3 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Deep Learning (Review Paper)</h3>
+          <p class="resource-card-desc">Yann LeCun, Yoshua Bengio, Geoffrey Hinton (Nature 2015)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://www.nature.com/articles/nature14539" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S3 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Yes you should understand backprop</h3>
+          <p class="resource-card-desc">Andrej Karpathy (2016)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S3 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Automatic Differentiation in PyTorch</h3>
+          <p class="resource-card-desc">Adam Paszke et al. (NeurIPS Autodiff Workshop 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://openreview.net/forum?id=BJJsrmfCZ" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S4 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">A Neural Probabilistic Language Model</h3>
+          <p class="resource-card-desc">Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin (JMLR 2003)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S4 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Generating Sequences With Recurrent Neural Networks</h3>
+          <p class="resource-card-desc">Alex Graves (2013)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1308.0850" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S4 • Book / Notes</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Speech and Language Processing (3rd ed. draft, Chapter 3: N-gram Language Models)</h3>
+          <p class="resource-card-desc">Dan Jurafsky, James H. Martin</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S5 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Long Short-Term Memory</h3>
+          <p class="resource-card-desc">Sepp Hochreiter, Jürgen Schmidhuber (Neural Computation 1997)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://www.bioinf.jku.at/publications/older/2604.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S5 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling</h3>
+          <p class="resource-card-desc">Junyoung Chung, Caglar Gulcehre, Kyunghyun Cho, Yoshua Bengio (NeurIPS 2014)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1412.3555" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S5 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Understanding LSTM Networks</h3>
+          <p class="resource-card-desc">Christopher Olah (2015)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S5 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">The Unreasonable Effectiveness of Recurrent Neural Networks</h3>
+          <p class="resource-card-desc">Andrej Karpathy (2015)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://karpathy.github.io/2015/05/21/rnn-effectiveness/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S6 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Attention Is All You Need</h3>
+          <p class="resource-card-desc">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit et al. (NeurIPS 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S6 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">The Illustrated Transformer</h3>
+          <p class="resource-card-desc">Jay Alammar (2018)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S6 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">RoFormer: Enhanced Transformer with Rotary Position Embedding (RoPE)</h3>
+          <p class="resource-card-desc">Jianlin Su, Yu Lu, Shengfeng Pan, Ahmed Murtadha, Bo Wen, Yunfeng Liu (Neurocomputing 2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2104.09864" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S6 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">The Annotated Transformer</h3>
+          <p class="resource-card-desc">Austin Rush et al. (Harvard NLP)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://nlp.seas.harvard.edu/annotated-transformer/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S7 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Neural Machine Translation of Rare Words with Subword Units (BPE)</h3>
+          <p class="resource-card-desc">Rico Sennrich, Barry Haddow, Alexandra Birch (ACL 2016)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1508.07909" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S7 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Subword Regularization: Improving Neural Network Translation Models (SentencePiece / Unigram)</h3>
+          <p class="resource-card-desc">Taku Kudo (ACL 2018)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1804.10959" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S7 • Pretraining</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Cross-lingual Language Model Pretraining (XLM)</h3>
+          <p class="resource-card-desc">Guillaume Lample, Alexis Conneau (NeurIPS 2019)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1901.07291" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S8 • Pretraining</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Language Models are Unsupervised Multitask Learners (GPT-2)</h3>
+          <p class="resource-card-desc">Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever (OpenAI 2019)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S8 • Pretraining</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">The Llama 3 Herd of Models</h3>
+          <p class="resource-card-desc">Abhimanyu Dubey et al. (Meta AI 2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2407.21783" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S8 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora</h3>
+          <p class="resource-card-desc">Guilherme Penedo et al. (NeurIPS 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2306.01116" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S9 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Training Compute-Optimal Large Language Models (Chinchilla)</h3>
+          <p class="resource-card-desc">Jordan Hoffmann et al. (DeepMind, NeurIPS 2022)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2203.15556" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S9 • Reasoning</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Scaling Laws for Neural Language Models</h3>
+          <p class="resource-card-desc">Jared Kaplan et al. (OpenAI 2020)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2001.08361" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S10 • PEFT</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">LoRA: Low-Rank Adaptation of Large Language Models</h3>
+          <p class="resource-card-desc">Edward J. Hu et al. (ICLR 2022)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S10 • PEFT</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">QLoRA: Efficient Finetuning of Quantized LLMs</h3>
+          <p class="resource-card-desc">Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, Luke Zettlemoyer (NeurIPS 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2305.14314" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S10 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Distilling the Knowledge in a Neural Network</h3>
+          <p class="resource-card-desc">Geoffrey Hinton, Oriol Vinyals, Jeff Dean (NeurIPS Deep Learning Workshop 2014)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1503.02531" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S10 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Prefix-Tuning: Optimizing Continuous Prompts for Generation</h3>
+          <p class="resource-card-desc">Xiang Lisa Li, Percy Liang (ACL 2021)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2101.00190" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S11 • Alignment</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Deep Reinforcement Learning from Human Preferences</h3>
+          <p class="resource-card-desc">Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amodei (NeurIPS 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1706.03741" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S11 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Proximal Policy Optimization Algorithms (PPO)</h3>
+          <p class="resource-card-desc">John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov (OpenAI 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1707.06347" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S12 • Pretraining</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Training language models to follow instructions with human feedback (InstructGPT)</h3>
+          <p class="resource-card-desc">Long Ouyang et al. (OpenAI, NeurIPS 2022)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2203.02155" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S12 • Alignment</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Direct Preference Optimization: Your Language Model is Secretly a Reward Model (DPO)</h3>
+          <p class="resource-card-desc">Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, Chelsea Finn (NeurIPS 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2305.18290" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S13 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale</h3>
+          <p class="resource-card-desc">Tim Dettmers, Mike Lewis, Younes Belkada, Luke Zettlemoyer (NeurIPS 2022)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2208.07339" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S13 • Efficiency</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration</h3>
+          <p class="resource-card-desc">Ji Lin, Jiaming Tang, Haotian Tang, Shang Yang, Xingyu Dang, Song Han (MLSys 2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2306.00978" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S13 • Efficiency</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">ZeRO: Memory Optimizations Toward Training Trillion Parameter Models</h3>
+          <p class="resource-card-desc">Samyam Rajbhandari, Jeff Rasley, Olatunji Ruwase, Yuxiong He (SC 2020)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1910.02054" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S14 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer</h3>
+          <p class="resource-card-desc">Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean (ICLR 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1701.06538" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S14 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning</h3>
+          <p class="resource-card-desc">Tri Dao (ICLR 2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2307.08691" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S14 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Mixtral of Experts</h3>
+          <p class="resource-card-desc">Albert Q. Jiang et al. (Mistral AI 2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2401.04088" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S15 • Reasoning</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</h3>
+          <p class="resource-card-desc">Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, Denny Zhou (NeurIPS 2022)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2201.11903" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S15 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">The Curious Case of Neural Text Degeneration (Nucleus / Top-p Sampling)</h3>
+          <p class="resource-card-desc">Ari Holtzman, Jan Buys, Li Du, Maxwell Forbes, Yejin Choi (ICLR 2020)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1904.09751" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S16 • Reasoning</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Parameters</h3>
+          <p class="resource-card-desc">Charlie Snell, Jaehoon Lee, Kelvin Xu, Aviral Kumar (Google DeepMind 2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2408.03314" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S16 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Let's Verify Step by Step (Process Supervision)</h3>
+          <p class="resource-card-desc">Hunter Lightman et al. (OpenAI 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2305.20050" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S17 • RAG</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)</h3>
+          <p class="resource-card-desc">Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni et al. (NeurIPS 2020)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S17 • RAG</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Dense Passage Retrieval for Open-Domain Question Answering (DPR)</h3>
+          <p class="resource-card-desc">Vladimir Karpukhin, Barlas Oğuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, Wen-tau Yih (EMNLP 2020)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2004.04906" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S17 • RAG</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection</h3>
+          <p class="resource-card-desc">Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, Hannaneh Hajishirzi (ICLR 2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2310.11511" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S18 • Reasoning</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">ReAct: Synergizing Reasoning and Acting in Language Models</h3>
+          <p class="resource-card-desc">Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao (ICLR 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2210.03629" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S18 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Toolformer: Language Models Can Teach Themselves to Use Tools</h3>
+          <p class="resource-card-desc">Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, Roberta Raileanu, Maria Lomeli, Luke Zettlemoyer, Nicola Cancedda, Thomas Scialom (NeurIPS 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2302.04761" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S18 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">World of Bits: An Open-Domain Platform for Web-Based Agents</h3>
+          <p class="resource-card-desc">Tianlin Shi, Andrej Karpathy, Linxi Fan, Jonathan O. Hernandez, Percy Liang (ICML 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://proceedings.mlr.press/v70/shi17a.html" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S19 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Measuring Massive Multitask Language Understanding (MMLU)</h3>
+          <p class="resource-card-desc">Dan Hendrycks et al. (ICLR 2021)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2009.03300" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S19 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</h3>
+          <p class="resource-card-desc">Lianmin Zheng, Wei-Lin Chiang, Hao Zhang, Siyuan Zhuang, Yonghao Zhuang, Lingxiao Zheng et al. (NeurIPS 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2306.05685" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S19 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations</h3>
+          <p class="resource-card-desc">Noah A. Smith et al. (2024)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2403.01018" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S20 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Towards Monosemanticity: Decomposing Language Models With Dictionary Learning</h3>
+          <p class="resource-card-desc">Trenton Bricken et al. (Anthropic 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S20 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Universal and Transferable Adversarial Attacks on Aligned Language Models</h3>
+          <p class="resource-card-desc">Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr, J. Zico Kolter, Matt Fredrikson (2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2307.15043" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S20 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)</h3>
+          <p class="resource-card-desc">Been Kim, Martin Wattenberg, Justin Gilmer, Carrie Cai, James Wexler, Fernanda Viegas, Rory Sayres (ICML 2018)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1711.11279" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S21 • Multimodal</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Learning Transferable Visual Models From Natural Language Supervision (CLIP)</h3>
+          <p class="resource-card-desc">Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal et al. (OpenAI, ICML 2021)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2103.00020" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S21 • Multimodal</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Visual Instruction Tuning (LLaVA)</h3>
+          <p class="resource-card-desc">Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee (NeurIPS 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2304.08485" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S21 • Architecture</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)</h3>
+          <p class="resource-card-desc">Alexey Dosovitskiy et al. (ICLR 2021)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2010.11929" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S22 • Diffusion</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Diffusion-LM Improves Controllable Text Generation</h3>
+          <p class="resource-card-desc">Xiang Lisa Li, John Thickstun, Ishaan Gulrajani, Percy Liang, Tatsunori B. Hashimoto (NeurIPS 2022)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2205.14217" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S22 • Diffusion</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Flow Matching for Generative Modeling</h3>
+          <p class="resource-card-desc">Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu, Maximilian Nicklas, Matt Le (ICLR 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2210.02747" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S22 • Diffusion</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Denoising Diffusion Probabilistic Models (DDPM)</h3>
+          <p class="resource-card-desc">Jonathan Ho, Ajay Jain, Pieter Abbeel (NeurIPS 2020)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2006.11239" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S23 • GNN</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Graph Neural Networks for Natural Language Processing: A Survey</h3>
+          <p class="resource-card-desc">Lingfei Wu, Yu Chen, Kai Shen, Xiaojie Guo et al. (Foundations and Trends in ML 2021)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2106.06090" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S23 • GNN</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Graph Convolutional Networks for Text Classification</h3>
+          <p class="resource-card-desc">Liang Yao, Chengsheng Mao, Yuan Luo (AAAI 2019)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1809.05679" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S23 • GNN</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Semi-Supervised Classification with Graph Convolutional Networks (GCN)</h3>
+          <p class="resource-card-desc">Thomas N. Kipf, Max Welling (ICLR 2017)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/1609.02907" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S24 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">A Survey of Large Language Models</h3>
+          <p class="resource-card-desc">Wayne Xin Zhao et al. (AI Open 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2303.18223" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="papers">
+        <div class="resource-card-header">
+          <span class="badge badge-quiz">Session S24 • Paper</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Literature</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Holistic Evaluation of Language Models (HELM)</h3>
+          <p class="resource-card-desc">Percy Liang et al. (Stanford CRFM, TMLR 2023)</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://arxiv.org/abs/2211.09110" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Read Publication →</a>
+        </div>
+      </div>
+          
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 01 • Foundations</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Introduction & Environment Setup in PyTorch</h3>
+          <p class="resource-card-desc">Hands-on setup with PyTorch, Hugging Face Transformers, and basic neural tensor operations.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/01_intro" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 02 • Foundations</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Word Representations, Word2Vec & Text Classification</h3>
+          <p class="resource-card-desc">Implementing word vector embeddings, continuous representations, and sentiment classification.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/02_wordrep_classification" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 03 • Language Modeling</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Autoregressive Neural Language Modeling Fundamentals</h3>
+          <p class="resource-card-desc">Building next-token prediction language models from scratch with Cross-Entropy Loss.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/03_lm_fundamentals" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 04 • Architectures</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Recurrent Neural Networks (RNN & LSTM) in PyTorch</h3>
+          <p class="resource-card-desc">Implementing recurrent sequence encoders, LSTM cells, and gated hidden state transitions.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/04_recurrent" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 05 • Architectures</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Transformer Architecture & Scaled Dot-Product Attention</h3>
+          <p class="resource-card-desc">Modular implementation of Multi-Head Self-Attention, Positional Encoding, and Feed-Forward blocks.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/05_transformers" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 06 • Pretraining</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">LLM Pretraining Pipelines & Data Preprocessing at Scale</h3>
+          <p class="resource-card-desc">Web text scraping, quality filtering, deduplication pipelines, and batch sequence packing.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/06_pretraining" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 07 • Prompting</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">In-Context Learning (ICL) & Few-Shot Prompt Engineering</h3>
+          <p class="resource-card-desc">Demonstrating few-shot learning, prompt calibration, and instruction formatting across open LLMs.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/07_icl_prompting" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 08 • PEFT & Fine-Tuning</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Instruction Fine-Tuning & Parameter-Efficient LoRA Adaptation</h3>
+          <p class="resource-card-desc">Fine-tuning foundation models with LoRA/QLoRA using Hugging Face PEFT and TRL.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/08_finetuning" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 09 • Inference</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Decoding Algorithms, Sampling (Top-p/Top-k) & Search</h3>
+          <p class="resource-card-desc">Greedy decoding, temperature scaling, top-k/nucleus sampling, and beam search implementations.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/09_decoding" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 10 • RAG</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Retrieval-Augmented Generation (RAG) & Vector Indexing</h3>
+          <p class="resource-card-desc">Dense passage retrieval (DPR), vector database indexing with FAISS, chunking, and generation.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/10_rag" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 11 • Multimodal</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Multimodal Vision-Language Models (CLIP & Visual Embeddings)</h3>
+          <p class="resource-card-desc">Contrastive image-text training (CLIP), zero-shot visual classification, and multimodal alignment.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/11_multimodal_i" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 12 • Multimodal</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Multimodal Instruction Tuning & Visual Generation (LLaVA)</h3>
+          <p class="resource-card-desc">Cross-modal projection, Visual Question Answering (VQA), and multimodal chat assistants.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/12_multimodal_ii" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 13 • Evaluation</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">LLM Evaluation Benchmarks & Automated Scoring Metrics</h3>
+          <p class="resource-card-desc">Benchmarking with MMLU and GSM8K, LLM-as-a-Judge evaluations, and statistical confidence intervals.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/13_evaluation" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 14 • Research Skills</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Research Skills, Experimental Design & Ablation Analysis</h3>
+          <p class="resource-card-desc">Designing rigorous NLP ablation experiments, statistical significance testing, and artifact analysis.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/14_experimental" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 15 • Generative Modeling</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Diffusion Models & Flow Matching for Text Generation</h3>
+          <p class="resource-card-desc">Implementing continuous/discrete text diffusion models, denoising steps, and flow matching.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/15_diffusion" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 16 • Reinforcement Learning</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Reinforcement Learning Fundamentals & Policy Optimization (PPO)</h3>
+          <p class="resource-card-desc">Markov Decision Processes, policy gradients, advantage estimation, and Proximal Policy Optimization.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/16_rl" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 17 • Alignment</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Preference Alignment for LLMs (RLHF & Direct Preference Optimization / DPO)</h3>
+          <p class="resource-card-desc">Bradley-Terry reward modeling, RLHF with PPO, and Direct Preference Optimization (DPO).</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/17_rl_llm" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 18 • Agents</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">LLM-Based Autonomous Agents, Function Calling & Tool Use (ReAct)</h3>
+          <p class="resource-card-desc">Building autonomous agent loops with ReAct prompting, API tool integration, and environment feedback.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/18_agents" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 19 • Efficiency</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Model Quantization (AWQ, GPTQ & INT8/INT4 Precision)</h3>
+          <p class="resource-card-desc">Weight quantization with bitsandbytes, activation-aware quantization (AWQ), and inference benchmarking.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/19_quantization" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="notebooks">
+        <div class="resource-card-header">
+          <span class="badge badge-review">Lab 20 • Distributed Systems</span>
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Code Lab</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">Distributed Training, Model Parallelism & ZeRO Optimization</h3>
+          <p class="resource-card-desc">Tensor and pipeline parallelism (Megatron-LM), ZeRO memory stages (DeepSpeed), and FSDP on GPU clusters.</p>
+        </div>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://github.com/cmu-l3/anlp-spring2026-code/tree/main/20_parallelism" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View Code on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+          
+      <div class="resource-card" data-category="datasets">
+        <div class="resource-card-header">
+          <span class="badge badge-presentation">Benchmark / Dataset</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">MMLU (Massive Multitask Language Understanding)</h3>
+          <p class="resource-card-desc">57 subjects across STEM, humanities, and social sciences for holistic LLM benchmarking.</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://huggingface.co/datasets/cais/mmlu" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Explore Dataset →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="datasets">
+        <div class="resource-card-header">
+          <span class="badge badge-presentation">Benchmark / Dataset</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">GSM8K (Grade School Math 8K)</h3>
+          <p class="resource-card-desc">8,500 high-quality multi-step math reasoning word problems for Chain-of-Thought evaluation.</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://huggingface.co/datasets/openai/gsm8k" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Explore Dataset →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="datasets">
+        <div class="resource-card-header">
+          <span class="badge badge-presentation">Benchmark / Dataset</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">UltraFeedback & Anthropic HH-RLHF</h3>
+          <p class="resource-card-desc">Binarized pairwise human preference datasets for RLHF and Direct Preference Optimization (DPO).</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Explore Dataset →</a>
+        </div>
+      </div>
+      <div class="resource-card" data-category="datasets">
+        <div class="resource-card-header">
+          <span class="badge badge-presentation">Benchmark / Dataset</span>
+        </div>
+        <div>
+          <h3 class="resource-card-title">MS MARCO & HotpotQA</h3>
+          <p class="resource-card-desc">Passage ranking and multi-hop reasoning datasets for open-domain RAG benchmarking.</p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <a href="https://microsoft.github.io/msmarco/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Explore Dataset →</a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="assets/images/logos/logo.png" alt="IUST Logo" width="44" height="44">
+            <div>
+              <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-primary);">M.Sc. Advanced NLP</h3>
+              <p style="font-size: 0.82rem; margin: 0; color: var(--accent-primary);">Iran University of Science and Technology • Semester 4051</p>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.5rem;">
+            Graduate Master's course on cutting-edge Natural Language Processing, Transformer architectures, Large Language Models, and Alignment at the School of Computer Engineering, IUST.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Course Home</a></li>
+            <li><a href="syllabus.html">Syllabus & Policies</a></li>
+            <li><a href="schedule.html">Weekly Schedule</a></li>
+            <li><a href="materials.html">Lecture Materials</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Course Work</h4>
+          <ul class="footer-links">
+            <li><a href="assignments.html">Assignments (HW1-3)</a></li>
+            <li><a href="project.html">Course Project</a></li>
+            <li><a href="team.html">Teaching Staff</a></li>
+            <li><a href="materials.html">Colab Labs & Code</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1xAcQgxm3iPvbYyJnGXyhij0TECLUVc4HgFrenllmc_s/edit?usp=sharing" target="_blank" rel="noopener">Live Course Sheet ↗</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Affiliations & Reference</h4>
+          <ul class="footer-links">
+            <li><a href="http://www.iust.ac.ir/" target="_blank" rel="noopener">IUST Official Website</a></li>
+            <li><a href="http://ce.iust.ac.ir/" target="_blank" rel="noopener">IUST Computer Engineering</a></li>
+            <li><a href="https://cmu-l3.github.io/anlp-spring2026/" target="_blank" rel="noopener">CMU ANLP Reference</a></li>
+            <li><a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noopener">Stanford CS224N Reference</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Advanced NLP Teaching Team • School of Computer Engineering, IUST</div>
+        <div>M.Sc. Graduate Program • Semester 4051</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=4051.3"></script>
+
+</body>
+</html>

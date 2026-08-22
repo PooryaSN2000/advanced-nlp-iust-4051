@@ -1,0 +1,150 @@
+{
+  "instructor": {
+    "name": "Prof. Behrouz Minaei-Bidgoli",
+    "title": "Professor, School of Computer Engineering",
+    "affiliation": "Iran University of Science and Technology (IUST)",
+    "role": "Course Instructor",
+    "photo": "assets/images/team/behrouz_minaei.jpg",
+    "email": "b_minaei@iust.ac.ir",
+    "office": "Room 304, School of Computer Engineering",
+    "scholar": "https://scholar.google.com/citations?user=M8tgU-wAAAAJ&hl=en",
+    "bio": "Professor at Iran University of Science and Technology (IUST). His research focuses on Natural Language Processing, Machine Learning, Large Language Models, and Trustworthy AI.",
+    "homepage": "http://minaei.iust.ac.ir/"
+  },
+  "course_manager": {
+    "name": "Dr. Najmeh Torabian",
+    "title": "Postgraduate Researcher in Artificial Intelligence",
+    "affiliation": "Iran University of Science and Technology (IUST)",
+    "role": "Course Manager",
+    "photo": null,
+    "email": "n_torabian@iust.ac.ir",
+    "scholar": "https://scholar.google.com/citations?user=5wryiGgAAAAJ&hl=en",
+    "bio": "Postgraduate Researcher in AI at IUST, coordinating course structure, curriculum synchronization with international benchmarks, and student research mentorship.",
+    "linkedin": "https://www.linkedin.com/in/najmeh-torabian-b9a89453/"
+  },
+  "teaching_assistants": [
+    {
+      "name": "Poorya Saneei",
+      "role": "Head TA & Co-Lecturer",
+      "is_head": true,
+      "major": "M.Sc. Artificial Intelligence",
+      "entry_year": "2024 (1403)",
+      "photo": "assets/images/team/poorya_saneei.jpg",
+      "email": "poorya_saneei@comp.iust.ac.ir",
+      "telegram": "PooryaSN",
+      "telegram_url": "https://t.me/PooryaSN",
+      "linkedin": "https://www.linkedin.com/in/poorya-saneei/",
+      "scholar": "https://scholar.google.com/citations?user=9slWOaQAAAAJ&hl=en"
+    },
+    {
+      "name": "Mohammad Khaki",
+      "role": "Teaching Assistant & Co-Lecturer",
+      "is_head": false,
+      "major": "M.Sc. Artificial Intelligence",
+      "entry_year": "2024 (1403)",
+      "photo": "assets/images/team/mohammad_khaki.jpg",
+      "email": "m_khaki@comp.iust.ac.ir",
+      "telegram": "khaki_mim",
+      "telegram_url": "https://t.me/khaki_mim",
+      "linkedin": "https://www.linkedin.com/in/mohammad-khaki/"
+    },
+    {
+      "name": "Alireza Nazari",
+      "role": "Teaching Assistant & Co-Lecturer",
+      "is_head": false,
+      "major": "M.Sc. Software Engineering",
+      "entry_year": "2024 (1403)",
+      "photo": "assets/images/team/alireza_nazari.jpg",
+      "email": "a_nazari@comp.iust.ac.ir",
+      "telegram": "CallMeAlirezaNz",
+      "telegram_url": "https://t.me/CallMeAlirezaNz",
+      "linkedin": "https://www.linkedin.com/in/alireza-nazari-work/",
+      "scholar": "https://scholar.google.com/citations?user=AO57M80AAAAJ&hl=en"
+    },
+    {
+      "name": "Mohadeseh Emadi",
+      "role": "Teaching Assistant & Co-Lecturer",
+      "is_head": false,
+      "major": "M.Sc. Artificial Intelligence",
+      "entry_year": "2025 (1404)",
+      "photo": "assets/images/team/mohadeseh_emadi.jpeg",
+      "email": "m_emadi@comp.iust.ac.ir",
+      "telegram": "Mohi28",
+      "telegram_url": "https://t.me/Mohi28",
+      "linkedin": "https://www.linkedin.com/in/mohaddeseh-emadi-a4648a413"
+    },
+    {
+      "name": "Setare Kahnamuee",
+      "role": "Teaching Assistant & Co-Lecturer",
+      "is_head": false,
+      "major": "M.Sc. Artificial Intelligence",
+      "entry_year": "2025 (1404)",
+      "photo": null,
+      "email": null,
+      "telegram": "sM31k",
+      "telegram_url": "https://t.me/sM31k",
+      "linkedin": null
+    },
+    {
+      "name": "Saba Sattari",
+      "role": "Teaching Assistant & Co-Lecturer",
+      "is_head": false,
+      "major": "M.Sc. Artificial Intelligence",
+      "entry_year": "2025 (1404)",
+      "photo": "assets/images/team/saba_sattari.jpeg",
+      "email": null,
+      "telegram": "saba_sattari",
+      "telegram_url": "https://t.me/saba_sattari",
+      "linkedin": "https://linkedin.com/in/sabasattari",
+      "github": "https://github.com/wisaba"
+    },
+    {
+      "name": "Mohammad Amin Haeri",
+      "role": "Grading & Assessment TA",
+      "is_head": false,
+      "major": "M.Sc. Software Engineering",
+      "entry_year": "2024 (1403)",
+      "photo": null,
+      "email": "m_haeri@comp.iust.ac.ir",
+      "telegram": "rstlss0",
+      "telegram_url": "https://t.me/rstlss0",
+      "linkedin": null
+    },
+    {
+      "name": "Maryam Mortazavi Nik",
+      "role": "Grading & Assessment TA",
+      "is_head": false,
+      "major": "M.Sc. Software Engineering",
+      "entry_year": "2025 (1404)",
+      "photo": "assets/images/team/maryam_mortazavi.jpg",
+      "email": "m_mortazavi@comp.iust.ac.ir",
+      "telegram": "thisisnikk",
+      "telegram_url": "https://t.me/thisisnikk",
+      "linkedin": "https://www.linkedin.com/in/maryam-mortazavi-nik-383298246"
+    },
+    {
+      "name": "Alireza Mohammadi",
+      "role": "Grading & Assessment TA",
+      "is_head": false,
+      "major": "M.Sc. Software Engineering",
+      "entry_year": "2025 (1404)",
+      "photo": "assets/images/team/alireza_mohammadi.jpg",
+      "email": "a_mohammadi@comp.iust.ac.ir",
+      "telegram": "Alireza2001923",
+      "telegram_url": "https://t.me/Alireza2001923",
+      "linkedin": "https://linkedin.com/in/alirezamohammadiii"
+    },
+    {
+      "name": "Amirhossein Amin Moghaddam",
+      "role": "Grading & Assessment TA",
+      "is_head": false,
+      "major": "M.Sc. Software Engineering",
+      "entry_year": "2025 (1404)",
+      "photo": "assets/images/team/amirhossein_amin_moghaddam.jpeg",
+      "email": null,
+      "telegram": "amirhossein_am78",
+      "telegram_url": "https://t.me/amirhossein_am78",
+      "linkedin": "https://www.linkedin.com/in/amirhossein-amin-moghaddam/"
+    }
+  ]
+}

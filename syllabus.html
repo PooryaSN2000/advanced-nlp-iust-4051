@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syllabus & Policies | M.Sc. Advanced NLP (Semester 4051) - IUST</title>
+  <meta name="description" content="Comprehensive syllabus, 110% grading policy, learning objectives, and academic policies for M.Sc. Advanced NLP (Semester 4051) at IUST.">
+  <link rel="icon" type="image/png" href="assets/images/logos/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-link">
+        <img src="assets/images/logos/logo.png" alt="IUST Logo" class="brand-logo" width="44" height="44">
+        <div class="brand-text">
+          <span class="brand-title">Advanced NLP</span>
+          <span class="brand-subtitle">M.Sc. Program • Semester 4051</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="syllabus.html" class="nav-link active">Syllabus</a>
+        <a href="schedule.html" class="nav-link">Schedule</a>
+        <a href="materials.html" class="nav-link">Materials</a>
+        <a href="assignments.html" class="nav-link">Assignments</a>
+        <a href="project.html" class="nav-link">Project</a>
+        <a href="team.html" class="nav-link">Team</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://docs.google.com/spreadsheets/d/1xAcQgxm3iPvbYyJnGXyhij0TECLUVc4HgFrenllmc_s/edit?usp=sharing" target="_blank" rel="noopener" class="nav-sheet-btn" title="Open Official Live Google Sheet">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
+          <span>Live Sheet</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button type="button" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 3.5rem;">
+      <div class="container">
+        <div class="section-header">
+          <div class="hero-pills">
+            <span class="pill-badge primary">Master of Science (M.Sc.)</span>
+            <span class="pill-badge term">Semester: 4051</span>
+            <span class="pill-badge">3 Credits</span>
+          </div>
+          <h1 class="section-title">Course Syllabus & Policies</h1>
+          <p class="section-subtitle">Comprehensive overview of Master's curriculum topics, learning outcomes, grading breakdown, prerequisites, and academic policies.</p>
+        </div>
+
+        <!-- Course Description & Objectives -->
+        <div class="card" style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1rem; color: var(--text-primary);">Course Description</h2>
+          <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.25rem;">
+            Natural Language Processing (NLP) is at the epicenter of modern artificial intelligence. This graduate Master's course provides an in-depth mathematical and algorithmic foundation of modern NLP, focusing on large-scale language representation learning, Transformer architectures, Parameter-Efficient Fine-Tuning (PEFT/LoRA), Reinforcement Learning from Human Feedback (RLHF & DPO), Retrieval-Augmented Generation (RAG), and Multimodal LLMs.
+          </p>
+
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-primary);">Key Learning Outcomes</h3>
+          <ul style="padding-left: 1.5rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
+            <li>Master mathematical foundations of autoregressive language models, word representations, and sequence modeling.</li>
+            <li>Implement encoder-only, decoder-only, and encoder-decoder Transformer blocks from scratch with multi-head attention and RoPE.</li>
+            <li>Understand pretraining scaling laws, compute-optimal recipes, data filtering, and distributed training systems.</li>
+            <li>Apply parameter-efficient fine-tuning techniques (LoRA, QLoRA, prefix tuning) on open-weight LLMs.</li>
+            <li>Implement preference alignment pipelines using RLHF, Direct Preference Optimization (DPO), and rejection sampling.</li>
+            <li>Design industrial-grade Retrieval-Augmented Generation (RAG) pipelines with hybrid dense/sparse vector search.</li>
+            <li>Analyze multimodal language models, decoding strategies, test-time scaling, and safety/fairness considerations.</li>
+          </ul>
+        </div>
+
+        <!-- Grading Policy Breakdown -->
+        <div class="card" style="margin-bottom: 2.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <h2 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.25rem;">Grading Policy & Breakdown</h2>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Official preliminary grading breakdown (110% Total with 10% bonus capacity)</p>
+            </div>
+            <span class="pill-badge primary" style="font-size: 0.85rem;">Total: 110%</span>
+          </div>
+
+          <div class="grading-table-wrap table-responsive-wrapper">
+            <table class="table-custom">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Weight</th>
+                  <th>Description</th>
+                  <th>Visual Share</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Assignment 1</strong></td>
+                  <td><span class="badge badge-lecture">10%</span></td>
+                  <td>Word Representations, Autoregressive LMs & Tokenization (Due Week 5)</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 10%;"></div></div></td>
+                </tr>
+                <tr>
+                  <td><strong>Assignment 2</strong></td>
+                  <td><span class="badge badge-lecture">10%</span></td>
+                  <td>Transformers & Parameter-Efficient Fine-Tuning (LoRA) (Due Week 8)</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 10%;"></div></div></td>
+                </tr>
+                <tr>
+                  <td><strong>Assignment 3</strong></td>
+                  <td><span class="badge badge-lecture">10%</span></td>
+                  <td>RAG Systems, Reasoning (CoT) & Model Alignment (DPO) (Due Week 12)</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 10%;"></div></div></td>
+                </tr>
+                <tr>
+                  <td><strong>Assignment 4 (Course Project)</strong></td>
+                  <td><span class="badge badge-presentation">20%</span></td>
+                  <td>Capstone research & implementation project (Presentations in Week 15)</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 20%;"></div></div></td>
+                </tr>
+                <tr>
+                  <td><strong>Midterm Exam</strong></td>
+                  <td><span class="badge badge-exam">20%</span></td>
+                  <td>Comprehensive in-class examination covering Sessions S1 to S12 (Week 7)</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 20%;"></div></div></td>
+                </tr>
+                <tr>
+                  <td><strong>Final Exam</strong></td>
+                  <td><span class="badge badge-exam">20%</span></td>
+                  <td>Final theoretical and applied examination on full semester topics</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 20%;"></div></div></td>
+                </tr>
+                <tr>
+                  <td><strong>Quizzes (Q1, Q2, Q3)</strong></td>
+                  <td><span class="badge badge-quiz">15%</span></td>
+                  <td>Three short review quizzes (5% each) at Weeks 4, 10, and 13</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 15%;"></div></div></td>
+                </tr>
+                <tr>
+                  <td><strong>In-Class Participation</strong></td>
+                  <td><span class="badge badge-review">5%</span></td>
+                  <td>Active discussion, paper reviews, and classroom engagement</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 5%;"></div></div></td>
+                </tr>
+                <tr class="total-row">
+                  <td><strong>Total Available Score</strong></td>
+                  <td><strong>110%</strong></td>
+                  <td>Includes 10% built-in bonus potential</td>
+                  <td><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width: 100%; background: var(--accent-emerald);"></div></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Curriculum Mapping -->
+        <div class="card" style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--text-primary);">Curriculum Structure & Module Alignment</h2>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            All 11 official curriculum modules are mapped independently to course sessions, aligning with national graduate requirements and benchmarked against CMU ANLP and Stanford CS224N.
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+            
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Sessions S1, S2, S4</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 1: Introduction to Large Language Models & Distributed Semantics</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">History of NLP, distributed word representations (Word2Vec, GloVe), and autoregressive neural language modeling fundamentals.</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Sessions S8, S9, S10</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 2: Pretraining Strategies, Data Scaling & Transfer Learning</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Web scraping data pipelines, quality filtering, deduplication, Chinchilla compute-optimal scaling laws, and transfer learning paradigms.</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Sessions S5, S6, S7</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 3: Transformer Architecture, Sequential Encoders & Subword Tokenization</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Recurrent sequence encoders (RNN/LSTM/GRU), scaled dot-product attention, multi-head Transformer blocks, RoPE, and subword tokenization (BPE, SentencePiece).</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Session S20</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 4: Security, Privacy, Hallucination & Robustness in NLP</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Adversarial prompt injection, jailbreaking attacks, mechanistic interpretability, safety filters, and privacy preservation in LLMs.</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Session S19</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 5: LLM Evaluation, Benchmarks & Leaderboards</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Standardized NLP benchmarks (MMLU, GSM8K), LLM-as-a-Judge methodologies, Chatbot Arena Elo ranking, and contamination detection.</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Sessions S11, S12</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 6: Reinforcement Learning & Human Preference Alignment</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Markov decision processes, PPO policy gradients, reward modeling, RLHF (InstructGPT), and Direct Preference Optimization (DPO).</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Sessions S9, S10, S13, S14</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 7: Advanced Architectures, Quantization & Parameter-Efficient Fine-Tuning</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">LoRA, QLoRA, weight quantization (AWQ, GPTQ), FlashAttention-2, and Mixture of Experts (MoE).</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Session S17</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 8: Retrieval-Augmented Generation (RAG) & Dense Search</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Dense passage retrieval (DPR, ColBERT), vector indexing (HNSW), chunking, re-ranking, and Self-RAG frameworks.</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Sessions S15, S16, S18</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 9: Reasoning, Chain-of-Thought, Test-Time Scaling & Autonomous LLM Agents</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Decoding algorithms, Chain-of-Thought prompting, test-time compute scaling, process supervision (PRM), ReAct prompting, tool use, and autonomous agent loops.</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Sessions S21, S22</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 10: Multimodal Models & Diffusion Generation in NLP</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Vision-Language Models (CLIP, LLaVA), cross-modal attention, continuous/discrete text diffusion, and flow matching for language generation.</p>
+        </div>
+      </div>
+      <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Session S23</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Module 11: Graph Neural Networks (GNNs) for Natural Language Processing</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">Knowledge graph embeddings, Graph Convolutional Networks (GCN/GAT) for text classification, dependency parsing, and KG-LLM fusion.</p>
+        </div>
+      </div>
+          </div>
+        </div>
+
+        <!-- Course Policies Accordion -->
+        <div class="card" style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1.25rem; color: var(--text-primary);">Course Policies & FAQs</h2>
+          
+          <div class="accordion">
+            <div class="accordion-item active">
+              <button class="accordion-trigger">
+                <span>Academic Integrity & Generative AI Usage Policy</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                We encourage the use of modern generative AI tools (e.g. ChatGPT, Claude, Copilot) as learning and coding assistants. However, all submitted code and reports must represent your own synthesis and deep understanding. You are required to explicitly cite any significant AI assistance in your assignment submission comments. Plagiarism between student submissions is strictly prohibited and subject to IUST academic committee referral.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>Late Submission Policy & Grace Period</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                Each student is allocated a total of <strong>3 slip days (grace days)</strong> across the entire semester for homework assignments, with a maximum of 2 slip days usable on any single assignment. Beyond the slip days, late submissions are penalized at 15% deduction per 24 hours. No submissions will be accepted 4 days after the original deadline.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>Prerequisites and Background Preparation</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                Students are expected to have a solid background in Linear Algebra, Probability & Statistics, Machine Learning / Deep Learning, and proficiency in Python and PyTorch. Prior knowledge of basic NLP concepts is beneficial but not strictly mandatory.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>Quizzes Format & Assignment Review</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                The 3 quizzes (Q1 in Week 4, Q2 in Week 10, Q3 in Week 13) are designed to consolidate theoretical insights and ensure steady progress. The remaining time of each quiz session is dedicated to interactive Q&A and problem solving with the teaching assistants.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="assets/images/logos/logo.png" alt="IUST Logo" width="44" height="44">
+            <div>
+              <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-primary);">M.Sc. Advanced NLP</h3>
+              <p style="font-size: 0.82rem; margin: 0; color: var(--accent-primary);">Iran University of Science and Technology • Semester 4051</p>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.5rem;">
+            Graduate Master's course on cutting-edge Natural Language Processing, Transformer architectures, Large Language Models, and Alignment at the School of Computer Engineering, IUST.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Course Home</a></li>
+            <li><a href="syllabus.html">Syllabus & Policies</a></li>
+            <li><a href="schedule.html">Weekly Schedule</a></li>
+            <li><a href="materials.html">Lecture Materials</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Course Work</h4>
+          <ul class="footer-links">
+            <li><a href="assignments.html">Assignments (HW1-3)</a></li>
+            <li><a href="project.html">Course Project</a></li>
+            <li><a href="team.html">Teaching Staff</a></li>
+            <li><a href="materials.html">Colab Labs & Code</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1xAcQgxm3iPvbYyJnGXyhij0TECLUVc4HgFrenllmc_s/edit?usp=sharing" target="_blank" rel="noopener">Live Course Sheet ↗</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Affiliations & Reference</h4>
+          <ul class="footer-links">
+            <li><a href="http://www.iust.ac.ir/" target="_blank" rel="noopener">IUST Official Website</a></li>
+            <li><a href="http://ce.iust.ac.ir/" target="_blank" rel="noopener">IUST Computer Engineering</a></li>
+            <li><a href="https://cmu-l3.github.io/anlp-spring2026/" target="_blank" rel="noopener">CMU ANLP Reference</a></li>
+            <li><a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noopener">Stanford CS224N Reference</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Advanced NLP Teaching Team • School of Computer Engineering, IUST</div>
+        <div>M.Sc. Graduate Program • Semester 4051</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=4051.3"></script>
+
+</body>
+</html>

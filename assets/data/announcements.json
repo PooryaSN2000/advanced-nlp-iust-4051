@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome to Advanced NLP (Course Code 4051) - Spring 2026",
+    "date": "2026-02-14",
+    "category": "General",
+    "urgent": true,
+    "content": "Welcome to the graduate course Advanced Natural Language Processing at Iran University of Science and Technology. Please explore the course syllabus, calendar, and join our official Telegram channel.",
+    "link": "syllabus.html"
+  },
+  {
+    "id": 2,
+    "title": "Course Project Guidelines & Proposal Submission Released",
+    "date": "2026-02-28",
+    "category": "Project",
+    "urgent": false,
+    "content": "Final capstone project instructions, milestone schedules, and proposal guidelines are now published on the Project page. Proposal deadline is Week 5.",
+    "link": "project.html"
+  },
+  {
+    "id": 3,
+    "title": "Assignment 1: Word Representations & Language Modeling Released",
+    "date": "2026-03-05",
+    "category": "Assignment",
+    "urgent": false,
+    "content": "Assignment 1 is now available on the Assignments page. Deadline for submission is Week 4 at 23:59 via the Course Submission Portal.",
+    "link": "assignments.html"
+  },
+  {
+    "id": 4,
+    "title": "Teaching Assistant Office Hours Schedule Announced",
+    "date": "2026-03-10",
+    "category": "Team",
+    "urgent": false,
+    "content": "Teaching assistant office hours have been established. Check the Team page for weekly online and in-person slots.",
+    "link": "team.html"
+  }
+]

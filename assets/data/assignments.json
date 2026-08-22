@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hw1",
+    "code": "Assignment 1",
+    "weight": "10%",
+    "title": "Word Representations, Autoregressive Language Models & Subword Tokenization",
+    "status": "upcoming",
+    "released": "Week 3",
+    "due": "Week 5 (2 Weeks Duration)",
+    "description": "Hands-on implementation covering continuous word representations, autoregressive neural language modeling, and subword tokenization algorithms. Detailed specifications and starter repository will be released by the teaching team.",
+    "deliverables": [
+      "Implementation codebase and evaluation scripts.",
+      "Experimental comparison report and theoretical analysis."
+    ],
+    "starter_code": "",
+    "colab": ""
+  },
+  {
+    "id": "hw2",
+    "code": "Assignment 2",
+    "weight": "10%",
+    "title": "Transformers & Parameter-Efficient Fine-Tuning (PEFT / LoRA)",
+    "status": "upcoming",
+    "released": "Week 6",
+    "due": "Week 8 (2 Weeks Duration)",
+    "description": "Hands-on implementation of Transformer multi-head attention and parameter-efficient fine-tuning (LoRA / QLoRA) on open-weight language models. Detailed specifications will be released by the teaching team.",
+    "deliverables": [
+      "PyTorch Transformer modules and LoRA adapter code.",
+      "Fine-tuning logs, checkpoint weights, and evaluation report."
+    ],
+    "starter_code": "",
+    "colab": ""
+  },
+  {
+    "id": "hw3",
+    "code": "Assignment 3",
+    "weight": "10%",
+    "title": "Retrieval-Augmented Generation (RAG), Reasoning (CoT) & Model Alignment (DPO)",
+    "status": "upcoming",
+    "released": "Week 10",
+    "due": "Week 12 (2 Weeks Duration)",
+    "description": "Hands-on implementation of dense/hybrid retrieval-augmented generation (RAG), Chain-of-Thought reasoning verification, and preference alignment via Direct Preference Optimization (DPO). Detailed specifications will be released by the teaching team.",
+    "deliverables": [
+      "RAG pipeline implementation and DPO alignment code.",
+      "Evaluation results on benchmark QA datasets and technical report."
+    ],
+    "starter_code": "",
+    "colab": ""
+  },
+  {
+    "id": "project",
+    "code": "Assignment 4 (Course Project)",
+    "weight": "20%",
+    "title": "Capstone Research & Applied LLM Systems Project",
+    "status": "upcoming",
+    "released": "Week 4",
+    "due": "Week 15 (Presentations: POST1 & POST2)",
+    "description": "Open-ended graduate Master's research project in small teams (1–3 members). Topics encompass novel alignment methods, specialized reasoning agents, multimodal modeling, model compression, or Persian/Multilingual NLP benchmarks. Guidelines and milestones will be announced by the instructor.",
+    "deliverables": [
+      "Project Proposal & Topic Selection (Week 6).",
+      "Midterm Milestone Progress Checkpoint (Week 11).",
+      "Final Codebase, Model Artifacts, and IEEE/ACL format Research Report.",
+      "Oral Presentation & Poster Defense in Final Sessions (POST1 & POST2 in Week 15)."
+    ],
+    "starter_code": "",
+    "colab": ""
+  }
+]
