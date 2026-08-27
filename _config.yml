@@ -1,0 +1,9 @@
+title: Advanced Natural Language Processing
+description: Graduate Course (Course Code 4051) at Iran University of Science and Technology (IUST), School of Computer Engineering.
+theme: null
+markdown: kramdown
+plugins: []
+exclude:
+  - generate_site.py
+  - "Advanced NLP - IUST - 4051.xlsx"
+  - README.md
