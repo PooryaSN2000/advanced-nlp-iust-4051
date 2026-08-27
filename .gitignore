@@ -1,0 +1,19 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.py
+
+# Local environments / IDEs
+.vscode/
+.idea/
+
+# Private course data & build scripts
+*.xlsx
+*.xls
+*.csv
+generate_site.py
+scratch/

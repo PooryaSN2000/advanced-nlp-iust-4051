@@ -1,0 +1,915 @@
+{
+  "slides": [
+    {
+      "session": "S1",
+      "title": "History of NLP, Modern LLM Foundations & Paradigm Shifts",
+      "category": "Lecture Slide",
+      "file": "slides/session_s1.pdf",
+      "cmu_ref": "Lecture 1 – Introduction & Fundamentals (01/13)",
+      "stanford_ref": "Week 1, Tue – History of NLP"
+    },
+    {
+      "session": "S2",
+      "title": "Word Representations, Distributed Semantics & Vector Embeddings (Word2Vec, GloVe)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s2.pdf",
+      "cmu_ref": "Lecture 2 – Fundamentals: Learned Representations (01/15)",
+      "stanford_ref": "Week 1, Thu – Word Vectors"
+    },
+    {
+      "session": "S3",
+      "title": "Neural Network Fundamentals & Backpropagation in NLP",
+      "category": "Lecture Slide",
+      "file": "slides/session_s3.pdf",
+      "cmu_ref": "— (Not Covered in CMU)",
+      "stanford_ref": "Week 2, Tue – Backpropagation and Neural Network Basics"
+    },
+    {
+      "session": "S4",
+      "title": "Autoregressive Language Modeling & Cross-Entropy Objectives",
+      "category": "Lecture Slide",
+      "file": "slides/session_s4.pdf",
+      "cmu_ref": "Lecture 3 – Fundamentals: Autoregressive Language Modeling (01/20)",
+      "stanford_ref": "Week 2, Thu – Language Models and RNNs (Part 1)"
+    },
+    {
+      "session": "S5",
+      "title": "Recurrent Sequence Architectures: RNNs, LSTMs & Gated Recurrent Units (GRUs)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s5.pdf",
+      "cmu_ref": "Lecture 4 – Architectures I: Recurrent Neural Networks (01/22)",
+      "stanford_ref": "Week 2, Thu – Language Models and RNNs (Part 2)"
+    },
+    {
+      "session": "S6",
+      "title": "Attention Mechanisms & Transformer Architecture (RoPE, Multi-Head Attention)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s6.pdf",
+      "cmu_ref": "Lecture 5 – Architectures II: Attention and Transformers (01/27)",
+      "stanford_ref": "Week 3, Tue – Transformers"
+    },
+    {
+      "session": "S7",
+      "title": "Subword Tokenization (BPE, SentencePiece) & Multilingual Language Models",
+      "category": "Lecture Slide",
+      "file": "slides/session_s7.pdf",
+      "cmu_ref": "— (Not Covered in CMU)",
+      "stanford_ref": "Week 7, Thu – Tokenization and Multilinguality (Guest: Julie Kallini)"
+    },
+    {
+      "session": "S8",
+      "title": "LLM Pretraining: Web Data Pipelines, Quality Filtering & Scaling",
+      "category": "Lecture Slide",
+      "file": "slides/session_s8.pdf",
+      "cmu_ref": "Lecture 6 – Learning I: Pretraining (01/29)",
+      "stanford_ref": "Week 4, Tue – Pretraining (Scaling, Systems, Data)"
+    },
+    {
+      "session": "S9",
+      "title": "Scaling Laws (Chinchilla) & In-Context Learning (ICL)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s9.pdf",
+      "cmu_ref": "Lecture 7 – Scaling Laws and In-Context Learning (02/03)",
+      "stanford_ref": "Week 4, Tue – Pretraining (Scaling)"
+    },
+    {
+      "session": "S10",
+      "title": "Parameter-Efficient Fine-Tuning (PEFT: LoRA, QLoRA) & Knowledge Distillation",
+      "category": "Lecture Slide",
+      "file": "slides/session_s10.pdf",
+      "cmu_ref": "Lecture 8 – Learning III: Fine-tuning and Distillation (02/05)",
+      "stanford_ref": "Week 5, Tue – Efficient Adaptation + Week 9, Thu – Tinker and LoRA (John Schulman)"
+    },
+    {
+      "session": "S11",
+      "title": "Decoding Algorithms, Sampling Strategies & Chain-of-Thought (CoT) Prompting",
+      "category": "Lecture Slide",
+      "file": "slides/session_s11.pdf",
+      "cmu_ref": "Lecture 9 – Decoding Algorithms (02/10)",
+      "stanford_ref": "Week 6, Thu – Reasoning 1"
+    },
+    {
+      "session": "S12",
+      "title": "Advanced Reasoning: System 2 Reasoning & Search",
+      "category": "Lecture Slide",
+      "file": "slides/session_s12.pdf",
+      "cmu_ref": "—",
+      "stanford_ref": "Week 7, Tue – Reasoning 2"
+    },
+    {
+      "session": "S13",
+      "title": "Retrieval-Augmented Generation (RAG) & Dense Passage Retrieval (DPR, Self-RAG)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s13.pdf",
+      "cmu_ref": "Lecture 10 – Modeling I: Retrieval and RAG (Guest: Akari Asai) (02/12)",
+      "stanford_ref": "Week 5, Thu – Agents, Tool Use, and RAG (Part 1)"
+    },
+    {
+      "session": "S14",
+      "title": "Vision-Language Models (CLIP, LLaVA) & Multimodal Alignment",
+      "category": "Lecture Slide",
+      "file": "slides/session_s14.pdf",
+      "cmu_ref": "Lecture 11 – Modeling II: Multimodal I (02/17) + Lecture 12 – Modeling III: Multimodal II (02/19)",
+      "stanford_ref": "Week 9, Tue – Multimodality (Guest: Luke Zettlemoyer)"
+    },
+    {
+      "session": "S15",
+      "title": "LLM Evaluation Methodologies, Benchmarks & Leaderboards (MMLU, LLM-as-a-Judge)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s15.pdf",
+      "cmu_ref": "Lecture 13 – Evaluation Techniques (02/24)",
+      "stanford_ref": "Week 6, Tue – Benchmarking and Evaluation"
+    },
+    {
+      "session": "S16",
+      "title": "Graph Neural Networks for Natural Language Processing (GNN for NLP)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s16.pdf",
+      "cmu_ref": "— (Not Covered in CMU)",
+      "stanford_ref": "— (Not Covered in Stanford)"
+    },
+    {
+      "session": "S17",
+      "title": "Diffusion Models & Flow Matching for Natural Language Generation",
+      "category": "Lecture Slide",
+      "file": "slides/session_s17.pdf",
+      "cmu_ref": "Lecture 15 – Modeling IV: Diffusion and Flows (03/10)",
+      "stanford_ref": "— (Not Covered in Stanford)"
+    },
+    {
+      "session": "S18",
+      "title": "Reinforcement Learning Fundamentals in Natural Language Processing",
+      "category": "Lecture Slide",
+      "file": "slides/session_s18.pdf",
+      "cmu_ref": "Lecture 16 – Reinforcement Learning I: Fundamentals (03/12)",
+      "stanford_ref": "— (Not Covered in Stanford)"
+    },
+    {
+      "session": "S19",
+      "title": "Post-Training with Human Feedback & Preference Alignment (RLHF & DPO)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s19.pdf",
+      "cmu_ref": "Lecture 17 – Reinforcement Learning II: Applications (03/17)",
+      "stanford_ref": "Week 4, Thu – Post-training (RLHF, SFT, DPO)"
+    },
+    {
+      "session": "S20",
+      "title": "Language Model-Based Autonomous Agents, Function Calling & Tool Use (ReAct)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s20.pdf",
+      "cmu_ref": "Lecture 18 – Language Model-Based Agents (03/19)",
+      "stanford_ref": "Week 5, Thu – Agents, Tool Use, and RAG (Part 2)"
+    },
+    {
+      "session": "S21",
+      "title": "Model Quantization (AWQ, GPTQ, FP8/INT4) & Efficient Inference",
+      "category": "Lecture Slide",
+      "file": "slides/session_s21.pdf",
+      "cmu_ref": "Lecture 19 – Quantization (03/26) - Lecture 20 – Parallelism and Distributed Training (03/31)",
+      "stanford_ref": "— (Not Covered in Stanford)"
+    },
+    {
+      "session": "S22",
+      "title": "Mixture of Experts (MoE) & Efficient Attention (FlashAttention-2)",
+      "category": "Lecture Slide",
+      "file": "slides/session_s22.pdf",
+      "cmu_ref": "Lecture 21 – Mixture of Experts (04/02) + Lecture 22 – Scaling Sequence Length",
+      "stanford_ref": "— (Not Covered in Stanford)"
+    },
+    {
+      "session": "S23",
+      "title": "Process Supervision & Test-Time Compute Scaling",
+      "category": "Lecture Slide",
+      "file": "slides/session_s23.pdf",
+      "cmu_ref": "Lecture 23 – Test-Time Scaling (04/14)",
+      "stanford_ref": "—"
+    },
+    {
+      "session": "S24",
+      "title": "Mechanistic Interpretability, Safety, Bias & Adversarial Attacks in LLMs",
+      "category": "Lecture Slide",
+      "file": "slides/session_s24.pdf",
+      "cmu_ref": "— (Not Covered in CMU)",
+      "stanford_ref": "Week 8, Tue – Interpretability (Guest: Been Kim) + Week 8, Thu – Social Impacts (Risks)"
+    },
+    {
+      "session": "S25",
+      "title": "Research Skills, ACL Experimental Design & Open Research Frontiers in NLP",
+      "category": "Lecture Slide",
+      "file": "slides/session_s25.pdf",
+      "cmu_ref": "Lecture 14 – Research Skills and Experimental Design (02/26)",
+      "stanford_ref": "Week 10, Tue – Open Questions in NLP 2026"
+    }
+  ],
+  "papers": [
+    {
+      "title": "Language Models are Few-Shot Learners (GPT-3)",
+      "authors": "Tom B. Brown et al. (NeurIPS 2020)",
+      "tag": "CMU Assigned",
+      "session": "S1",
+      "link": "https://arxiv.org/abs/2005.14165"
+    },
+    {
+      "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+      "authors": "Sébastien Bubeck et al. (Microsoft Research 2023)",
+      "tag": "Stanford Core",
+      "session": "S1",
+      "link": "https://arxiv.org/abs/2303.12712"
+    },
+    {
+      "title": "Natural Language Understanding (Eisenstein Book, Chapter 1-2)",
+      "authors": "Jacob Eisenstein (MIT Press)",
+      "tag": "Book / Notes",
+      "session": "S1",
+      "link": "https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf"
+    },
+    {
+      "title": "On the Opportunities and Risks of Foundation Models",
+      "authors": "Rishi Bommasani et al. (Stanford CRFM 2021)",
+      "tag": "Stanford Core",
+      "session": "S1",
+      "link": "https://arxiv.org/abs/2108.07258"
+    },
+    {
+      "title": "Efficient Estimation of Word Representations in Vector Space (Word2Vec)",
+      "authors": "Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean (ICLR 2013)",
+      "tag": "CMU Assigned",
+      "session": "S2",
+      "link": "https://arxiv.org/abs/1301.3781"
+    },
+    {
+      "title": "GloVe: Global Vectors for Word Representation",
+      "authors": "Jeffrey Pennington, Richard Socher, Christopher D. Manning (EMNLP 2014)",
+      "tag": "CMU Assigned",
+      "session": "S2",
+      "link": "https://nlp.stanford.edu/pubs/glove.pdf"
+    },
+    {
+      "title": "Distributed Representations of Words and Phrases and their Compositionality",
+      "authors": "Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean (NeurIPS 2013)",
+      "tag": "Stanford Core",
+      "session": "S2",
+      "link": "https://arxiv.org/abs/1310.4546"
+    },
+    {
+      "title": "Enriching Word Vectors with Subword Information (fastText)",
+      "authors": "Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov (TACL 2017)",
+      "tag": "Stanford Core",
+      "session": "S2",
+      "link": "https://arxiv.org/abs/1607.04606"
+    },
+    {
+      "title": "Deep Learning (Review Paper)",
+      "authors": "Yann LeCun, Yoshua Bengio, Geoffrey Hinton (Nature 2015)",
+      "tag": "Stanford Core",
+      "session": "S3",
+      "link": "https://www.nature.com/articles/nature14539"
+    },
+    {
+      "title": "Yes you should understand backprop",
+      "authors": "Andrej Karpathy (2016)",
+      "tag": "Stanford Core",
+      "session": "S3",
+      "link": "https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b"
+    },
+    {
+      "title": "Automatic Differentiation in PyTorch",
+      "authors": "Adam Paszke et al. (NeurIPS Autodiff Workshop 2017)",
+      "tag": "CMU Assigned",
+      "session": "S3",
+      "link": "https://openreview.net/forum?id=BJJsrmfCZ"
+    },
+    {
+      "title": "A Neural Probabilistic Language Model",
+      "authors": "Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin (JMLR 2003)",
+      "tag": "CMU Assigned",
+      "session": "S4",
+      "link": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf"
+    },
+    {
+      "title": "Generating Sequences With Recurrent Neural Networks",
+      "authors": "Alex Graves (2013)",
+      "tag": "CMU Assigned",
+      "session": "S4",
+      "link": "https://arxiv.org/abs/1308.0850"
+    },
+    {
+      "title": "Speech and Language Processing (3rd ed. draft, Chapter 3: N-gram Language Models)",
+      "authors": "Dan Jurafsky, James H. Martin",
+      "tag": "Book / Notes",
+      "session": "S4",
+      "link": "https://web.stanford.edu/~jurafsky/slp3/3.pdf"
+    },
+    {
+      "title": "Long Short-Term Memory",
+      "authors": "Sepp Hochreiter, Jürgen Schmidhuber (Neural Computation 1997)",
+      "tag": "CMU Assigned",
+      "session": "S5",
+      "link": "https://www.bioinf.jku.at/publications/older/2604.pdf"
+    },
+    {
+      "title": "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling",
+      "authors": "Junyoung Chung, Caglar Gulcehre, Kyunghyun Cho, Yoshua Bengio (NeurIPS 2014)",
+      "tag": "CMU Assigned",
+      "session": "S5",
+      "link": "https://arxiv.org/abs/1412.3555"
+    },
+    {
+      "title": "Understanding LSTM Networks",
+      "authors": "Christopher Olah (2015)",
+      "tag": "Stanford Core",
+      "session": "S5",
+      "link": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/"
+    },
+    {
+      "title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+      "authors": "Andrej Karpathy (2015)",
+      "tag": "Stanford Core",
+      "session": "S5",
+      "link": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/"
+    },
+    {
+      "title": "Attention Is All You Need",
+      "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit et al. (NeurIPS 2017)",
+      "tag": "CMU Assigned",
+      "session": "S6",
+      "link": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+      "title": "The Illustrated Transformer",
+      "authors": "Jay Alammar (2018)",
+      "tag": "Stanford Core",
+      "session": "S6",
+      "link": "https://jalammar.github.io/illustrated-transformer/"
+    },
+    {
+      "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding (RoPE)",
+      "authors": "Jianlin Su, Yu Lu, Shengfeng Pan, Ahmed Murtadha, Bo Wen, Yunfeng Liu (Neurocomputing 2024)",
+      "tag": "CMU Assigned",
+      "session": "S6",
+      "link": "https://arxiv.org/abs/2104.09864"
+    },
+    {
+      "title": "The Annotated Transformer",
+      "authors": "Austin Rush et al. (Harvard NLP)",
+      "tag": "Stanford Core",
+      "session": "S6",
+      "link": "https://nlp.seas.harvard.edu/annotated-transformer/"
+    },
+    {
+      "title": "Neural Machine Translation of Rare Words with Subword Units (BPE)",
+      "authors": "Rico Sennrich, Barry Haddow, Alexandra Birch (ACL 2016)",
+      "tag": "CMU Assigned",
+      "session": "S7",
+      "link": "https://arxiv.org/abs/1508.07909"
+    },
+    {
+      "title": "Subword Regularization: Improving Neural Network Translation Models (SentencePiece / Unigram)",
+      "authors": "Taku Kudo (ACL 2018)",
+      "tag": "Stanford Core",
+      "session": "S7",
+      "link": "https://arxiv.org/abs/1804.10959"
+    },
+    {
+      "title": "Cross-lingual Language Model Pretraining (XLM)",
+      "authors": "Guillaume Lample, Alexis Conneau (NeurIPS 2019)",
+      "tag": "Stanford Core",
+      "session": "S7",
+      "link": "https://arxiv.org/abs/1901.07291"
+    },
+    {
+      "title": "Language Models are Unsupervised Multitask Learners (GPT-2)",
+      "authors": "Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever (OpenAI 2019)",
+      "tag": "CMU Assigned",
+      "session": "S8",
+      "link": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
+    },
+    {
+      "title": "The Llama 3 Herd of Models",
+      "authors": "Abhimanyu Dubey et al. (Meta AI 2024)",
+      "tag": "CMU Assigned",
+      "session": "S8",
+      "link": "https://arxiv.org/abs/2407.21783"
+    },
+    {
+      "title": "The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora",
+      "authors": "Guilherme Penedo et al. (NeurIPS 2023)",
+      "tag": "CMU Assigned",
+      "session": "S8",
+      "link": "https://arxiv.org/abs/2306.01116"
+    },
+    {
+      "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+      "authors": "Jordan Hoffmann et al. (DeepMind, NeurIPS 2022)",
+      "tag": "CMU Assigned",
+      "session": "S9",
+      "link": "https://arxiv.org/abs/2203.15556"
+    },
+    {
+      "title": "Scaling Laws for Neural Language Models",
+      "authors": "Jared Kaplan et al. (OpenAI 2020)",
+      "tag": "CMU Assigned",
+      "session": "S9",
+      "link": "https://arxiv.org/abs/2001.08361"
+    },
+    {
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "authors": "Edward J. Hu et al. (ICLR 2022)",
+      "tag": "CMU Assigned",
+      "session": "S10",
+      "link": "https://arxiv.org/abs/2106.09685"
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "authors": "Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, Luke Zettlemoyer (NeurIPS 2023)",
+      "tag": "CMU Assigned",
+      "session": "S10",
+      "link": "https://arxiv.org/abs/2305.14314"
+    },
+    {
+      "title": "Distilling the Knowledge in a Neural Network",
+      "authors": "Geoffrey Hinton, Oriol Vinyals, Jeff Dean (NeurIPS Deep Learning Workshop 2014)",
+      "tag": "CMU Assigned",
+      "session": "S10",
+      "link": "https://arxiv.org/abs/1503.02531"
+    },
+    {
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "authors": "Xiang Lisa Li, Percy Liang (ACL 2021)",
+      "tag": "Stanford Core",
+      "session": "S10",
+      "link": "https://arxiv.org/abs/2101.00190"
+    },
+    {
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "authors": "Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, Denny Zhou (NeurIPS 2022)",
+      "tag": "CMU Assigned",
+      "session": "S11",
+      "link": "https://arxiv.org/abs/2201.11903"
+    },
+    {
+      "title": "The Curious Case of Neural Text Degeneration (Nucleus / Top-p Sampling)",
+      "authors": "Ari Holtzman, Jan Buys, Li Du, Maxwell Forbes, Yejin Choi (ICLR 2020)",
+      "tag": "CMU Assigned",
+      "session": "S11",
+      "link": "https://arxiv.org/abs/1904.09751"
+    },
+    {
+      "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+      "authors": "Shunyu Yao et al. (Princeton & DeepMind, NeurIPS 2023)",
+      "tag": "CMU Assigned",
+      "session": "S12",
+      "link": "https://arxiv.org/abs/2305.10601"
+    },
+    {
+      "title": "STaR: Bootstrapping Reasoning With Reasoning",
+      "authors": "Eric Zelikman et al. (Stanford, NeurIPS 2022)",
+      "tag": "Stanford Core",
+      "session": "S12",
+      "link": "https://arxiv.org/abs/2203.14465"
+    },
+    {
+      "title": "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling",
+      "authors": "Bradley Brown et al. (2024)",
+      "tag": "CMU Assigned",
+      "session": "S12",
+      "link": "https://arxiv.org/abs/2407.21787"
+    },
+    {
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)",
+      "authors": "Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni et al. (NeurIPS 2020)",
+      "tag": "CMU Assigned",
+      "session": "S13",
+      "link": "https://arxiv.org/abs/2005.11401"
+    },
+    {
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering (DPR)",
+      "authors": "Vladimir Karpukhin, Barlas Oğuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, Wen-tau Yih (EMNLP 2020)",
+      "tag": "CMU Assigned",
+      "session": "S13",
+      "link": "https://arxiv.org/abs/2004.04906"
+    },
+    {
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "authors": "Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, Hannaneh Hajishirzi (ICLR 2024)",
+      "tag": "CMU Assigned",
+      "session": "S13",
+      "link": "https://arxiv.org/abs/2310.11511"
+    },
+    {
+      "title": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
+      "authors": "Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal et al. (OpenAI, ICML 2021)",
+      "tag": "CMU Assigned",
+      "session": "S14",
+      "link": "https://arxiv.org/abs/2103.00020"
+    },
+    {
+      "title": "Visual Instruction Tuning (LLaVA)",
+      "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee (NeurIPS 2023)",
+      "tag": "CMU Assigned",
+      "session": "S14",
+      "link": "https://arxiv.org/abs/2304.08485"
+    },
+    {
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)",
+      "authors": "Alexey Dosovitskiy et al. (ICLR 2021)",
+      "tag": "CMU Assigned",
+      "session": "S14",
+      "link": "https://arxiv.org/abs/2010.11929"
+    },
+    {
+      "title": "Measuring Massive Multitask Language Understanding (MMLU)",
+      "authors": "Dan Hendrycks et al. (ICLR 2021)",
+      "tag": "CMU Assigned",
+      "session": "S15",
+      "link": "https://arxiv.org/abs/2009.03300"
+    },
+    {
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "authors": "Lianmin Zheng, Wei-Lin Chiang, Hao Zhang, Siyuan Zhuang, Yonghao Zhuang, Lingxiao Zheng et al. (NeurIPS 2023)",
+      "tag": "CMU Assigned",
+      "session": "S15",
+      "link": "https://arxiv.org/abs/2306.05685"
+    },
+    {
+      "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+      "authors": "Noah A. Smith et al. (2024)",
+      "tag": "CMU Assigned",
+      "session": "S15",
+      "link": "https://arxiv.org/abs/2403.01018"
+    },
+    {
+      "title": "Graph Neural Networks for Natural Language Processing: A Survey",
+      "authors": "Lingfei Wu, Yu Chen, Kai Shen, Xiaojie Guo et al. (Foundations and Trends in ML 2021)",
+      "tag": "CMU Assigned",
+      "session": "S16",
+      "link": "https://arxiv.org/abs/2106.06090"
+    },
+    {
+      "title": "Graph Convolutional Networks for Text Classification",
+      "authors": "Liang Yao, Chengsheng Mao, Yuan Luo (AAAI 2019)",
+      "tag": "Stanford Core",
+      "session": "S16",
+      "link": "https://arxiv.org/abs/1809.05679"
+    },
+    {
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks (GCN)",
+      "authors": "Thomas N. Kipf, Max Welling (ICLR 2017)",
+      "tag": "Landmark Paper",
+      "session": "S16",
+      "link": "https://arxiv.org/abs/1609.02907"
+    },
+    {
+      "title": "Diffusion-LM Improves Controllable Text Generation",
+      "authors": "Xiang Lisa Li, John Thickstun, Ishaan Gulrajani, Percy Liang, Tatsunori B. Hashimoto (NeurIPS 2022)",
+      "tag": "CMU Assigned",
+      "session": "S17",
+      "link": "https://arxiv.org/abs/2205.14217"
+    },
+    {
+      "title": "Flow Matching for Generative Modeling",
+      "authors": "Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu, Maximilian Nicklas, Matt Le (ICLR 2023)",
+      "tag": "CMU Assigned",
+      "session": "S17",
+      "link": "https://arxiv.org/abs/2210.02747"
+    },
+    {
+      "title": "Denoising Diffusion Probabilistic Models (DDPM)",
+      "authors": "Jonathan Ho, Ajay Jain, Pieter Abbeel (NeurIPS 2020)",
+      "tag": "CMU Assigned",
+      "session": "S17",
+      "link": "https://arxiv.org/abs/2006.11239"
+    },
+    {
+      "title": "Deep Reinforcement Learning from Human Preferences",
+      "authors": "Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amodei (NeurIPS 2017)",
+      "tag": "CMU Assigned",
+      "session": "S18",
+      "link": "https://arxiv.org/abs/1706.03741"
+    },
+    {
+      "title": "Proximal Policy Optimization Algorithms (PPO)",
+      "authors": "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov (OpenAI 2017)",
+      "tag": "CMU Assigned",
+      "session": "S18",
+      "link": "https://arxiv.org/abs/1707.06347"
+    },
+    {
+      "title": "Training language models to follow instructions with human feedback (InstructGPT)",
+      "authors": "Long Ouyang et al. (OpenAI, NeurIPS 2022)",
+      "tag": "CMU Assigned",
+      "session": "S19",
+      "link": "https://arxiv.org/abs/2203.02155"
+    },
+    {
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model (DPO)",
+      "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, Chelsea Finn (NeurIPS 2023)",
+      "tag": "CMU Assigned",
+      "session": "S19",
+      "link": "https://arxiv.org/abs/2305.18290"
+    },
+    {
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "authors": "Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao (ICLR 2023)",
+      "tag": "CMU Assigned",
+      "session": "S20",
+      "link": "https://arxiv.org/abs/2210.03629"
+    },
+    {
+      "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+      "authors": "Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, Roberta Raileanu, Maria Lomeli, Luke Zettlemoyer, Nicola Cancedda, Thomas Scialom (NeurIPS 2023)",
+      "tag": "CMU Assigned",
+      "session": "S20",
+      "link": "https://arxiv.org/abs/2302.04761"
+    },
+    {
+      "title": "World of Bits: An Open-Domain Platform for Web-Based Agents",
+      "authors": "Tianlin Shi, Andrej Karpathy, Linxi Fan, Jonathan O. Hernandez, Percy Liang (ICML 2017)",
+      "tag": "CMU Assigned",
+      "session": "S20",
+      "link": "https://proceedings.mlr.press/v70/shi17a.html"
+    },
+    {
+      "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+      "authors": "Tim Dettmers, Mike Lewis, Younes Belkada, Luke Zettlemoyer (NeurIPS 2022)",
+      "tag": "CMU Assigned",
+      "session": "S21",
+      "link": "https://arxiv.org/abs/2208.07339"
+    },
+    {
+      "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+      "authors": "Ji Lin, Jiaming Tang, Haotian Tang, Shang Yang, Xingyu Dang, Song Han (MLSys 2024)",
+      "tag": "CMU Assigned",
+      "session": "S21",
+      "link": "https://arxiv.org/abs/2306.00978"
+    },
+    {
+      "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+      "authors": "Samyam Rajbhandari, Jeff Rasley, Olatunji Ruwase, Yuxiong He (SC 2020)",
+      "tag": "CMU Assigned",
+      "session": "S21",
+      "link": "https://arxiv.org/abs/1910.02054"
+    },
+    {
+      "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+      "authors": "Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean (ICLR 2017)",
+      "tag": "CMU Assigned",
+      "session": "S22",
+      "link": "https://arxiv.org/abs/1701.06538"
+    },
+    {
+      "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+      "authors": "Tri Dao (ICLR 2024)",
+      "tag": "CMU Assigned",
+      "session": "S22",
+      "link": "https://arxiv.org/abs/2307.08691"
+    },
+    {
+      "title": "Mixtral of Experts",
+      "authors": "Albert Q. Jiang et al. (Mistral AI 2024)",
+      "tag": "CMU Assigned",
+      "session": "S22",
+      "link": "https://arxiv.org/abs/2401.04088"
+    },
+    {
+      "title": "Let's Verify Step by Step (PRM800K & Process Supervision)",
+      "authors": "Hunter Lightman et al. (OpenAI 2023)",
+      "tag": "CMU Assigned",
+      "session": "S23",
+      "link": "https://arxiv.org/abs/2305.20050"
+    },
+    {
+      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+      "authors": "Charlie Snell et al. (Google DeepMind / UC Berkeley 2024)",
+      "tag": "CMU Assigned",
+      "session": "S23",
+      "link": "https://arxiv.org/abs/2408.03314"
+    },
+    {
+      "title": "Quiet-STaR: Language Models Can Teach Themselves to Think Before Speaking",
+      "authors": "Eric Zelikman et al. (Stanford 2024)",
+      "tag": "CMU Assigned",
+      "session": "S23",
+      "link": "https://arxiv.org/abs/2403.09629"
+    },
+    {
+      "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+      "authors": "Trenton Bricken et al. (Anthropic 2023)",
+      "tag": "Stanford Core",
+      "session": "S24",
+      "link": "https://transformer-circuits.pub/2023/monosemantic-features/index.html"
+    },
+    {
+      "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+      "authors": "Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr, J. Zico Kolter, Matt Fredrikson (2023)",
+      "tag": "CMU Assigned",
+      "session": "S24",
+      "link": "https://arxiv.org/abs/2307.15043"
+    },
+    {
+      "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)",
+      "authors": "Been Kim, Martin Wattenberg, Justin Gilmer, Carrie Cai, James Wexler, Fernanda Viegas, Rory Sayres (ICML 2018)",
+      "tag": "Stanford Core",
+      "session": "S24",
+      "link": "https://arxiv.org/abs/1711.11279"
+    },
+    {
+      "title": "A Survey of Large Language Models",
+      "authors": "Wayne Xin Zhao et al. (AI Open 2023)",
+      "tag": "CMU Assigned",
+      "session": "S25",
+      "link": "https://arxiv.org/abs/2303.18223"
+    },
+    {
+      "title": "Holistic Evaluation of Language Models (HELM)",
+      "authors": "Percy Liang et al. (Stanford CRFM, TMLR 2023)",
+      "tag": "Stanford Core",
+      "session": "S25",
+      "link": "https://arxiv.org/abs/2211.09110"
+    }
+  ],
+  "notebooks": [
+    {
+      "code": "Lab 01",
+      "title": "Introduction & Environment Setup in PyTorch",
+      "category": "Foundations",
+      "folder": "01_intro",
+      "description": "Hands-on setup with PyTorch, Hugging Face Transformers, and basic neural tensor operations.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/01_intro"
+    },
+    {
+      "code": "Lab 02",
+      "title": "Word Representations, Word2Vec & Text Classification",
+      "category": "Foundations",
+      "folder": "02_wordrep_classification",
+      "description": "Implementing word vector embeddings, continuous representations, and sentiment classification.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/02_wordrep_classification"
+    },
+    {
+      "code": "Lab 03",
+      "title": "Autoregressive Neural Language Modeling Fundamentals",
+      "category": "Language Modeling",
+      "folder": "03_lm_fundamentals",
+      "description": "Building next-token prediction language models from scratch with Cross-Entropy Loss.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/03_lm_fundamentals"
+    },
+    {
+      "code": "Lab 04",
+      "title": "Recurrent Neural Networks (RNN & LSTM) in PyTorch",
+      "category": "Architectures",
+      "folder": "04_recurrent",
+      "description": "Implementing recurrent sequence encoders, LSTM cells, and gated hidden state transitions.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/04_recurrent"
+    },
+    {
+      "code": "Lab 05",
+      "title": "Transformer Architecture & Scaled Dot-Product Attention",
+      "category": "Architectures",
+      "folder": "05_transformers",
+      "description": "Modular implementation of Multi-Head Self-Attention, Positional Encoding, and Feed-Forward blocks.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/05_transformers"
+    },
+    {
+      "code": "Lab 06",
+      "title": "LLM Pretraining Pipelines & Data Preprocessing at Scale",
+      "category": "Pretraining",
+      "folder": "06_pretraining",
+      "description": "Web text scraping, quality filtering, deduplication pipelines, and batch sequence packing.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/06_pretraining"
+    },
+    {
+      "code": "Lab 07",
+      "title": "In-Context Learning (ICL) & Few-Shot Prompt Engineering",
+      "category": "Prompting",
+      "folder": "07_icl_prompting",
+      "description": "Demonstrating few-shot learning, prompt calibration, and instruction formatting across open LLMs.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/07_icl_prompting"
+    },
+    {
+      "code": "Lab 08",
+      "title": "Instruction Fine-Tuning & Parameter-Efficient LoRA Adaptation",
+      "category": "PEFT & Fine-Tuning",
+      "folder": "08_finetuning",
+      "description": "Fine-tuning foundation models with LoRA/QLoRA using Hugging Face PEFT and TRL.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/08_finetuning"
+    },
+    {
+      "code": "Lab 09",
+      "title": "Decoding Algorithms, Sampling (Top-p/Top-k) & Search",
+      "category": "Inference",
+      "folder": "09_decoding",
+      "description": "Greedy decoding, temperature scaling, top-k/nucleus sampling, and beam search implementations.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/09_decoding"
+    },
+    {
+      "code": "Lab 10",
+      "title": "Retrieval-Augmented Generation (RAG) & Vector Indexing",
+      "category": "RAG",
+      "folder": "10_rag",
+      "description": "Dense passage retrieval (DPR), vector database indexing with FAISS, chunking, and generation.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/10_rag"
+    },
+    {
+      "code": "Lab 11",
+      "title": "Multimodal Vision-Language Models (CLIP & Visual Embeddings)",
+      "category": "Multimodal",
+      "folder": "11_multimodal_i",
+      "description": "Contrastive image-text training (CLIP), zero-shot visual classification, and multimodal alignment.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/11_multimodal_i"
+    },
+    {
+      "code": "Lab 12",
+      "title": "Multimodal Instruction Tuning & Visual Generation (LLaVA)",
+      "category": "Multimodal",
+      "folder": "12_multimodal_ii",
+      "description": "Cross-modal projection, Visual Question Answering (VQA), and multimodal chat assistants.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/12_multimodal_ii"
+    },
+    {
+      "code": "Lab 13",
+      "title": "LLM Evaluation Benchmarks & Automated Scoring Metrics",
+      "category": "Evaluation",
+      "folder": "13_evaluation",
+      "description": "Benchmarking with MMLU and GSM8K, LLM-as-a-Judge evaluations, and statistical confidence intervals.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/13_evaluation"
+    },
+    {
+      "code": "Lab 14",
+      "title": "Research Skills, Experimental Design & Ablation Analysis",
+      "category": "Research Skills",
+      "folder": "14_experimental",
+      "description": "Designing rigorous NLP ablation experiments, statistical significance testing, and artifact analysis.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/14_experimental"
+    },
+    {
+      "code": "Lab 15",
+      "title": "Diffusion Models & Flow Matching for Text Generation",
+      "category": "Generative Modeling",
+      "folder": "15_diffusion",
+      "description": "Implementing continuous/discrete text diffusion models, denoising steps, and flow matching.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/15_diffusion"
+    },
+    {
+      "code": "Lab 16",
+      "title": "Reinforcement Learning Fundamentals & Policy Optimization (PPO)",
+      "category": "Reinforcement Learning",
+      "folder": "16_rl",
+      "description": "Markov Decision Processes, policy gradients, advantage estimation, and Proximal Policy Optimization.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/16_rl"
+    },
+    {
+      "code": "Lab 17",
+      "title": "Preference Alignment for LLMs (RLHF & Direct Preference Optimization / DPO)",
+      "category": "Alignment",
+      "folder": "17_rl_llm",
+      "description": "Bradley-Terry reward modeling, RLHF with PPO, and Direct Preference Optimization (DPO).",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/17_rl_llm"
+    },
+    {
+      "code": "Lab 18",
+      "title": "LLM-Based Autonomous Agents, Function Calling & Tool Use (ReAct)",
+      "category": "Agents",
+      "folder": "18_agents",
+      "description": "Building autonomous agent loops with ReAct prompting, API tool integration, and environment feedback.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/18_agents"
+    },
+    {
+      "code": "Lab 19",
+      "title": "Model Quantization (AWQ, GPTQ & INT8/INT4 Precision)",
+      "category": "Efficiency",
+      "folder": "19_quantization",
+      "description": "Weight quantization with bitsandbytes, activation-aware quantization (AWQ), and inference benchmarking.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/19_quantization"
+    },
+    {
+      "code": "Lab 20",
+      "title": "Distributed Training, Model Parallelism & ZeRO Optimization",
+      "category": "Distributed Systems",
+      "folder": "20_parallelism",
+      "description": "Tensor and pipeline parallelism (Megatron-LM), ZeRO memory stages (DeepSpeed), and FSDP on GPU clusters.",
+      "github": "https://github.com/cmu-l3/anlp-spring2026-code/tree/main/20_parallelism"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "MMLU (Massive Multitask Language Understanding)",
+      "description": "57 subjects across STEM, humanities, and social sciences for holistic LLM benchmarking.",
+      "link": "https://huggingface.co/datasets/cais/mmlu"
+    },
+    {
+      "name": "GSM8K (Grade School Math 8K)",
+      "description": "8,500 high-quality multi-step math reasoning word problems for Chain-of-Thought evaluation.",
+      "link": "https://huggingface.co/datasets/openai/gsm8k"
+    },
+    {
+      "name": "UltraFeedback & Anthropic HH-RLHF",
+      "description": "Binarized pairwise human preference datasets for RLHF and Direct Preference Optimization (DPO).",
+      "link": "https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized"
+    },
+    {
+      "name": "MS MARCO & HotpotQA",
+      "description": "Passage ranking and multi-hop reasoning datasets for open-domain RAG benchmarking.",
+      "link": "https://microsoft.github.io/msmarco/"
+    }
+  ]
+}

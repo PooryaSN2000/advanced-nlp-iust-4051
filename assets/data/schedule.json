@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "S1",
+    "week": 1,
+    "date": "1405-06-29",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "History of NLP, Modern LLM Foundations & Paradigm Shifts",
+    "presenter": "Prof. Behrouz Minaei-Bidgoli",
+    "cmu_ref": "Lecture 1 – Introduction & Fundamentals (01/13)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 1, Tue – History of NLP",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 1: Introduction to Large Language Models",
+    "notes": "",
+    "slides_url": "slides/session_s1.pdf",
+    "papers": [
+      {
+        "title": "Language Models are Few-Shot Learners (GPT-3)",
+        "authors": "Tom B. Brown et al. (NeurIPS 2020)",
+        "url": "https://arxiv.org/abs/2005.14165",
+        "source": "Stanford CS224N / CMU"
+      },
+      {
+        "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+        "authors": "Sébastien Bubeck et al. (Microsoft Research 2023)",
+        "url": "https://arxiv.org/abs/2303.12712",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "Natural Language Understanding (Eisenstein Book, Chapter 1-2)",
+        "authors": "Jacob Eisenstein (MIT Press)",
+        "url": "https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "On the Opportunities and Risks of Foundation Models",
+        "authors": "Rishi Bommasani et al. (Stanford CRFM 2021)",
+        "url": "https://arxiv.org/abs/2108.07258",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S2",
+    "week": 1,
+    "date": "1405-06-31",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Word Representations, Distributed Semantics & Vector Embeddings (Word2Vec, GloVe)",
+    "presenter": "Fateme Marefat",
+    "cmu_ref": "Lecture 2 – Fundamentals: Learned Representations (01/15)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 1, Thu – Word Vectors",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 1: Information Representation & Vector Embeddings",
+    "notes": "",
+    "slides_url": "slides/session_s2.pdf",
+    "papers": [
+      {
+        "title": "Efficient Estimation of Word Representations in Vector Space (Word2Vec)",
+        "authors": "Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean (ICLR 2013)",
+        "url": "https://arxiv.org/abs/1301.3781",
+        "source": "Stanford CS224N / CMU"
+      },
+      {
+        "title": "GloVe: Global Vectors for Word Representation",
+        "authors": "Jeffrey Pennington, Richard Socher, Christopher D. Manning (EMNLP 2014)",
+        "url": "https://nlp.stanford.edu/pubs/glove.pdf",
+        "source": "Stanford CS224N / CMU"
+      },
+      {
+        "title": "Distributed Representations of Words and Phrases and their Compositionality",
+        "authors": "Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean (NeurIPS 2013)",
+        "url": "https://arxiv.org/abs/1310.4546",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "Enriching Word Vectors with Subword Information (fastText)",
+        "authors": "Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov (TACL 2017)",
+        "url": "https://arxiv.org/abs/1607.04606",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S3",
+    "week": 2,
+    "date": "1405-07-05",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Neural Network Fundamentals & Backpropagation in NLP",
+    "presenter": "Alireza Nazari",
+    "cmu_ref": "— (Not Covered in CMU)",
+    "cmu_link": "",
+    "stanford_ref": "Week 2, Tue – Backpropagation and Neural Network Basics",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Foundations: Neural Computation & Optimization",
+    "notes": "",
+    "slides_url": "slides/session_s3.pdf",
+    "papers": [
+      {
+        "title": "Deep Learning (Review Paper)",
+        "authors": "Yann LeCun, Yoshua Bengio, Geoffrey Hinton (Nature 2015)",
+        "url": "https://www.nature.com/articles/nature14539",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "Yes you should understand backprop",
+        "authors": "Andrej Karpathy (2016)",
+        "url": "https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "Automatic Differentiation in PyTorch",
+        "authors": "Adam Paszke et al. (NeurIPS Autodiff Workshop 2017)",
+        "url": "https://openreview.net/forum?id=BJJsrmfCZ",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S4",
+    "week": 2,
+    "date": "1405-07-07",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Autoregressive Language Modeling & Cross-Entropy Objectives",
+    "presenter": "Alireza Nazari",
+    "cmu_ref": "Lecture 3 – Fundamentals: Autoregressive Language Modeling (01/20)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 2, Thu – Language Models and RNNs (Part 1)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 1: Statistical & Probabilistic Language Modeling",
+    "notes": "",
+    "slides_url": "slides/session_s4.pdf",
+    "papers": [
+      {
+        "title": "A Neural Probabilistic Language Model",
+        "authors": "Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin (JMLR 2003)",
+        "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+        "source": "CMU ANLP / Stanford"
+      },
+      {
+        "title": "Generating Sequences With Recurrent Neural Networks",
+        "authors": "Alex Graves (2013)",
+        "url": "https://arxiv.org/abs/1308.0850",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "Speech and Language Processing (3rd ed. draft, Chapter 3: N-gram Language Models)",
+        "authors": "Dan Jurafsky, James H. Martin",
+        "url": "https://web.stanford.edu/~jurafsky/slp3/3.pdf",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S5",
+    "week": 3,
+    "date": "1405-07-12",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Recurrent Sequence Architectures: RNNs, LSTMs & Gated Recurrent Units (GRUs)",
+    "presenter": "Alireza Nazari",
+    "cmu_ref": "Lecture 4 – Architectures I: Recurrent Neural Networks (01/22)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 2, Thu – Language Models and RNNs (Part 2)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 3: Sequential Encoders & Recurrent Architectures",
+    "notes": "",
+    "slides_url": "slides/session_s5.pdf",
+    "papers": [
+      {
+        "title": "Long Short-Term Memory",
+        "authors": "Sepp Hochreiter, Jürgen Schmidhuber (Neural Computation 1997)",
+        "url": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+        "source": "Stanford CS224N / CMU"
+      },
+      {
+        "title": "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling",
+        "authors": "Junyoung Chung, Caglar Gulcehre, Kyunghyun Cho, Yoshua Bengio (NeurIPS 2014)",
+        "url": "https://arxiv.org/abs/1412.3555",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "Understanding LSTM Networks",
+        "authors": "Christopher Olah (2015)",
+        "url": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+        "authors": "Andrej Karpathy (2015)",
+        "url": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S6",
+    "week": 3,
+    "date": "1405-07-14",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Attention Mechanisms & Transformer Architecture (RoPE, Multi-Head Attention)",
+    "presenter": "Setare Kahnamuee",
+    "cmu_ref": "Lecture 5 – Architectures II: Attention and Transformers (01/27)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 3, Tue – Transformers",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 3: Transformer Architecture & Multi-Head Attention",
+    "notes": "",
+    "slides_url": "slides/session_s6.pdf",
+    "papers": [
+      {
+        "title": "Attention Is All You Need",
+        "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit et al. (NeurIPS 2017)",
+        "url": "https://arxiv.org/abs/1706.03762",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "The Illustrated Transformer",
+        "authors": "Jay Alammar (2018)",
+        "url": "https://jalammar.github.io/illustrated-transformer/",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding (RoPE)",
+        "authors": "Jianlin Su, Yu Lu, Shengfeng Pan, Ahmed Murtadha, Bo Wen, Yunfeng Liu (Neurocomputing 2024)",
+        "url": "https://arxiv.org/abs/2104.09864",
+        "source": "CMU ANLP / Stanford"
+      },
+      {
+        "title": "The Annotated Transformer",
+        "authors": "Austin Rush et al. (Harvard NLP)",
+        "url": "https://nlp.seas.harvard.edu/annotated-transformer/",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "Q1",
+    "week": 4,
+    "date": "1405-07-19",
+    "day": "Sunday",
+    "type": "quiz",
+    "type_title": "Quiz",
+    "title": "Quiz 1 (Covers Sessions S1–S6)",
+    "presenter": "Teaching Staff",
+    "cmu_ref": "—",
+    "cmu_link": "",
+    "stanford_ref": "—",
+    "stanford_link": "",
+    "ministry_topic": "",
+    "notes": "",
+    "slides_url": "",
+    "papers": []
+  },
+  {
+    "id": "S7",
+    "week": 4,
+    "date": "1405-07-21",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Subword Tokenization (BPE, SentencePiece) & Multilingual Language Models",
+    "presenter": "Fateme Marefat",
+    "cmu_ref": "— (Not Covered in CMU)",
+    "cmu_link": "",
+    "stanford_ref": "Week 7, Thu – Tokenization and Multilinguality (Guest: Julie Kallini)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 3: Subword Tokenization (BPE, SentencePiece)",
+    "notes": "",
+    "slides_url": "slides/session_s7.pdf",
+    "papers": [
+      {
+        "title": "Neural Machine Translation of Rare Words with Subword Units (BPE)",
+        "authors": "Rico Sennrich, Barry Haddow, Alexandra Birch (ACL 2016)",
+        "url": "https://arxiv.org/abs/1508.07909",
+        "source": "Stanford CS224N / CMU"
+      },
+      {
+        "title": "Subword Regularization: Improving Neural Network Translation Models (SentencePiece / Unigram)",
+        "authors": "Taku Kudo (ACL 2018)",
+        "url": "https://arxiv.org/abs/1804.10959",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "Cross-lingual Language Model Pretraining (XLM)",
+        "authors": "Guillaume Lample, Alexis Conneau (NeurIPS 2019)",
+        "url": "https://arxiv.org/abs/1901.07291",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S8",
+    "week": 5,
+    "date": "1405-07-26",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "LLM Pretraining: Web Data Pipelines, Quality Filtering & Scaling",
+    "presenter": "Setare Kahnamuee",
+    "cmu_ref": "Lecture 6 – Learning I: Pretraining (01/29)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 4, Tue – Pretraining (Scaling, Systems, Data)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 2: Pretraining Strategies & Data Curation Pipelines",
+    "notes": "",
+    "slides_url": "slides/session_s8.pdf",
+    "papers": [
+      {
+        "title": "Language Models are Unsupervised Multitask Learners (GPT-2)",
+        "authors": "Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever (OpenAI 2019)",
+        "url": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+        "source": "CMU ANLP / Stanford"
+      },
+      {
+        "title": "The Llama 3 Herd of Models",
+        "authors": "Abhimanyu Dubey et al. (Meta AI 2024)",
+        "url": "https://arxiv.org/abs/2407.21783",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora",
+        "authors": "Guilherme Penedo et al. (NeurIPS 2023)",
+        "url": "https://arxiv.org/abs/2306.01116",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S9",
+    "week": 5,
+    "date": "1405-07-28",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Scaling Laws (Chinchilla) & In-Context Learning (ICL)",
+    "presenter": "Setare Kahnamuee",
+    "cmu_ref": "Lecture 7 – Scaling Laws and In-Context Learning (02/03)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 4, Tue – Pretraining (Scaling)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 7: Prompting & ICL / Module 2: Transfer Learning",
+    "notes": "",
+    "slides_url": "slides/session_s9.pdf",
+    "papers": [
+      {
+        "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+        "authors": "Jordan Hoffmann et al. (DeepMind, NeurIPS 2022)",
+        "url": "https://arxiv.org/abs/2203.15556",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Jared Kaplan et al. (OpenAI 2020)",
+        "url": "https://arxiv.org/abs/2001.08361",
+        "source": "CMU ANLP / Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S10",
+    "week": 6,
+    "date": "1405-08-03",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Parameter-Efficient Fine-Tuning (PEFT: LoRA, QLoRA) & Knowledge Distillation",
+    "presenter": "Saba Sattari",
+    "cmu_ref": "Lecture 8 – Learning III: Fine-tuning and Distillation (02/05)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 5, Tue – Efficient Adaptation + Week 9, Thu – Tinker and LoRA (John Schulman)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 2: Fine-Tuning & Distillation / Module 7: Adaptation",
+    "notes": "",
+    "slides_url": "slides/session_s10.pdf",
+    "papers": [
+      {
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Edward J. Hu et al. (ICLR 2022)",
+        "url": "https://arxiv.org/abs/2106.09685",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+        "authors": "Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, Luke Zettlemoyer (NeurIPS 2023)",
+        "url": "https://arxiv.org/abs/2305.14314",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "Distilling the Knowledge in a Neural Network",
+        "authors": "Geoffrey Hinton, Oriol Vinyals, Jeff Dean (NeurIPS Deep Learning Workshop 2014)",
+        "url": "https://arxiv.org/abs/1503.02531",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+        "authors": "Xiang Lisa Li, Percy Liang (ACL 2021)",
+        "url": "https://arxiv.org/abs/2101.00190",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S11",
+    "week": 6,
+    "date": "1405-08-05",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Decoding Algorithms, Sampling Strategies & Chain-of-Thought (CoT) Prompting",
+    "presenter": "Mohammad Khaki",
+    "cmu_ref": "Lecture 9 – Decoding Algorithms (02/10)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 6, Thu – Reasoning 1",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 9: Inference & Language Reasoning Systems",
+    "notes": "",
+    "slides_url": "slides/session_s11.pdf",
+    "papers": [
+      {
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "authors": "Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, Denny Zhou (NeurIPS 2022)",
+        "url": "https://arxiv.org/abs/2201.11903",
+        "source": "Stanford CS224N / CMU ANLP"
+      },
+      {
+        "title": "The Curious Case of Neural Text Degeneration (Nucleus / Top-p Sampling)",
+        "authors": "Ari Holtzman, Jan Buys, Li Du, Maxwell Forbes, Yejin Choi (ICLR 2020)",
+        "url": "https://arxiv.org/abs/1904.09751",
+        "source": "CMU ANLP / Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S12",
+    "week": 7,
+    "date": "1405-08-10",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Advanced Reasoning: System 2 Reasoning & Search",
+    "presenter": "Mohammad Khaki",
+    "cmu_ref": "—",
+    "cmu_link": "",
+    "stanford_ref": "Week 7, Tue – Reasoning 2",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 9: Inference & Language Reasoning Systems",
+    "notes": "",
+    "slides_url": "slides/session_s12.pdf",
+    "papers": [
+      {
+        "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+        "authors": "Shunyu Yao et al. (Princeton & DeepMind, NeurIPS 2023)",
+        "url": "https://arxiv.org/abs/2305.10601",
+        "source": "Stanford CS224N / CMU"
+      },
+      {
+        "title": "STaR: Bootstrapping Reasoning With Reasoning",
+        "authors": "Eric Zelikman et al. (Stanford, NeurIPS 2022)",
+        "url": "https://arxiv.org/abs/2203.14465",
+        "source": "Stanford CS224N"
+      },
+      {
+        "title": "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling",
+        "authors": "Bradley Brown et al. (2024)",
+        "url": "https://arxiv.org/abs/2407.21787",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "MID",
+    "week": 7,
+    "date": "1405-08-12",
+    "day": "Tuesday",
+    "type": "exam",
+    "type_title": "Midterm Exam",
+    "title": "Midterm Examination (Comprehensive Assessment on Sessions S1–S12)",
+    "presenter": "Teaching Staff",
+    "cmu_ref": "—",
+    "cmu_link": "",
+    "stanford_ref": "—",
+    "stanford_link": "",
+    "ministry_topic": "",
+    "notes": "",
+    "slides_url": "",
+    "papers": []
+  },
+  {
+    "id": "S13",
+    "week": 8,
+    "date": "1405-08-17",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Retrieval-Augmented Generation (RAG) & Dense Passage Retrieval (DPR, Self-RAG)",
+    "presenter": "Mohadeseh Emadi",
+    "cmu_ref": "Lecture 10 – Modeling I: Retrieval and RAG (Guest: Akari Asai) (02/12)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 5, Thu – Agents, Tool Use, and RAG (Part 1)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 8: Retrieval-Augmented Modeling & Knowledge Integration",
+    "notes": "",
+    "slides_url": "slides/session_s13.pdf",
+    "papers": [
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)",
+        "authors": "Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni et al. (NeurIPS 2020)",
+        "url": "https://arxiv.org/abs/2005.11401",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering (DPR)",
+        "authors": "Vladimir Karpukhin, Barlas Oğuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, Wen-tau Yih (EMNLP 2020)",
+        "url": "https://arxiv.org/abs/2004.04906",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+        "authors": "Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, Hannaneh Hajishirzi (ICLR 2024)",
+        "url": "https://arxiv.org/abs/2310.11511",
+        "source": "CMU ANLP (Guest Lecture)"
+      }
+    ]
+  },
+  {
+    "id": "S14",
+    "week": 8,
+    "date": "1405-08-19",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Vision-Language Models (CLIP, LLaVA) & Multimodal Alignment",
+    "presenter": "Poorya Saneei",
+    "cmu_ref": "Lecture 11 – Modeling II: Multimodal I (02/17) + Lecture 12 – Modeling III: Multimodal II (02/19)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 9, Tue – Multimodality (Guest: Luke Zettlemoyer)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 7: Multimodal Training / Module 10: Multimodal Generation",
+    "notes": "",
+    "slides_url": "slides/session_s14.pdf",
+    "papers": [
+      {
+        "title": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
+        "authors": "Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal et al. (OpenAI, ICML 2021)",
+        "url": "https://arxiv.org/abs/2103.00020",
+        "source": "Stanford CS224N / CMU ANLP"
+      },
+      {
+        "title": "Visual Instruction Tuning (LLaVA)",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee (NeurIPS 2023)",
+        "url": "https://arxiv.org/abs/2304.08485",
+        "source": "Stanford CS224N / CMU ANLP"
+      },
+      {
+        "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)",
+        "authors": "Alexey Dosovitskiy et al. (ICLR 2021)",
+        "url": "https://arxiv.org/abs/2010.11929",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S15",
+    "week": 9,
+    "date": "1405-08-24",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "LLM Evaluation Methodologies, Benchmarks & Leaderboards (MMLU, LLM-as-a-Judge)",
+    "presenter": "Mohadeseh Emadi",
+    "cmu_ref": "Lecture 13 – Evaluation Techniques (02/24)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 6, Tue – Benchmarking and Evaluation",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 5: Evaluation Methodologies for Large Language Models",
+    "notes": "",
+    "slides_url": "slides/session_s15.pdf",
+    "papers": [
+      {
+        "title": "Measuring Massive Multitask Language Understanding (MMLU)",
+        "authors": "Dan Hendrycks et al. (ICLR 2021)",
+        "url": "https://arxiv.org/abs/2009.03300",
+        "source": "Stanford CS224N / CMU ANLP"
+      },
+      {
+        "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+        "authors": "Lianmin Zheng, Wei-Lin Chiang, Hao Zhang, Siyuan Zhuang, Yonghao Zhuang, Lingxiao Zheng et al. (NeurIPS 2023)",
+        "url": "https://arxiv.org/abs/2306.05685",
+        "source": "Stanford CS224N / CMU ANLP"
+      },
+      {
+        "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+        "authors": "Noah A. Smith et al. (2024)",
+        "url": "https://arxiv.org/abs/2403.01018",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S16",
+    "week": 9,
+    "date": "1405-10-01",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Graph Neural Networks for Natural Language Processing (GNN for NLP)",
+    "presenter": "Poorya Saneei, Setare Kahnamuee",
+    "cmu_ref": "— (Not Covered in CMU)",
+    "cmu_link": "",
+    "stanford_ref": "— (Not Covered in Stanford)",
+    "stanford_link": "",
+    "ministry_topic": "Module 11: Graph Neural Networks for NLP",
+    "notes": "",
+    "slides_url": "slides/session_s16.pdf",
+    "papers": [
+      {
+        "title": "Graph Neural Networks for Natural Language Processing: A Survey",
+        "authors": "Lingfei Wu, Yu Chen, Kai Shen, Xiaojie Guo et al. (Foundations and Trends in ML 2021)",
+        "url": "https://arxiv.org/abs/2106.06090",
+        "source": "IUST Syllabus / CMU reference"
+      },
+      {
+        "title": "Graph Convolutional Networks for Text Classification",
+        "authors": "Liang Yao, Chengsheng Mao, Yuan Luo (AAAI 2019)",
+        "url": "https://arxiv.org/abs/1809.05679",
+        "source": "IUST Syllabus / Stanford reference"
+      },
+      {
+        "title": "Semi-Supervised Classification with Graph Convolutional Networks (GCN)",
+        "authors": "Thomas N. Kipf, Max Welling (ICLR 2017)",
+        "url": "https://arxiv.org/abs/1609.02907",
+        "source": "Benchmark Reference"
+      }
+    ]
+  },
+  {
+    "id": "S17",
+    "week": 10,
+    "date": "1405-09-01",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Diffusion Models & Flow Matching for Natural Language Generation",
+    "presenter": "Poorya Saneei",
+    "cmu_ref": "Lecture 15 – Modeling IV: Diffusion and Flows (03/10)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "— (Not Covered in Stanford)",
+    "stanford_link": "",
+    "ministry_topic": "Module 10: Natural Language Generation Tasks with LLMs",
+    "notes": "",
+    "slides_url": "slides/session_s17.pdf",
+    "papers": [
+      {
+        "title": "Diffusion-LM Improves Controllable Text Generation",
+        "authors": "Xiang Lisa Li, John Thickstun, Ishaan Gulrajani, Percy Liang, Tatsunori B. Hashimoto (NeurIPS 2022)",
+        "url": "https://arxiv.org/abs/2205.14217",
+        "source": "CMU ANLP / Stanford"
+      },
+      {
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu, Maximilian Nicklas, Matt Le (ICLR 2023)",
+        "url": "https://arxiv.org/abs/2210.02747",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "Denoising Diffusion Probabilistic Models (DDPM)",
+        "authors": "Jonathan Ho, Ajay Jain, Pieter Abbeel (NeurIPS 2020)",
+        "url": "https://arxiv.org/abs/2006.11239",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S18",
+    "week": 10,
+    "date": "1405-09-03",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Reinforcement Learning Fundamentals in Natural Language Processing",
+    "presenter": "Saba Sattari",
+    "cmu_ref": "Lecture 16 – Reinforcement Learning I: Fundamentals (03/12)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "— (Not Covered in Stanford)",
+    "stanford_link": "",
+    "ministry_topic": "Module 6: Reinforcement Learning in NLP – Foundations",
+    "notes": "",
+    "slides_url": "slides/session_s18.pdf",
+    "papers": [
+      {
+        "title": "Deep Reinforcement Learning from Human Preferences",
+        "authors": "Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amodei (NeurIPS 2017)",
+        "url": "https://arxiv.org/abs/1706.03741",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "Proximal Policy Optimization Algorithms (PPO)",
+        "authors": "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov (OpenAI 2017)",
+        "url": "https://arxiv.org/abs/1707.06347",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "Q2",
+    "week": 11,
+    "date": "1405-09-08",
+    "day": "Sunday",
+    "type": "quiz",
+    "type_title": "Quiz",
+    "title": "Quiz 2 (Covers Sessions S13–S18)",
+    "presenter": "Teaching Staff",
+    "cmu_ref": "—",
+    "cmu_link": "",
+    "stanford_ref": "—",
+    "stanford_link": "",
+    "ministry_topic": "",
+    "notes": "",
+    "slides_url": "",
+    "papers": []
+  },
+  {
+    "id": "S19",
+    "week": 11,
+    "date": "1405-09-10",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Post-Training with Human Feedback & Preference Alignment (RLHF & DPO)",
+    "presenter": "Poorya Saneei",
+    "cmu_ref": "Lecture 17 – Reinforcement Learning II: Applications (03/17)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 4, Thu – Post-training (RLHF, SFT, DPO)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 6: Post-Training with Human Feedback (RLHF & DPO)",
+    "notes": "",
+    "slides_url": "slides/session_s19.pdf",
+    "papers": [
+      {
+        "title": "Training language models to follow instructions with human feedback (InstructGPT)",
+        "authors": "Long Ouyang et al. (OpenAI, NeurIPS 2022)",
+        "url": "https://arxiv.org/abs/2203.02155",
+        "source": "CMU ANLP / Stanford CS224N"
+      },
+      {
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model (DPO)",
+        "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, Chelsea Finn (NeurIPS 2023)",
+        "url": "https://arxiv.org/abs/2305.18290",
+        "source": "CMU ANLP / Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S20",
+    "week": 12,
+    "date": "1405-09-15",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Language Model-Based Autonomous Agents, Function Calling & Tool Use (ReAct)",
+    "presenter": "Mohammad Khaki",
+    "cmu_ref": "Lecture 18 – Language Model-Based Agents (03/19)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 5, Thu – Agents, Tool Use, and RAG (Part 2)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 9: Conversational Agents & Language Understanding",
+    "notes": "",
+    "slides_url": "slides/session_s20.pdf",
+    "papers": [
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao (ICLR 2023)",
+        "url": "https://arxiv.org/abs/2210.03629",
+        "source": "Stanford CS224N / CMU ANLP"
+      },
+      {
+        "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+        "authors": "Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, Roberta Raileanu, Maria Lomeli, Luke Zettlemoyer, Nicola Cancedda, Thomas Scialom (NeurIPS 2023)",
+        "url": "https://arxiv.org/abs/2302.04761",
+        "source": "Stanford CS224N / CMU ANLP"
+      },
+      {
+        "title": "World of Bits: An Open-Domain Platform for Web-Based Agents",
+        "authors": "Tianlin Shi, Andrej Karpathy, Linxi Fan, Jonathan O. Hernandez, Percy Liang (ICML 2017)",
+        "url": "https://proceedings.mlr.press/v70/shi17a.html",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S21",
+    "week": 12,
+    "date": "1405-09-17",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Model Quantization (AWQ, GPTQ, FP8/INT4) & Efficient Inference",
+    "presenter": "Mohammad Khaki",
+    "cmu_ref": "Lecture 19 – Quantization (03/26) - Lecture 20 – Parallelism and Distributed Training (03/31)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "— (Not Covered in Stanford)",
+    "stanford_link": "",
+    "ministry_topic": "Module 7: Compute-Optimal Training & Weight Quantization",
+    "notes": "",
+    "slides_url": "slides/session_s21.pdf",
+    "papers": [
+      {
+        "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+        "authors": "Tim Dettmers, Mike Lewis, Younes Belkada, Luke Zettlemoyer (NeurIPS 2022)",
+        "url": "https://arxiv.org/abs/2208.07339",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+        "authors": "Ji Lin, Jiaming Tang, Haotian Tang, Shang Yang, Xingyu Dang, Song Han (MLSys 2024)",
+        "url": "https://arxiv.org/abs/2306.00978",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+        "authors": "Samyam Rajbhandari, Jeff Rasley, Olatunji Ruwase, Yuxiong He (SC 2020)",
+        "url": "https://arxiv.org/abs/1910.02054",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S22",
+    "week": 13,
+    "date": "1405-09-22",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Mixture of Experts (MoE) & Efficient Attention (FlashAttention-2)",
+    "presenter": "Mohadeseh Emadi",
+    "cmu_ref": "Lecture 21 – Mixture of Experts (04/02) + Lecture 22 – Scaling Sequence Length",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "— (Not Covered in Stanford)",
+    "stanford_link": "",
+    "ministry_topic": "Module 7: Scalable LLM Architectures (MoE & FlashAttention)",
+    "notes": "",
+    "slides_url": "slides/session_s22.pdf",
+    "papers": [
+      {
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "authors": "Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean (ICLR 2017)",
+        "url": "https://arxiv.org/abs/1701.06538",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+        "authors": "Tri Dao (ICLR 2024)",
+        "url": "https://arxiv.org/abs/2307.08691",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "Mixtral of Experts",
+        "authors": "Albert Q. Jiang et al. (Mistral AI 2024)",
+        "url": "https://arxiv.org/abs/2401.04088",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S23",
+    "week": 13,
+    "date": "1405-09-24",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Process Supervision & Test-Time Compute Scaling",
+    "presenter": "Saba Sattari",
+    "cmu_ref": "Lecture 23 – Test-Time Scaling (04/14)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "—",
+    "stanford_link": "",
+    "ministry_topic": "",
+    "notes": "",
+    "slides_url": "slides/session_s23.pdf",
+    "papers": [
+      {
+        "title": "Let's Verify Step by Step (PRM800K & Process Supervision)",
+        "authors": "Hunter Lightman et al. (OpenAI 2023)",
+        "url": "https://arxiv.org/abs/2305.20050",
+        "source": "CMU ANLP / Stanford"
+      },
+      {
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "authors": "Charlie Snell et al. (Google DeepMind / UC Berkeley 2024)",
+        "url": "https://arxiv.org/abs/2408.03314",
+        "source": "CMU ANLP Lecture 23"
+      },
+      {
+        "title": "Quiet-STaR: Language Models Can Teach Themselves to Think Before Speaking",
+        "authors": "Eric Zelikman et al. (Stanford 2024)",
+        "url": "https://arxiv.org/abs/2403.09629",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S24",
+    "week": 14,
+    "date": "1405-09-29",
+    "day": "Sunday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Mechanistic Interpretability, Safety, Bias & Adversarial Attacks in LLMs",
+    "presenter": "Fateme Marefat",
+    "cmu_ref": "— (Not Covered in CMU)",
+    "cmu_link": "",
+    "stanford_ref": "Week 8, Tue – Interpretability (Guest: Been Kim) + Week 8, Thu – Social Impacts (Risks)",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Module 4: Safety, Privacy & Bias / Module 5: Qualitative Evaluation",
+    "notes": "",
+    "slides_url": "slides/session_s24.pdf",
+    "papers": [
+      {
+        "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+        "authors": "Trenton Bricken et al. (Anthropic 2023)",
+        "url": "https://transformer-circuits.pub/2023/monosemantic-features/index.html",
+        "source": "Stanford CS224N (Been Kim Lecture)"
+      },
+      {
+        "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+        "authors": "Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr, J. Zico Kolter, Matt Fredrikson (2023)",
+        "url": "https://arxiv.org/abs/2307.15043",
+        "source": "Stanford CS224N / CMU"
+      },
+      {
+        "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)",
+        "authors": "Been Kim, Martin Wattenberg, Justin Gilmer, Carrie Cai, James Wexler, Fernanda Viegas, Rory Sayres (ICML 2018)",
+        "url": "https://arxiv.org/abs/1711.11279",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "S25",
+    "week": 14,
+    "date": "1405-08-26",
+    "day": "Tuesday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Research Skills, ACL Experimental Design & Open Research Frontiers in NLP",
+    "presenter": "Setare Kahnamuee",
+    "cmu_ref": "Lecture 14 – Research Skills and Experimental Design (02/26)",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "Week 10, Tue – Open Questions in NLP 2026",
+    "stanford_link": "https://web.stanford.edu/class/cs224n/",
+    "ministry_topic": "Synthesis, ACL Experimental Design & Project Guidance",
+    "notes": "",
+    "slides_url": "slides/session_s25.pdf",
+    "papers": [
+      {
+        "title": "A Survey of Large Language Models",
+        "authors": "Wayne Xin Zhao et al. (AI Open 2023)",
+        "url": "https://arxiv.org/abs/2303.18223",
+        "source": "CMU / Stanford"
+      },
+      {
+        "title": "Holistic Evaluation of Language Models (HELM)",
+        "authors": "Percy Liang et al. (Stanford CRFM, TMLR 2023)",
+        "url": "https://arxiv.org/abs/2211.09110",
+        "source": "Stanford CS224N"
+      }
+    ]
+  },
+  {
+    "id": "POST1",
+    "week": 15,
+    "date": "1405-10-06",
+    "day": "Sunday",
+    "type": "presentation",
+    "type_title": "Project Presentation",
+    "title": "Final Course Project Presentations & Poster Session – Part 1",
+    "presenter": "Teaching Staff & Student Teams",
+    "cmu_ref": "—",
+    "cmu_link": "",
+    "stanford_ref": "—",
+    "stanford_link": "",
+    "ministry_topic": "",
+    "notes": "",
+    "slides_url": "",
+    "papers": []
+  },
+  {
+    "id": "POST2",
+    "week": 15,
+    "date": "1405-10-08",
+    "day": "Tuesday",
+    "type": "presentation",
+    "type_title": "Project Presentation",
+    "title": "Final Course Project Presentations & Poster Session – Part 2",
+    "presenter": "Teaching Staff & Student Teams",
+    "cmu_ref": "—",
+    "cmu_link": "",
+    "stanford_ref": "—",
+    "stanford_link": "",
+    "ministry_topic": "",
+    "notes": "",
+    "slides_url": "",
+    "papers": []
+  }
+]

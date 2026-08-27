@@ -1,0 +1,65 @@
+[
+  {
+    "id": "hw1",
+    "code": "Assignment 1",
+    "weight": "8%",
+    "title": "Assignment 1 (To Be Announced)",
+    "module": "Part 1: Foundations & Transformer Architecture",
+    "covered_sessions": "Sessions S1 – S7",
+    "coordinator": "Alireza Mohammadi",
+    "coordinator_link": "team.html#alireza-mohammadi",
+    "status": "upcoming",
+    "released": "Week 3",
+    "due": "Week 6 (3 Weeks Duration)",
+    "scope_summary": "Word representations, autoregressive language modeling, recurrent sequence models, self-attention mechanisms, and subword tokenization.",
+    "description": "Practical coding assignment and implementation problem set covering the first major module of the course. Detailed problem specifications, starter codebase, and submission instructions will be released by the instructional team according to course progress.",
+    "deliverables": [
+      "Implementation codebase and execution/evaluation scripts.",
+      "Experimental results and written analysis report."
+    ],
+    "starter_code": "",
+    "colab": ""
+  },
+  {
+    "id": "hw2",
+    "code": "Assignment 2",
+    "weight": "8%",
+    "title": "Assignment 2 (To Be Announced)",
+    "module": "Part 2: Pretraining, Adaptation & Retrieval (RAG)",
+    "covered_sessions": "Sessions S8 – S13",
+    "coordinator": "Maryam Mortazavi Nik",
+    "coordinator_link": "team.html#maryam-mortazavi",
+    "status": "upcoming",
+    "released": "Week 8",
+    "due": "Week 10 (2 Weeks Duration)",
+    "scope_summary": "Web data pipelines, scaling laws, parameter-efficient fine-tuning (LoRA/QLoRA), decoding strategies, reasoning (CoT), and retrieval-augmented generation (RAG).",
+    "description": "Practical coding assignment and implementation problem set covering the second major module of the course. Detailed problem specifications, starter codebase, and submission instructions will be released by the instructional team according to course progress.",
+    "deliverables": [
+      "Implementation codebase and execution/evaluation scripts.",
+      "Experimental results and written analysis report."
+    ],
+    "starter_code": "",
+    "colab": ""
+  },
+  {
+    "id": "hw3",
+    "code": "Assignment 3",
+    "weight": "9%",
+    "title": "Assignment 3 (To Be Announced)",
+    "module": "Part 3: Post-Training, Alignment & Autonomous Agents",
+    "covered_sessions": "Sessions S14 – S24",
+    "coordinator": "Mohammad Amin Haeri",
+    "coordinator_link": "team.html#mohammad-amin-haeri",
+    "status": "upcoming",
+    "released": "Week 11",
+    "due": "Week 14 (3 Weeks Duration)",
+    "scope_summary": "Reinforcement learning fundamentals in NLP, preference alignment (RLHF & DPO), autonomous agents (ReAct & tool use), model quantization, and safety/robustness.",
+    "description": "Practical coding assignment and implementation problem set covering the third major module of the course. Detailed problem specifications, starter codebase, and submission instructions will be released by the instructional team according to course progress.",
+    "deliverables": [
+      "Implementation codebase and execution/evaluation scripts.",
+      "Experimental results and written analysis report."
+    ],
+    "starter_code": "",
+    "colab": ""
+  }
+]
