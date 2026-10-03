@@ -247,7 +247,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 3: Transformer Architecture & Multi-Head Attention",
     "notes": "",
-    "slides_url": "slides/Advanced NLP - Session 6 - Attention Mechanisms & The Transformer Architecture.pdf",
+    "slides_url": "slides/session_s6.pdf",
     "papers": [
       {
         "title": "Attention Is All You Need",
