@@ -196,6 +196,18 @@
         "authors": "Andrej Karpathy (2015)",
         "url": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
         "source": "Stanford CS224N"
+      },
+      {
+        "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
+        "authors": "StatQuest with Josh Starmer",
+        "url": "https://www.youtube.com/watch?v=AsNTP8Kwu80",
+        "source": "Video Tutorial"
+      },
+      {
+        "title": "Long Short-Term Memory (LSTM), Clearly Explained",
+        "authors": "StatQuest with Josh Starmer",
+        "url": "https://www.youtube.com/watch?v=YCzL96nL7j0",
+        "source": "Video Tutorial"
       }
     ]
   },

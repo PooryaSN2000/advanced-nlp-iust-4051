@@ -36,7 +36,7 @@
       "session": "S5",
       "title": "Recurrent Sequence Architectures: RNNs, LSTMs & Gated Recurrent Units (GRUs)",
       "category": "Lecture Slide",
-      "file": "slides/session_s5.pdf",
+      "file": "slides/Advanced NLP - Session 5 - Recurrent Sequence Architectures RNNs, LSTMs & GRUs.pdf",
       "cmu_ref": "Lecture 4 – Architectures I: Recurrent Neural Networks (01/22)",
       "stanford_ref": "Week 2, Thu – Language Models and RNNs (Part 2)"
     },
@@ -44,7 +44,7 @@
       "session": "S6",
       "title": "Attention Mechanisms & Transformer Architecture (RoPE, Multi-Head Attention)",
       "category": "Lecture Slide",
-      "file": "slides/session_s6.pdf",
+      "file": "slides/Advanced NLP - Session 6 - Attention Mechanisms & The Transformer Architecture.pdf",
       "cmu_ref": "Lecture 5 – Architectures II: Attention and Transformers (01/27)",
       "stanford_ref": "Week 3, Tue – Transformers"
     },
@@ -348,6 +348,20 @@
       "tag": "Stanford Core",
       "session": "S5",
       "link": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/"
+    },
+    {
+      "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
+      "authors": "StatQuest with Josh Starmer",
+      "tag": "Video Tutorial",
+      "session": "S5",
+      "link": "https://www.youtube.com/watch?v=AsNTP8Kwu80"
+    },
+    {
+      "title": "Long Short-Term Memory (LSTM), Clearly Explained",
+      "authors": "StatQuest with Josh Starmer",
+      "tag": "Video Tutorial",
+      "session": "S5",
+      "link": "https://www.youtube.com/watch?v=YCzL96nL7j0"
     },
     {
       "title": "Attention Is All You Need",

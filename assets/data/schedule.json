@@ -192,7 +192,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 3: Sequential Encoders & Recurrent Architectures",
     "notes": "",
-    "slides_url": "slides/session_s5.pdf",
+    "slides_url": "slides/Advanced NLP - Session 5 - Recurrent Sequence Architectures RNNs, LSTMs & GRUs.pdf",
     "papers": [
       {
         "title": "Long Short-Term Memory",
@@ -217,6 +217,18 @@
         "authors": "Andrej Karpathy (2015)",
         "url": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
         "source": "Stanford CS224N"
+      },
+      {
+        "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
+        "authors": "StatQuest with Josh Starmer",
+        "url": "https://www.youtube.com/watch?v=AsNTP8Kwu80",
+        "source": "Video Tutorial"
+      },
+      {
+        "title": "Long Short-Term Memory (LSTM), Clearly Explained",
+        "authors": "StatQuest with Josh Starmer",
+        "url": "https://www.youtube.com/watch?v=YCzL96nL7j0",
+        "source": "Video Tutorial"
       }
     ]
   },
@@ -235,7 +247,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 3: Transformer Architecture & Multi-Head Attention",
     "notes": "",
-    "slides_url": "slides/session_s6.pdf",
+    "slides_url": "slides/Advanced NLP - Session 6 - Attention Mechanisms & The Transformer Architecture.pdf",
     "papers": [
       {
         "title": "Attention Is All You Need",
