@@ -958,6 +958,11 @@
       "name": "ANLP Course Pack v1 (Project Multi-Hop Dataset)",
       "description": "3,882 Wikipedia passages, 300 dev questions with evidence triples & labels, and 300 hidden test questions for course project.",
       "link": "https://www.kaggle.com/datasets/aminheari/anlp-course-pack"
+    },
+    {
+      "name": "ANLP Project Starter Kit (score.py, config & baseline)",
+      "description": "Official starter kit archive containing score.py with bootstrap CI, example_predict.py, and predictions format specification.",
+      "link": "project/starter.zip"
     }
   ]
 }
