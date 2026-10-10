@@ -139,16 +139,92 @@
 
           <!-- Section Jump Navigation -->
           <div class="project-quick-nav" style="justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
-            <a href="#schedule-table" class="btn btn-secondary btn-sm">Milestones &amp; Oral Defense</a>
+            <a href="#mentors" class="btn btn-secondary btn-sm">Mentorship Team</a>
+            <a href="#schedule-table" class="btn btn-secondary btn-sm">Milestones &amp; Defense</a>
             <a href="#deliverables" class="btn btn-secondary btn-sm">Deliverables &amp; Format</a>
             <a href="#evaluation" class="btn btn-secondary btn-sm">Evaluation &amp; Defense</a>
             <a href="#late-policy" class="btn btn-secondary btn-sm">Deadlines &amp; Late Policy</a>
-            <a href="#mentors" class="btn btn-secondary btn-sm">Teaching Assistants</a>
           </div>
         </div>
 
-        <!-- 1. SCHEDULE & MILESTONES TABLE -->
-        <div id="schedule-table" class="card project-card" style="border-left: 4px solid var(--accent-primary); scroll-margin-top: 5rem;">
+        <!-- 1. TEACHING ASSISTANTS & MENTORSHIP TEAM (MOVED BEFORE SCHEDULE) -->
+        <div id="mentors" class="card project-card" style="border-left: 4px solid var(--accent-primary); scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              👥
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="badge badge-head">Project Team</span>
+                <span class="pill-badge">Mentors &amp; Assessment</span>
+              </div>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">Project Mentorship Team (Teaching Assistants)</h2>
+            </div>
+          </div>
+
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            The project teaching assistants guide students through implementation, host office hours, and conduct individual oral defense evaluations:
+          </p>
+
+          <div class="mentors-grid">
+            <!-- Poorya Saneei -->
+            <div class="mentor-box">
+              <div class="mentor-avatar">
+                <img src="assets/images/team/poorya_saneei.jpg" alt="Poorya Saneei">
+              </div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Poorya Saneei</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Head TA</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+                  Telegram: <a href="https://t.me/Poorya_sn" target="_blank" rel="noopener">@Poorya_sn</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mohammad Amin Haeri -->
+            <div class="mentor-box" style="border: 1.5px solid var(--accent-primary); background: rgba(2, 132, 199, 0.04);">
+              <div class="mentor-avatar-fallback" style="background: var(--accent-primary);">H</div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Amin Haeri</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Phase 1 Lead TA</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+                  Telegram: <a href="https://t.me/rstlss0" target="_blank" rel="noopener">@rstlss0</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mohammad Khaki -->
+            <div class="mentor-box">
+              <div class="mentor-avatar">
+                <img src="assets/images/team/mohammad_khaki.jpg" alt="Mohammad Khaki">
+              </div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Khaki</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Mentor &amp; TA</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+                  Telegram: <a href="https://t.me/khaki_mim" target="_blank" rel="noopener">@khaki_mim</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Maryam Mortazavi Nik -->
+            <div class="mentor-box">
+              <div class="mentor-avatar">
+                <img src="assets/images/team/maryam_mortazavi.jpg" alt="Maryam Mortazavi Nik">
+              </div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Maryam Mortazavi Nik</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Mentor &amp; TA</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+                  Telegram: <a href="https://t.me/thisisnikk" target="_blank" rel="noopener">@thisisnikk</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. SCHEDULE & MILESTONES (RESPONSIVE TABLE + MOBILE CARDS) -->
+        <div id="schedule-table" class="card project-card" style="scroll-margin-top: 5rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
             <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
               🗓️
@@ -166,7 +242,8 @@
             The capstone project is organized into 5 progressive milestones. Following code and report submissions for each milestone, students participate in an individual oral defense check-in with the assigned teaching assistants:
           </p>
 
-          <div class="table-responsive-wrapper" style="margin-bottom: 1.25rem;">
+          <!-- Desktop Table View (Hidden on mobile via CSS) -->
+          <div class="desktop-milestones table-responsive-wrapper" style="margin-bottom: 1.25rem;">
             <table class="schedule-table" style="width: 100%; font-size: 0.9rem;">
               <thead>
                 <tr>
@@ -244,9 +321,140 @@
               </tbody>
             </table>
           </div>
+
+          <!-- Mobile Cards View (Optimized for Phones, visible <=768px via CSS) -->
+          <div class="mobile-milestones">
+            <!-- Phase 1 Mobile Card -->
+            <div style="background: var(--bg-secondary); border: 1.5px solid var(--accent-primary); border-radius: var(--radius-md); padding: 1.15rem; box-shadow: var(--shadow-sm);">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-head" style="font-weight: 700;">Phase 1 • Active</span>
+                <span class="badge badge-presentation" style="font-size: 0.72rem;">Detailed in Handout</span>
+              </div>
+              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
+                Dense Retrieval &amp; Evaluation
+              </h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
+                Handcrafted IR metrics (Recall@k, HitAll@k, MRR, nDCG@10), document masking, and 3 baselines (Closed-Book, Oracle-Context, Dense RAG).
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
+                  <span class="badge badge-quiz" style="font-weight: 700;">Wed, 1405-07-30 (23:59)</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
+                  <span class="badge badge-presentation">1405-08-03 to 1405-08-07</span>
+                </div>
+              </div>
+              <div style="font-size: 0.82rem; color: var(--accent-primary); font-weight: 600; display: flex; align-items: center; gap: 0.35rem;">
+                <span>👤</span> Lead TA: Mohammad Amin Haeri (<a href="https://t.me/rstlss0" target="_blank" rel="noopener">@rstlss0</a>)
+              </div>
+            </div>
+
+            <!-- Phase 2 Mobile Card -->
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-lecture">Phase 2</span>
+                <span class="badge" style="background: var(--bg-tertiary); color: var(--text-muted); font-size: 0.72rem;">Upcoming</span>
+              </div>
+              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
+                Hybrid Retrieval &amp; Re-ranking
+              </h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
+                Sparse lexical retrieval (BM25), Reciprocal Rank Fusion (RRF), Cross-Encoder re-ranking, and token context budgeting.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
+                  <span style="color: var(--text-primary); font-weight: 600;">Wed, 1405-08-21 (23:59)</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
+                  <span class="badge badge-presentation">1405-08-24 to 1405-08-28</span>
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">
+                📌 Will be released in Handout update
+              </div>
+            </div>
+
+            <!-- Phase 3 Mobile Card -->
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-presentation">Phase 3</span>
+                <span class="badge" style="background: var(--bg-tertiary); color: var(--text-muted); font-size: 0.72rem;">Upcoming</span>
+              </div>
+              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
+                Knowledge Graph &amp; GraphRAG
+              </h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
+                Triple extraction on passage subsets, entity graph construction, 2-hop traversal, and graph-augmented prompting.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
+                  <span style="color: var(--text-primary); font-weight: 600;">Wed, 1405-09-12 (23:59)</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
+                  <span class="badge badge-presentation">1405-09-15 to 1405-09-19</span>
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">
+                📌 Will be released in Handout update
+              </div>
+            </div>
+
+            <!-- Phase 4 Mobile Card -->
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-quiz">Phase 4</span>
+                <span class="badge" style="background: var(--bg-tertiary); color: var(--text-muted); font-size: 0.72rem;">Upcoming</span>
+              </div>
+              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
+                Multi-Hop Routing &amp; Final Evaluation
+              </h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
+                Adaptive query routing, iterative step-by-step reasoning, query reformulation, and predictions on hidden benchmark.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
+                  <span style="color: var(--text-primary); font-weight: 600;">Wed, 1405-10-03 (23:59)</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
+                  <span class="badge badge-presentation">1405-10-06 to 1405-10-10</span>
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">
+                📌 Will be released in Handout update
+              </div>
+            </div>
+
+            <!-- Phase 5 Mobile Card -->
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-review">Phase 5</span>
+                <span class="badge badge-presentation" style="font-size: 0.72rem;">Final Milestone</span>
+              </div>
+              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
+                Final Defense &amp; Documentation
+              </h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
+                Final portfolio presentation, comprehensive technical report, and live demo on challenging evaluation queries.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-size: 0.84rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-muted); font-weight: 600;">Presentation Window:</span>
+                  <span class="badge badge-lecture">1405-10-15 to 1405-10-20</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- 2. DELIVERABLES & SUBMISSION FORMAT -->
+        <!-- 3. DELIVERABLES & SUBMISSION FORMAT -->
         <div id="deliverables" class="card project-card" style="scroll-margin-top: 5rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
             <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
@@ -305,7 +513,7 @@
           </div>
         </div>
 
-        <!-- 3. EVALUATION METHOD -->
+        <!-- 4. EVALUATION METHOD -->
         <div id="evaluation" class="card project-card" style="scroll-margin-top: 5rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
             <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-amber); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
@@ -355,7 +563,7 @@
           </div>
         </div>
 
-        <!-- 4. LATE POLICY & GRACE BUDGET -->
+        <!-- 5. LATE POLICY & GRACE BUDGET -->
         <div id="late-policy" class="card project-card" style="scroll-margin-top: 5rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
             <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(239, 68, 68, 0.1); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
@@ -424,82 +632,6 @@
               </div>
               <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
                 <strong>Experiment Tracking:</strong> Tracking metric curves and runs using MLflow or Weights &amp; Biases.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. TEACHING ASSISTANTS & MENTORSHIP TEAM -->
-        <div id="mentors" class="card project-card" style="scroll-margin-top: 5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
-              👥
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span class="badge badge-head">Project Team</span>
-                <span class="pill-badge">Mentors &amp; Assessment</span>
-              </div>
-              <h2 class="card-section-title" style="margin-top: 0.25rem;">Project Mentorship Team (Teaching Assistants)</h2>
-            </div>
-          </div>
-
-          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
-            The project teaching assistants guide students through implementation, host office hours, and conduct oral defense evaluations:
-          </p>
-
-          <div class="mentors-grid">
-            <!-- Poorya Saneei -->
-            <div class="mentor-box">
-              <div class="mentor-avatar">
-                <img src="assets/images/team/poorya_saneei.jpg" alt="Poorya Saneei">
-              </div>
-              <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Poorya Saneei</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Head TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/Poorya_sn" target="_blank" rel="noopener">@Poorya_sn</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Mohammad Amin Haeri -->
-            <div class="mentor-box" style="border: 1.5px solid var(--accent-primary); background: rgba(2, 132, 199, 0.04);">
-              <div class="mentor-avatar-fallback" style="background: var(--accent-primary);">H</div>
-              <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Amin Haeri</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Phase 1 Lead TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/rstlss0" target="_blank" rel="noopener">@rstlss0</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Mohammad Khaki -->
-            <div class="mentor-box">
-              <div class="mentor-avatar">
-                <img src="assets/images/team/mohammad_khaki.jpg" alt="Mohammad Khaki">
-              </div>
-              <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Khaki</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Mentor &amp; TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/khaki_mim" target="_blank" rel="noopener">@khaki_mim</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Maryam Mortazavi Nik -->
-            <div class="mentor-box">
-              <div class="mentor-avatar">
-                <img src="assets/images/team/maryam_mortazavi.jpg" alt="Maryam Mortazavi Nik">
-              </div>
-              <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Maryam Mortazavi Nik</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Mentor &amp; TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/thisisnikk" target="_blank" rel="noopener">@thisisnikk</a>
-                </div>
               </div>
             </div>
           </div>
