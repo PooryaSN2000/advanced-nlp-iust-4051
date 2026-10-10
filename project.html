@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Capstone Project: Modular Legal RAG & Graph RAG | M.Sc. Advanced NLP</title>
-  <meta name="description" content="Course Capstone Project for M.Sc. Advanced NLP at Iran University of Science and Technology (IUST) - Semester 4051. Official release on Monday, 1405-07-07.">
+  <title>Course Project: Multi-Hop Question Answering with RAG &amp; GraphRAG | M.Sc. Advanced NLP</title>
+  <meta name="description" content="Course Project for M.Sc. Advanced NLP at Iran University of Science and Technology (IUST) - Semester 4051. Multi-Hop Question Answering with RAG and GraphRAG.">
   <link rel="icon" type="image/png" href="assets/images/logos/logo.png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- KaTeX for mathematical notation rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
 </head>
 <body>
   
@@ -51,148 +56,797 @@
           <div class="hero-pills">
             <span class="pill-badge primary">Master of Science (M.Sc.)</span>
             <span class="pill-badge term">Semester: 4051</span>
-            <span class="pill-badge">45% Course Weight</span>
-            <span class="pill-badge">Individual Portfolio Project</span>
-            <span class="pill-badge">Release: Monday, 1405-07-07</span>
+            <span class="pill-badge">45% Total Weight</span>
+            <span class="pill-badge">5 Guided Phases</span>
+            <span class="pill-badge">Kaggle Dual T4 Ready</span>
           </div>
-          <h1 class="section-title">Course Capstone Project: Modular Legal RAG & Graph RAG</h1>
+          <h1 class="section-title">Course Project: Multi-Hop Question Answering with RAG &amp; GraphRAG</h1>
+          <p style="font-size: 1.15rem; font-weight: 600; color: var(--accent-primary); margin: 0.5rem 0 1rem; direction: rtl;">
+            پروژه درس: پرسش و پاسخ چندمرحله‌ای با RAG و GraphRAG
+          </p>
           <p class="section-subtitle">
-            A guided, hands-on engineering journey to build a modern Legal Retrieval-Augmented Generation (RAG) assistant in Persian. Step-by-step milestones with provided starter code, walkthrough tutorials, and continuous TA mentorship.
+            An end-to-end graduate research engineering project building state-of-the-art Multi-Hop Retrieval-Augmented Generation (RAG) and Knowledge Graph (GraphRAG) systems with exact IR evaluation, hybrid retrieval, graph traversal, and Dual-GPU acceleration.
           </p>
 
-          <!-- Status Bar -->
-          <div class="project-quick-nav">
-            <button type="button" class="btn btn-disabled" disabled title="Project specification and starter kit will be released on Monday, 1405-07-07">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-              <span>Specifications & Starter Kit Released on Monday, 1405-07-07</span>
-            </button>
-            <div class="project-jump-links">
-              <a href="schedule.html" class="btn btn-secondary btn-sm">Course Schedule →</a>
-              <a href="syllabus.html" class="btn btn-secondary btn-sm">Syllabus & Grading →</a>
-            </div>
+          <!-- Primary Downloads & Resources Grid -->
+          <div style="margin: 2.25rem 0 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; text-align: left;">
+            <!-- Handout PDF -->
+            <a href="project/handout.pdf" target="_blank" rel="noopener" download="Advanced_NLP_Project_Handout_Phase1.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md);">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <span style="font-size: 1.75rem; line-height: 1;">📄</span>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.98rem; line-height: 1.3;">Project Handout (PDF)</div>
+                  <div style="font-size: 0.78rem; opacity: 0.9; margin-top: 2px;">Phase 1 Specs &amp; Guidelines</div>
+                </div>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">268 KB</span>
+            </a>
+
+            <!-- Kaggle HowTo PDF -->
+            <a href="project/kaggle_howto.pdf" target="_blank" rel="noopener" download="Advanced_NLP_Kaggle_HowTo.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md);">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <span style="font-size: 1.75rem; line-height: 1;">📘</span>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.98rem; line-height: 1.3;">Kaggle &amp; GPU Guide (PDF)</div>
+                  <div style="font-size: 0.78rem; opacity: 0.9; margin-top: 2px;">Dual T4, vLLM &amp; Secrets</div>
+                </div>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">131 KB</span>
+            </a>
+
+            <!-- Course Pack Zip -->
+            <a href="project/course_pack_v1.zip" target="_blank" rel="noopener" download="course_pack_v1.zip" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md);">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <span style="font-size: 1.75rem; line-height: 1;">📦</span>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.98rem; line-height: 1.3;">Course Pack v1 (.ZIP)</div>
+                  <div style="font-size: 0.78rem; opacity: 0.9; margin-top: 2px;">Corpus, Dev, Hidden &amp; Labels</div>
+                </div>
+              </div>
+              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">854 KB</span>
+            </a>
+
+            <!-- Kaggle Hub Link -->
+            <a href="https://www.kaggle.com/datasets/aminheari/anlp-course-pack" target="_blank" rel="noopener" class="btn btn-secondary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md); border-color: var(--accent-primary);">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <span style="font-size: 1.75rem; line-height: 1;">🌐</span>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.98rem; line-height: 1.3; color: var(--text-primary);">Kaggle Dataset Hub</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 2px;">Direct Kaggle Hub Repository</div>
+                </div>
+              </div>
+              <span class="badge badge-presentation" style="font-size: 0.75rem;">Online ↗</span>
+            </a>
+          </div>
+
+          <!-- Section Jump Navigation -->
+          <div class="project-quick-nav" style="justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+            <a href="#overview" class="btn btn-secondary btn-sm">Overview &amp; Architecture</a>
+            <a href="#mentors" class="btn btn-secondary btn-sm">Mentorship Team</a>
+            <a href="#roadmap" class="btn btn-secondary btn-sm">5-Phase Roadmap</a>
+            <a href="#phase1" class="btn btn-secondary btn-sm">Phase 1 Specs</a>
+            <a href="#coursepack" class="btn btn-secondary btn-sm">Course Pack Architecture</a>
+            <a href="#kaggle" class="btn btn-secondary btn-sm">Kaggle Dual-GPU Guide</a>
+            <a href="#policies" class="btn btn-secondary btn-sm">Policies &amp; Bonus</a>
           </div>
         </div>
 
-        <!-- Release Announcement Card -->
-        <div class="card project-card" style="border-left: 4px solid var(--accent-primary);">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-            <div style="width: 42px; height: 42px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">
-              🚀
+        <!-- 1. OVERVIEW & ARCHITECTURE -->
+        <div id="overview" class="card project-card" style="border-left: 4px solid var(--accent-primary); scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              🧭
             </div>
             <div>
               <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span class="badge badge-presentation">Hands-On Capstone</span>
-                <span class="pill-badge term">Official Release: Monday, 1405-07-07</span>
+                <span class="badge badge-lecture">Core Architecture</span>
+                <span class="pill-badge term">Semester Capstone</span>
               </div>
-              <h2 class="card-section-title" style="margin-top: 0.25rem;">Project Overview & Preparation Guide</h2>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">Project Overview &amp; Multi-Hop Problem Formulation</h2>
             </div>
           </div>
 
-          <p style="font-size: 0.98rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
-            Welcome to the course capstone project! The teaching team is putting the finishing touches on your project starter kit—including beginner-friendly walkthrough notebooks, preprocessed dataset splits, and clean baseline scaffolding. Our goal is to ensure a smooth, rewarding, and highly practical learning experience that equips you with production-grade skills in modern NLP and RAG systems without feeling overwhelmed.
+          <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Standard Retrieval-Augmented Generation (RAG) pipelines assume that a single relevant document or passage contains the complete answer to a user query. In real-world enterprise reasoning, legal inquiries, and complex scientific questions, this assumption fails catastrophically. The answer often requires <strong style="color: var(--text-primary);">synthesizing facts scattered across multiple distant documents</strong>, discovering intermediate "bridge" entities, comparing disparate properties, and constructing an unbroken chain of evidence.
           </p>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
-              <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Paced & Guided</div>
-              <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;">45% Total • 5 Milestones</div>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
-                Distributed across the semester (2–3 weeks per milestone). Each milestone builds naturally on previous steps, supported by friendly 1-on-1 TA check-ins.
-              </p>
-            </div>
+          <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            In this semester-long project, you will develop a complete <strong style="color: var(--text-primary);">Multi-Hop Question Answering system combining Dense Retrieval, Hybrid Ranking, and Knowledge Graph (GraphRAG) traversal</strong>. You will work on an authentic Wikipedia-derived multi-hop corpus consisting of 3,882 passages and rigorous multi-step queries covering comparison, bridging, compositionality, and inference.
+          </p>
 
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
-              <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Practical Domain</div>
-              <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;">Iranian Legal Corpus</div>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
-                Build an intelligent assistant answering questions on Iranian Civil and Family statutory law—a practical, high-value AI application tailored for Persian NLP.
-              </p>
+          <!-- Pipeline Architecture Track -->
+          <div class="pipeline-flow-wrapper">
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.6rem; letter-spacing: 0.05em;">
+              End-to-End Multi-Hop RAG &amp; GraphRAG Pipeline
             </div>
-
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
-              <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; margin-bottom: 0.25rem;">Personal Portfolio</div>
-              <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;">Individual Project & Community</div>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
-                Develop your personal portfolio repository with provided templates. You are warmly encouraged to brainstorm ideas and discuss concepts with peers!
-              </p>
+            <div class="pipeline-flow-track">
+              <span class="badge badge-head">3,882 Passages &amp; Query</span>
+              <span class="pipeline-arrow">➔</span>
+              <span class="badge badge-lecture">Dense &amp; BM25 Retrieval</span>
+              <span class="pipeline-arrow">➔</span>
+              <span class="badge badge-quiz">Document Masking</span>
+              <span class="pipeline-arrow">➔</span>
+              <span class="badge badge-presentation">RRF &amp; Re-ranking</span>
+              <span class="pipeline-arrow">➔</span>
+              <span class="badge badge-review">Multi-Hop Routing</span>
+              <span class="pipeline-arrow">➔</span>
+              <span class="badge badge-head">GraphRAG Triples</span>
+              <span class="pipeline-arrow">➔</span>
+              <span class="badge badge-lecture">LLM Synthesis</span>
+              <span class="pipeline-arrow">➔</span>
+              <span class="badge badge-quiz">95% Bootstrap CI</span>
             </div>
           </div>
 
-          <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); padding: 1.15rem 1.35rem; border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 0.85rem;">
-            <div style="font-size: 1.25rem; line-height: 1; flex-shrink: 0; margin-top: 2px;">🌟</div>
-            <div style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
-              <strong style="color: var(--accent-emerald);">Designed for Gradual Learning:</strong> You will have over three weeks for Milestone 1 (due <strong>Wednesday, 1405-07-30</strong>), which covers basic data exploration and embeddings with ready-made notebooks. Complete starter templates, boilerplate code, and TA office hours are provided every step of the way!
+          <!-- Feature Cards Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+            <div class="phase-subbox">
+              <div style="font-weight: 700; color: var(--accent-primary); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                <span>🎯</span> Exact IR &amp; Document Masking
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                Handcraft fundamental information retrieval metrics (Recall@k, HitAll@k, MRR, nDCG@k) from scratch without black-box packages. Implement exact cosine search with document masking to dynamically exclude already-retrieved evidence across multi-hop iterations.
+              </p>
+            </div>
+
+            <div class="phase-subbox">
+              <div style="font-weight: 700; color: var(--accent-emerald); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                <span>🕸️</span> Knowledge Graph &amp; GraphRAG
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                Extract semantic triples (Subject, Relation, Object) to build a graph schema over passage subsets. Traverse 2-hop neighborhood paths to enrich vector prompts with structured relationship contexts for entity disambiguation.
+              </p>
+            </div>
+
+            <div class="phase-subbox">
+              <div style="font-weight: 700; color: var(--accent-amber); margin-bottom: 0.35rem; display: center; gap: 0.4rem;">
+                <span>⚡</span> Dual-GPU Kaggle Acceleration
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                Leverage 30 hours/week of free NVIDIA Dual T4 GPUs on Kaggle. Serve open-weight LLMs (up to 14B parameters) via vLLM with 4-bit AWQ quantization or Hugging Face bitsandbytes for lightning-fast batch scoring across all 300 test queries.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Mentorship & Coordination Team Card -->
-        <div class="card project-card">
-          <div style="margin-bottom: 1.25rem;">
-            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem;">
-              <span class="badge badge-head">Support & Mentorship</span>
-              <span class="pill-badge primary">Mentorship Team</span>
+        <!-- 2. MENTORSHIP TEAM -->
+        <div id="mentors" class="card project-card" style="scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              👥
             </div>
-            <h2 class="card-section-title">Project Mentorship & Coordination Team</h2>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.25rem;">
-              Our dedicated instructional team is here to guide you, answer questions, help you debug code, and provide constructive feedback throughout your journey. Reach out anytime via Telegram or during weekly office hours!
-            </p>
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="badge badge-head">Instruction &amp; Mentorship</span>
+                <span class="pill-badge">Oral Check-Ins</span>
+              </div>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">Project Leadership &amp; Mentorship Team</h2>
+            </div>
           </div>
 
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            The project follows an interactive mentorship structure. In each phase, after code submission, students participate in a 10–15 minute 1-on-1 oral check-in with an assigned TA to run live sample queries, discuss design choices, and receive immediate actionable feedback.
+          </p>
+
           <div class="mentors-grid">
+            <!-- Prof. Minaei -->
+            <div class="mentor-box">
+              <div class="mentor-avatar">
+                <img src="assets/images/team/behrouz_minaei.jpg" alt="Prof. Behrouz Minaei-Bidgoli">
+              </div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Prof. Behrouz Minaei</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Course Instructor</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Professor, IUST CE Dept.</div>
+              </div>
+            </div>
+
+            <!-- Dr. Torabian -->
+            <div class="mentor-box">
+              <div class="mentor-avatar-fallback">T</div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Dr. Najmeh Torabian</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Director</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Postdoctoral Researcher, IUST</div>
+              </div>
+            </div>
+
+            <!-- Poorya Saneei -->
             <div class="mentor-box">
               <div class="mentor-avatar">
                 <img src="assets/images/team/poorya_saneei.jpg" alt="Poorya Saneei">
               </div>
-              <div style="min-width: 0;">
-                <a href="team.html#poorya-saneei" class="presenter-link" style="font-weight: 700; font-size: 0.95rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Poorya Saneei</a>
-                <span style="font-size: 0.76rem; color: var(--text-muted); display: block;">Head TA</span>
-                <a href="https://t.me/Poorya_sn" target="_blank" rel="noopener" style="font-size: 0.76rem; color: var(--accent-primary); font-weight: 600; text-decoration: none;">@Poorya_sn</a>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Poorya Saneei</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Head TA</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Telegram: <a href="https://t.me/Poorya_sn" target="_blank" rel="noopener">@Poorya_sn</a></div>
               </div>
             </div>
 
+            <!-- Mohammad Amin Haeri -->
+            <div class="mentor-box" style="border: 1.5px solid var(--accent-primary); background: rgba(2, 132, 199, 0.04);">
+              <div class="mentor-avatar-fallback" style="background: var(--accent-primary);">H</div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Amin Haeri</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Phase 1 Lead TA</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Telegram: <a href="https://t.me/rstlss0" target="_blank" rel="noopener">@rstlss0</a></div>
+              </div>
+            </div>
+
+            <!-- Mohammad Khaki -->
             <div class="mentor-box">
               <div class="mentor-avatar">
                 <img src="assets/images/team/mohammad_khaki.jpg" alt="Mohammad Khaki">
               </div>
-              <div style="min-width: 0;">
-                <a href="team.html#mohammad-khaki" class="presenter-link" style="font-weight: 700; font-size: 0.95rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Mohammad Khaki</a>
-                <span style="font-size: 0.76rem; color: var(--text-muted); display: block;">Co-Lecturer & Mentor</span>
-                <a href="https://t.me/khaki_mim" target="_blank" rel="noopener" style="font-size: 0.76rem; color: var(--accent-primary); font-weight: 600; text-decoration: none;">@khaki_mim</a>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Khaki</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Mentor</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Telegram: <a href="https://t.me/khaki_mim" target="_blank" rel="noopener">@khaki_mim</a></div>
               </div>
             </div>
 
-            <div class="mentor-box">
-              <div class="mentor-avatar-fallback">H</div>
-              <div style="min-width: 0;">
-                <a href="team.html#mohammad-amin-haeri" class="presenter-link" style="font-weight: 700; font-size: 0.95rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Mohammad Amin Haeri</a>
-                <span style="font-size: 0.76rem; color: var(--text-muted); display: block;">Project Mentor & TA</span>
-                <a href="https://t.me/rstlss0" target="_blank" rel="noopener" style="font-size: 0.76rem; color: var(--accent-primary); font-weight: 600; text-decoration: none;">@rstlss0</a>
-              </div>
-            </div>
-
-            <!-- Deactivated for now (data preserved): Alireza Mohammadi
-            <div class="mentor-box">
-              <div class="mentor-avatar">
-                <img src="assets/images/team/alireza_mohammadi.jpg" alt="Alireza Mohammadi">
-              </div>
-              <div style="min-width: 0;">
-                <a href="team.html#alireza-mohammadi" class="presenter-link" style="font-weight: 700; font-size: 0.95rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Alireza Mohammadi</a>
-                <span style="font-size: 0.76rem; color: var(--text-muted); display: block;">Project Mentor & TA</span>
-                <a href="https://t.me/Alireza2001923" target="_blank" rel="noopener" style="font-size: 0.76rem; color: var(--accent-primary); font-weight: 600; text-decoration: none;">@Alireza2001923</a>
-              </div>
-            </div>
-            -->
-
+            <!-- Maryam Mortazavi Nik -->
             <div class="mentor-box">
               <div class="mentor-avatar">
                 <img src="assets/images/team/maryam_mortazavi.jpg" alt="Maryam Mortazavi Nik">
               </div>
-              <div style="min-width: 0;">
-                <a href="team.html#maryam-mortazavi" class="presenter-link" style="font-weight: 700; font-size: 0.95rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Maryam Mortazavi Nik</a>
-                <span style="font-size: 0.76rem; color: var(--text-muted); display: block;">Project Mentor & TA</span>
-                <a href="https://t.me/thisisnikk" target="_blank" rel="noopener" style="font-size: 0.76rem; color: var(--accent-primary); font-weight: 600; text-decoration: none;">@thisisnikk</a>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Maryam Mortazavi Nik</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Mentor</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Telegram: <a href="https://t.me/thisisnikk" target="_blank" rel="noopener">@thisisnikk</a></div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. ROADMAP & TIMELINE -->
+        <div id="roadmap" class="card project-card" style="scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-amber); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              🗓️
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="badge badge-presentation">Semester Schedule</span>
+                <span class="pill-badge">5 Milestones</span>
+              </div>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">5-Phase Semester Roadmap &amp; Defense Windows</h2>
+            </div>
+          </div>
+
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            The project is partitioned into 5 progressive phases designed to build upon each other without cognitive overload. Each phase has a dedicated deadline and an oral defense window:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <!-- Phase 1 Card (Active) -->
+            <div class="phase-card" style="border-left: 4px solid var(--accent-primary); background: rgba(2, 132, 199, 0.03);">
+              <div class="phase-header-wrap">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                    <span class="badge badge-head">Phase 1 • ACTIVE</span>
+                    <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-primary);">Lead TA: Mohammad Amin Haeri (@rstlss0)</span>
+                  </div>
+                  <h3 style="margin: 0; font-size: 1.2rem; color: var(--text-primary);">
+                    Dense Retrieval &amp; Evaluation (سنجش و بازیابی متراکم)
+                  </h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="pill-badge">Release: 18 Mehr 1405</span>
+                  <span class="pill-badge primary" style="font-weight: 700;">Due: Wednesday, 30 Mehr 1405 (23:59)</span>
+                  <span class="pill-badge term">Defense: 3–7 Aban 1405</span>
+                </div>
+              </div>
+              <div class="phase-grid-cols">
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Core Tasks:</strong>
+                  <ul style="margin: 0; padding-left: 1.2rem; line-height: 1.6; color: var(--text-secondary);">
+                    <li>Handcrafted IR metrics (Recall@k, HitAll@k, MRR, nDCG@k) strictly matching <code>score.py</code></li>
+                    <li>Exact dense cosine similarity search with document masking (<code>dense_search(query, k, exclude_ids)</code>)</li>
+                    <li>3 Baseline systems: Closed-Book, Oracle-Context, and Dense RAG</li>
+                  </ul>
+                </div>
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Deliverables:</strong>
+                  <ul style="margin: 0; padding-left: 1.2rem; line-height: 1.6; color: var(--text-secondary);">
+                    <li>Clean, reproducible GitHub repository</li>
+                    <li>5 JSONL prediction files (Closed-book dev/hidden, Oracle dev, Dense RAG dev/hidden)</li>
+                    <li>Max 3-page concise PDF report detailing metrics &amp; analysis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 2 Card -->
+            <div class="phase-card">
+              <div class="phase-header-wrap">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                    <span class="badge badge-lecture">Phase 2</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Upcoming</span>
+                  </div>
+                  <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">
+                    Hybrid Retrieval &amp; Re-ranking (بازیابی ترکیبی و بازرتبه‌بندی)
+                  </h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="pill-badge">Due: Wednesday, 21 Aban 1405 (23:59)</span>
+                  <span class="pill-badge term">Defense: 24–28 Aban 1405</span>
+                </div>
+              </div>
+              <div class="phase-grid-cols">
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Core Tasks:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    Implement BM25 lexical retrieval from scratch. Implement Reciprocal Rank Fusion (RRF) and convex score combination to merge dense and sparse streams. Integrate cross-encoder re-rankers and manage LLM context token budgets.
+                  </p>
+                </div>
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Deliverables:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    Hybrid search pipeline code, re-ranked predictions for dev and hidden test splits, ablation study comparing Dense vs. BM25 vs. Hybrid vs. Re-ranked RAG, concise engineering report.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 3 Card -->
+            <div class="phase-card">
+              <div class="phase-header-wrap">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                    <span class="badge badge-presentation">Phase 3</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Upcoming</span>
+                  </div>
+                  <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">
+                    Knowledge Graph &amp; GraphRAG (پایگاه دانش و GraphRAG)
+                  </h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="pill-badge">Due: Wednesday, 12 Azar 1405 (23:59)</span>
+                  <span class="pill-badge term">Defense: 15–19 Azar 1405</span>
+                </div>
+              </div>
+              <div class="phase-grid-cols">
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Core Tasks:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    Extract <code>(Subject, Relation, Object)</code> triples from <code>kg_subset_passages.txt</code> (200 passages). Build an entity graph using NetworkX/Neo4j. Implement 2-hop neighborhood traversal and formulate structured graph prompts for GraphRAG.
+                  </p>
+                </div>
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Deliverables:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    Knowledge graph serialization, GraphRAG execution script, qualitative comparison of GraphRAG vs. Vector RAG on complex multi-hop relation questions, technical report.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 4 Card -->
+            <div class="phase-card">
+              <div class="phase-header-wrap">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                    <span class="badge badge-quiz">Phase 4</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Upcoming</span>
+                  </div>
+                  <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">
+                    Multi-Hop Routing &amp; Final Evaluation (مسیریابی چندمرحله‌ای و ارزیابی نهایی)
+                  </h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="pill-badge">Due: Wednesday, 3 Dey 1405 (23:59)</span>
+                  <span class="pill-badge term">Defense: 6–10 Dey 1405</span>
+                </div>
+              </div>
+              <div class="phase-grid-cols">
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Core Tasks:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    Build query classification to adaptively route questions (single-hop vs. multi-hop, graph vs. text). Implement iterative reasoning and sub-query rewriting with stop conditions. Perform full evaluation on <code>questions_hidden.jsonl</code>.
+                  </p>
+                </div>
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Deliverables:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    End-to-end multi-hop inference pipeline, official final predictions on hidden benchmark, ablation results across all 4 question categories, comprehensive documentation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 5 Card -->
+            <div class="phase-card">
+              <div class="phase-header-wrap">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                    <span class="badge badge-review">Phase 5</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Final Milestone</span>
+                  </div>
+                  <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-primary);">
+                    Final Defense &amp; Documentation (ارائه و مستندسازی نهایی)
+                  </h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="pill-badge primary">Presentation Window: 15–20 Dey 1405</span>
+                </div>
+              </div>
+              <div class="phase-grid-cols">
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Core Tasks:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    Deliver oral defense presentation, demonstrate end-to-end multi-hop answering live on unseen evaluation queries, present ablation study findings, and prepare open-source portfolio repository.
+                  </p>
+                </div>
+                <div class="phase-subbox">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Deliverables:</strong>
+                  <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">
+                    Polished GitHub repository with complete reproduction instructions, final technical paper/report, live defense slide deck.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. PHASE 1 DETAILED SPECS -->
+        <div id="phase1" class="card project-card" style="border-left: 4px solid var(--accent-primary); scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              ⚙️
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="badge badge-head">Detailed Specifications</span>
+                <span class="pill-badge term">Due: 30 Mehr 1405</span>
+              </div>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">Phase 1: Dense Retrieval &amp; Evaluation Technical Guide</h2>
+            </div>
+          </div>
+
+          <div style="background: rgba(2, 132, 199, 0.05); border: 1px solid rgba(2, 132, 199, 0.2); padding: 1.15rem 1.35rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+            <strong style="color: var(--accent-primary);">Primary Goal:</strong> Build clean, standard measurement infrastructure and establish primary empirical baselines before introducing complex multi-hop algorithmic modifications.
+          </div>
+
+          <!-- Core Mechanism A -->
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.15rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-lecture">Mechanism A</span> Handcrafted Information Retrieval Metrics
+            </h3>
+            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              You must implement the following metrics <strong style="color: var(--text-primary);">from foundational mathematical definitions in pure Python/NumPy</strong> without using high-level IR libraries (such as <code>ranx</code>, <code>scikit-learn</code>, or <code>trec_eval</code>). Let $G$ be the set of gold passage IDs for a query, and $d_1, d_2, \dots, d_k$ be the ranked list of retrieved passage IDs:
+            </p>
+
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem; overflow-x: auto;">
+              <div style="margin-bottom: 0.85rem;">
+                <strong>1. Recall@k:</strong>
+                $$\text{Recall}@k = \frac{|G \cap \{d_1, \dots, d_k\}|}{|G|}$$
+              </div>
+              <div style="margin-bottom: 0.85rem;">
+                <strong>2. HitAll@k (Strict Coverage):</strong>
+                $$\text{HitAll}@k = \mathbf{1}[G \subseteq \{d_1, \dots, d_k\}]$$
+              </div>
+              <div style="margin-bottom: 0.85rem;">
+                <strong>3. Mean Reciprocal Rank (MRR):</strong>
+                $$\text{MRR} = \frac{1}{\min\{i : d_i \in G\}}$$
+                <span style="font-size: 0.8rem; color: var(--text-muted);">(MRR = 0 if no gold document is retrieved in the ranked list)</span>
+              </div>
+              <div>
+                <strong>4. Normalized Discounted Cumulative Gain (nDCG@k):</strong>
+                $$\text{DCG}@k = \sum_{i=1}^k \frac{\mathbf{1}[d_i \in G]}{\log_2(i + 1)}, \quad \text{IDCG}@k = \sum_{i=1}^{\min(|G|, k)} \frac{1}{\log_2(i + 1)}, \quad \text{nDCG}@k = \frac{\text{DCG}@k}{\text{IDCG}@k}$$
+              </div>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+              💡 <em>Validation Check:</em> Your implementations must produce identical numerical outputs to <code>score.py</code> across all 300 dev queries.
+            </p>
+          </div>
+
+          <!-- Core Mechanism B -->
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.15rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-presentation">Mechanism B</span> Exact Dense Cosine Retrieval with Document Masking
+            </h3>
+            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              In multi-hop QA, subsequent retrieval hops must uncover new supporting evidence rather than redundantly retrieving passages discovered in earlier steps. Implement a dense search function with document masking:
+            </p>
+
+            <div style="background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem; font-family: var(--font-mono); font-size: 0.88rem; margin-bottom: 1rem; overflow-x: auto;">
+              <span style="color: var(--accent-primary);">def</span> <span style="font-weight: 700;">dense_search</span>(query: str, k: int, exclude_ids: set = <span style="color: var(--accent-emerald);">None</span>) -&gt; List[str]:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--text-muted);"># 1. Embed query and normalize vector (L2 normalization)</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--text-muted);"># 2. Compute exact cosine similarity across all 3,882 passages</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--text-muted);"># 3. For any doc_id in exclude_ids, set similarity score = -inf</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--text-muted);"># 4. Select top-k documents (guaranteed to return k unmasked passages)</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: var(--accent-primary);">return</span> top_k_doc_ids
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">
+              Recommended open embedding models: <code>Qwen/Qwen2.5-Coder-0.5B</code>, <code>BAAI/bge-m3</code>, <code>intfloat/multilingual-e5-base</code>, or modern Sentence-Transformers.
+            </p>
+          </div>
+
+          <!-- 3 Baseline Systems -->
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.15rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-head">3 Baseline Systems</span> Experimental Benchmarks
+            </h3>
+            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1rem;">
+              To measure the exact empirical contribution of retrieval and calibrate model capability, evaluate three baseline setups:
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+              <div class="phase-subbox">
+                <div style="font-weight: 700; color: var(--accent-primary); margin-bottom: 0.35rem;">1. Closed-Book Baseline</div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.5rem;">
+                  No retrieval context is supplied to the LLM. Tests internal parametric memory.
+                </p>
+                <div style="font-family: var(--font-mono); font-size: 0.78rem; background: var(--bg-secondary); padding: 0.4rem 0.6rem; border-radius: 4px;">
+                  "retrieved": []
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Run on: <code>dev</code> &amp; <code>hidden</code></div>
+              </div>
+
+              <div class="phase-subbox">
+                <div style="font-weight: 700; color: var(--accent-emerald); margin-bottom: 0.35rem;">2. Oracle-Context Baseline</div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.5rem;">
+                  The true gold supporting passages (from <code>gold_doc_ids</code>) are directly fed into the LLM context. Represents empirical performance ceiling.
+                </p>
+                <div style="font-family: var(--font-mono); font-size: 0.78rem; background: var(--bg-secondary); padding: 0.4rem 0.6rem; border-radius: 4px;">
+                  "retrieved": gold_doc_ids
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Run on: <code>dev</code> only (labels private for hidden)</div>
+              </div>
+
+              <div class="phase-subbox">
+                <div style="font-weight: 700; color: var(--accent-amber); margin-bottom: 0.35rem;">3. Dense RAG Baseline</div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.5rem;">
+                  Dense retriever fetches top-$k$ passages ($k \in \{2, 5, 10\}$) to supply as context to the LLM generator.
+                </p>
+                <div style="font-family: var(--font-mono); font-size: 0.78rem; background: var(--bg-secondary); padding: 0.4rem 0.6rem; border-radius: 4px;">
+                  "retrieved": [d1, d2, ..., dk] (min 10)
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Run on: <code>dev</code> &amp; <code>hidden</code></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 1 Deliverables Summary -->
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+            <h4 style="font-size: 1.05rem; color: var(--text-primary); margin: 0 0 0.5rem;">Phase 1 Submission Checklist:</h4>
+            <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.7; font-size: 0.9rem;">
+              <li><strong>GitHub Repository:</strong> Clean structure, <code>requirements.txt</code> with pinned versions, <code>README.md</code> reproduction guide.</li>
+              <li><strong>5 Prediction Files (JSONL format):</strong>
+                <code>predictions_closed_book_dev.jsonl</code>,
+                <code>predictions_closed_book_hidden.jsonl</code>,
+                <code>predictions_oracle_dev.jsonl</code>,
+                <code>predictions_dense_rag_dev.jsonl</code>,
+                <code>predictions_dense_rag_hidden.jsonl</code>.
+              </li>
+              <li><strong>Concise Report (Max 3 Pages PDF):</strong> Embedding model choice, retrieval metric tables (Recall@k, HitAll@k, MRR, nDCG@10 for $k \in \{2, 5, 10\}$), baseline generation comparisons (EM, Token F1), and failure analysis.</li>
+              <li><strong>Oral Defense Check-In:</strong> 10–15 min interactive meeting with Phase 1 Lead TA Mohammad Amin Haeri (@rstlss0).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5. COURSE PACK ARCHITECTURE -->
+        <div id="coursepack" class="card project-card" style="scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              📦
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="badge badge-head">Dataset Specifications</span>
+                <span class="pill-badge">Course Pack v1</span>
+              </div>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">Course Pack Architecture &amp; Benchmark Schema</h2>
+            </div>
+          </div>
+
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            The project dataset is packaged in <code>course_pack_v1.zip</code> and mirrored on Kaggle. It contains all corpus passages, splits, ground truth labels, and knowledge graph subsets:
+          </p>
+
+          <div class="table-responsive-wrapper" style="margin-bottom: 1.5rem;">
+            <table class="schedule-table" style="width: 100%; font-size: 0.88rem;">
+              <thead>
+                <tr>
+                  <th>File Name</th>
+                  <th>Item Count</th>
+                  <th>Schema / Fields</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>corpus.jsonl</code></td>
+                  <td><strong>3,882 passages</strong></td>
+                  <td><code>{"doc_id", "title", "text", "sentences": [...]}</code></td>
+                  <td>Full retrieval corpus from English Wikipedia</td>
+                </tr>
+                <tr>
+                  <td><code>questions_dev.jsonl</code></td>
+                  <td><strong>300 questions</strong></td>
+                  <td><code>{"qid", "question", "type"}</code></td>
+                  <td>Development questions for offline experiments</td>
+                </tr>
+                <tr>
+                  <td><code>labels_dev.jsonl</code></td>
+                  <td><strong>300 labels</strong></td>
+                  <td><code>{"qid", "answer", "aliases", "gold_doc_ids", "gold_sentences", "evidence_triples", "type"}</code></td>
+                  <td>Full ground truth for development set</td>
+                </tr>
+                <tr>
+                  <td><code>questions_hidden.jsonl</code></td>
+                  <td><strong>300 questions</strong></td>
+                  <td><code>{"qid", "question", "type"}</code></td>
+                  <td>Hidden test questions for TA evaluation &amp; scoring</td>
+                </tr>
+                <tr>
+                  <td><code>kg_subset_passages.txt</code></td>
+                  <td><strong>200 doc IDs</strong></td>
+                  <td>List of <code>doc_id</code> strings</td>
+                  <td>Designated subset for Phase 3 Knowledge Graph construction</td>
+                </tr>
+                <tr>
+                  <td><code>score.py</code></td>
+                  <td>Evaluator Script</td>
+                  <td>CLI: <code>--pack course_pack_v1 --split dev</code></td>
+                  <td>Official scoring script with 95% bootstrap CI calculation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+            <h4 style="font-size: 0.95rem; color: var(--text-primary); margin: 0 0 0.5rem;">Question Taxonomies &amp; Multi-Hop Types:</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; font-size: 0.85rem;">
+              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong style="color: var(--accent-primary);">comparison</strong>: Comparing properties or dates of two distinct entities.
+              </div>
+              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong style="color: var(--accent-emerald);">bridge_comparison</strong>: Finding an intermediate bridge entity before comparing attributes.
+              </div>
+              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong style="color: var(--accent-amber);">compositional</strong>: Chaining multiple facts in sequence (e.g., $A \rightarrow B \rightarrow C$).
+              </div>
+              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong style="color: var(--accent-purple);">inference</strong>: Performing logical deduction from multiple disjoint facts.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. KAGGLE & FREE GPU GUIDE -->
+        <div id="kaggle" class="card project-card" style="scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(59, 130, 246, 0.1); color: #3b82f6; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              🚀
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="badge badge-head">Compute Infrastructure</span>
+                <span class="pill-badge">Free NVIDIA GPUs</span>
+              </div>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">Kaggle Dual T4 GPU Execution Guide</h2>
+            </div>
+          </div>
+
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            You do <strong style="color: var(--text-primary);">not</strong> need a personal high-end GPU. Kaggle provides <strong style="color: var(--text-primary);">30 hours per week of free Dual NVIDIA Tesla T4 GPUs (16GB VRAM each)</strong>. Follow these key steps outlined in <code>kaggle_howto.pdf</code>:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+            <div class="phase-subbox">
+              <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">1. Session Setup &amp; Verification</strong>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                Verify your Kaggle account with a phone number to unlock GPU access. In your notebook session options: set <code>Accelerator: GPU T4 x2</code> and enable <code>Internet: ON</code> to download Hugging Face models and packages.
+              </p>
+            </div>
+
+            <div class="phase-subbox">
+              <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">2. Secure Token Management</strong>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                Store your GitHub Personal Access Token (<code>GH_TOKEN</code>) and Hugging Face token (<code>HF_TOKEN</code>) securely via <strong>Add-ons ➔ Secrets</strong> in Kaggle. Never print or commit tokens into your repository.
+              </p>
+            </div>
+
+            <div class="phase-subbox">
+              <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">3. Fast Serving with vLLM (AWQ)</strong>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                For fast batch inference across all 300 test queries, use <code>vLLM</code> with 4-bit AWQ quantized open-weight models (up to ~14B parameters, e.g., <code>Qwen2.5-7B-Instruct-AWQ</code>). Processing takes under 3 minutes!
+              </p>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem; font-family: var(--font-mono); font-size: 0.82rem; overflow-x: auto;">
+            <span style="color: var(--text-muted);"># Fast Batch LLM Inference with vLLM on Kaggle</span><br>
+            <span style="color: var(--accent-primary);">from</span> vllm <span style="color: var(--accent-primary);">import</span> LLM, SamplingParams<br><br>
+            llm = LLM(model=<span style="color: var(--accent-emerald);">"Qwen/Qwen2.5-7B-Instruct-AWQ"</span>, quantization=<span style="color: var(--accent-emerald);">"awq"</span>, dtype=<span style="color: var(--accent-emerald);">"half"</span>, max_model_len=8192, gpu_memory_utilization=0.90)<br>
+            params = SamplingParams(temperature=0, max_tokens=128)<br>
+            outputs = llm.chat([[{"role": "user", "content": p}] <span style="color: var(--accent-primary);">for</span> p <span style="color: var(--accent-primary);">in</span> prompts], params)<br>
+            answers = [o.outputs[0].text <span style="color: var(--accent-primary);">for</span> o <span style="color: var(--accent-primary);">in</span> outputs]
+          </div>
+        </div>
+
+        <!-- 7. EVALUATION POLICIES & BONUS -->
+        <div id="policies" class="card project-card" style="scroll-margin-top: 5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+              ⚖️
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="badge badge-head">Grading &amp; Policy</span>
+                <span class="pill-badge">Oral Defense &amp; Bonus</span>
+              </div>
+              <h2 class="card-section-title" style="margin-top: 0.25rem;">Evaluation Protocol, Grace Policy &amp; Software Engineering Bonus</h2>
+            </div>
+          </div>
+
+          <div class="policy-grid">
+            <div class="policy-box">
+              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎙️</div>
+              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Oral Defense Structure</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                Each phase concludes with a 10–15 minute oral defense. The TA selects 3–5 random queries to run live, tests prompt variations, adjusts hyperparameters ($k$, masking), and discusses failure modes.
+              </p>
+            </div>
+
+            <div class="policy-box">
+              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📊</div>
+              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Grading Weight Distribution</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                Approximately <strong>40%</strong> of each phase grade is assigned to code correctness, prediction quality, and written reports; <strong>60%</strong> is based on technical defense and code mastery.
+              </p>
+            </div>
+
+            <div class="policy-box">
+              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⏱️</div>
+              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">48-Hour Grace Budget</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                Each student has <strong>48 free grace hours</strong> across the semester. After grace hours, a 0.5-point/hour late deduction applies. The LMS portal remains open for 96 hours (4 days).
+              </p>
+            </div>
+
+            <div class="policy-box">
+              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎁</div>
+              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Early Submission Bonus</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                Submitting early with solid results awards bonus hours (up to <strong>24 hours</strong>) added back into your semester grace quota.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bonus Engineering Practices -->
+          <div style="background: rgba(2, 132, 199, 0.04); border: 1px solid rgba(2, 132, 199, 0.2); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.1rem; color: var(--accent-primary); margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span>🏆</span> Software Engineering &amp; MLOps Extra Credit
+            </h3>
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1rem;">
+              Demonstrating production-grade software engineering practices earns extra credit evaluated in 1–2 minutes during oral defense:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.75rem; font-size: 0.85rem;">
+              <div style="background: var(--bg-secondary); padding: 0.85rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong>Structured YAML Configs:</strong> Manage all hyperparameters in <code>run_config.yaml</code> instead of hardcoded values.
+              </div>
+              <div style="background: var(--bg-secondary); padding: 0.85rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong>Unit Tests (<code>pytest</code>):</strong> Automated unit tests verifying handcrafted IR metrics and masking logic.
+              </div>
+              <div style="background: var(--bg-secondary); padding: 0.85rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong>Continuous Integration:</strong> GitHub Actions running unit tests automatically on every commit.
+              </div>
+              <div style="background: var(--bg-secondary); padding: 0.85rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+                <strong>Experiment Tracking:</strong> Logging experiments with MLflow or W&amp;B for reproducible metric curves.
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Honor Code -->
+          <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 1rem;">
+            <div style="font-size: 1.4rem; line-height: 1; flex-shrink: 0; margin-top: 2px;">🤝</div>
+            <div style="font-size: 0.92rem; line-height: 1.6; color: var(--text-secondary);">
+              <strong style="color: var(--accent-emerald);">Academic Honor Code &amp; AI Assistant Policy:</strong>
+              Discussion of concepts, algorithms, and debugging strategies with peers is warmly welcomed. Modern AI coding assistants (ChatGPT, Claude, GitHub Copilot) are permitted as productivity aids, provided you personally understand every line of submitted code and can explain and modify your implementation live during oral defense.
             </div>
           </div>
         </div>

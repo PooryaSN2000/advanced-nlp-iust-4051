@@ -289,8 +289,8 @@
     "stanford_ref": "—",
     "stanford_link": "",
     "ministry_topic": "",
-    "notes": "",
-    "slides_url": "",
+    "notes": "Covers Sessions S1–S6 (Word Vectors, Neural Basics, LM, RNNs, LSTMs, Transformers)",
+    "slides_url": "slides/Advanced NLP Exam 1.pdf",
     "papers": []
   },
   {

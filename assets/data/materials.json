@@ -49,6 +49,14 @@
       "stanford_ref": "Week 3, Tue – Transformers"
     },
     {
+      "session": "Q1",
+      "title": "Quiz 1 Exam Paper (Covers Sessions S1–S6: Word Representations, Backprop, Language Modeling, RNNs & Transformers)",
+      "category": "Exam / Quiz",
+      "file": "slides/Advanced NLP Exam 1.pdf",
+      "cmu_ref": "—",
+      "stanford_ref": "—"
+    },
+    {
       "session": "S7",
       "title": "Subword Tokenization (BPE, SentencePiece) & Multilingual Language Models",
       "category": "Lecture Slide",
@@ -945,6 +953,11 @@
       "name": "MS MARCO & HotpotQA",
       "description": "Passage ranking and multi-hop reasoning datasets for open-domain RAG benchmarking.",
       "link": "https://microsoft.github.io/msmarco/"
+    },
+    {
+      "name": "ANLP Course Pack v1 (Project Multi-Hop Dataset)",
+      "description": "3,882 Wikipedia passages, 300 dev questions with evidence triples & labels, and 300 hidden test questions for course project.",
+      "link": "https://www.kaggle.com/datasets/aminheari/anlp-course-pack"
     }
   ]
 }
