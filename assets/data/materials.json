@@ -60,7 +60,7 @@
       "session": "S7",
       "title": "Subword Tokenization (BPE, SentencePiece) & Multilingual Language Models",
       "category": "Lecture Slide",
-      "file": "slides/session_s7.pdf",
+      "file": "slides/Advanced NLP - Session 7 - Subword Tokenization (BPE, SentencePiece) & Multilinguality.pdf",
       "cmu_ref": "— (Not Covered in CMU)",
       "stanford_ref": "Week 7, Thu – Tokenization and Multilinguality (Guest: Julie Kallini)"
     },

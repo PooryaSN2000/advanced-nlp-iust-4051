@@ -308,7 +308,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 3: Subword Tokenization (BPE, SentencePiece)",
     "notes": "",
-    "slides_url": "slides/session_s7.pdf",
+    "slides_url": "slides/Advanced NLP - Session 7 - Subword Tokenization (BPE, SentencePiece) & Multilinguality.pdf",
     "papers": [
       {
         "title": "Neural Machine Translation of Rare Words with Subword Units (BPE)",
