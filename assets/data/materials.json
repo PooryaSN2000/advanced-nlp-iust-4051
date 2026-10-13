@@ -49,6 +49,14 @@
       "stanford_ref": "Week 3, Tue – Transformers"
     },
     {
+      "session": "S6",
+      "title": "Attention Mechanisms & Transformer Architecture (Supplementary / Extra Slides)",
+      "category": "Extra Slide",
+      "file": "slides/Advanced NLP - Session 6 - Attention Mechanisms & The Transformer Architecture - Extra.pdf",
+      "cmu_ref": "Lecture 5 – Architectures II: Attention and Transformers (01/27)",
+      "stanford_ref": "Week 3, Tue – Transformers"
+    },
+    {
       "session": "Q1",
       "title": "Quiz 1 Exam Paper (Covers Sessions S1–S6: Word Representations, Backprop, Language Modeling, RNNs & Transformers)",
       "category": "Exam / Quiz",

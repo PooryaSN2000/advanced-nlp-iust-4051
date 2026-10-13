@@ -248,6 +248,8 @@
     "ministry_topic": "Module 3: Transformer Architecture & Multi-Head Attention",
     "notes": "",
     "slides_url": "slides/Advanced NLP - Session 6 - Attention Mechanisms & The Transformer Architecture.pdf",
+    "extra_slides_url": "slides/Advanced NLP - Session 6 - Attention Mechanisms & The Transformer Architecture - Extra.pdf",
+    "extra_slides_label": "Extra Slides (PDF)",
     "papers": [
       {
         "title": "Attention Is All You Need",
