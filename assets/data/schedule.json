@@ -347,7 +347,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 2: Pretraining Strategies & Data Curation Pipelines",
     "notes": "",
-    "slides_url": "slides/session_s8.pdf",
+    "slides_url": "slides/Advanced NLP - Session 8 - LLM Pretraining Data pipelines, Filtering.pdf",
     "papers": [
       {
         "title": "Language Models are Unsupervised Multitask Learners (GPT-2)",
