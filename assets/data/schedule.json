@@ -384,7 +384,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 7: Prompting & ICL / Module 2: Transfer Learning",
     "notes": "",
-    "slides_url": "slides/session_s9.pdf",
+    "slides_url": "slides/Advanced NLP - Session 9 - Scaling laws and ICL.pdf",
     "papers": [
       {
         "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
