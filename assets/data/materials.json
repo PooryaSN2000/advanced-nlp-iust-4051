@@ -92,7 +92,7 @@
       "session": "S10",
       "title": "Parameter-Efficient Fine-Tuning (PEFT: LoRA, QLoRA) & Knowledge Distillation",
       "category": "Lecture Slide",
-      "file": "slides/session_s10.pdf",
+      "file": "slides/Advanced NLP - Session 10 - Parameter Efficient Fine Tuning PEFT LoRA.pdf",
       "cmu_ref": "Lecture 8 – Learning III: Fine-tuning and Distillation (02/05)",
       "stanford_ref": "Week 5, Tue – Efficient Adaptation + Week 9, Thu – Tinker and LoRA (John Schulman)"
     },

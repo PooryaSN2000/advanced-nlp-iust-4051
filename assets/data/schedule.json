@@ -415,7 +415,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 2: Fine-Tuning & Distillation / Module 7: Adaptation",
     "notes": "",
-    "slides_url": "slides/session_s10.pdf",
+    "slides_url": "slides/Advanced NLP - Session 10 - Parameter Efficient Fine Tuning PEFT LoRA.pdf",
     "papers": [
       {
         "title": "LoRA: Low-Rank Adaptation of Large Language Models",
