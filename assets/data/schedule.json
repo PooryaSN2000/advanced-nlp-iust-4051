@@ -458,7 +458,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 9: Inference & Language Reasoning Systems",
     "notes": "",
-    "slides_url": "slides/session_s11.pdf",
+    "slides_url": "slides/Advanced NLP - Session 11 - Decoding Algorithms, Sampling Strategies.pdf",
     "papers": [
       {
         "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
