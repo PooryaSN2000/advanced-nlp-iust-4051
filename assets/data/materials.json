@@ -106,11 +106,19 @@
     },
     {
       "session": "S12",
-      "title": "Advanced Reasoning: System 2 Reasoning & Search",
+      "title": "Advanced Reasoning: System 2 Reasoning & Mathematical Planning in LLMs",
       "category": "Lecture Slide",
-      "file": "slides/session_s12.pdf",
+      "file": "slides/Advanced NLP - Session 12 - Advanced Reasoning & Mathematical Planning in LLMs.pdf",
       "cmu_ref": "—",
       "stanford_ref": "Week 7, Tue – Reasoning 2"
+    },
+    {
+      "session": "Q2",
+      "title": "Quiz 2 Exam Paper (Covers Sessions S7–S11: Subword Tokenization, Pretraining, Scaling Laws, PEFT & Decoding)",
+      "category": "Exam / Quiz",
+      "file": "slides/Advanced NLP Exam 2.pdf",
+      "cmu_ref": "—",
+      "stanford_ref": "—"
     },
     {
       "session": "S13",
