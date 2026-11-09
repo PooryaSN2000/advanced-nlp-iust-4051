@@ -124,7 +124,7 @@
       "session": "S13",
       "title": "Retrieval-Augmented Generation (RAG) & Dense Passage Retrieval (DPR, Self-RAG)",
       "category": "Lecture Slide",
-      "file": "slides/session_s13.pdf",
+      "file": "slides/Advanced NLP - Session 13 - Retrieval Augmented Generation RAG & Dense.pdf",
       "cmu_ref": "Lecture 10 – Modeling I: Retrieval and RAG (Guest: Akari Asai) (02/12)",
       "stanford_ref": "Week 5, Thu – Agents, Tool Use, and RAG (Part 1)"
     },
@@ -132,7 +132,7 @@
       "session": "S14",
       "title": "Vision-Language Models (CLIP, LLaVA) & Multimodal Alignment",
       "category": "Lecture Slide",
-      "file": "slides/session_s14.pdf",
+      "file": "slides/Advanced NLP - Session 14 - Vision-Language Models (VLM_ CLIP, LLaVA) & Multimodality.pdf",
       "cmu_ref": "Lecture 11 – Modeling II: Multimodal I (02/17) + Lecture 12 – Modeling III: Multimodal II (02/19)",
       "stanford_ref": "Week 9, Tue – Multimodality (Guest: Luke Zettlemoyer)"
     },

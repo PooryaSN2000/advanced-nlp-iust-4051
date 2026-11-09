@@ -544,7 +544,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 8: Retrieval-Augmented Modeling & Knowledge Integration",
     "notes": "",
-    "slides_url": "slides/session_s13.pdf",
+    "slides_url": "slides/Advanced NLP - Session 13 - Retrieval Augmented Generation RAG & Dense.pdf",
     "papers": [
       {
         "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)",
@@ -581,7 +581,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 7: Multimodal Training / Module 10: Multimodal Generation",
     "notes": "",
-    "slides_url": "slides/session_s14.pdf",
+    "slides_url": "slides/Advanced NLP - Session 14 - Vision-Language Models (VLM_ CLIP, LLaVA) & Multimodality.pdf",
     "papers": [
       {
         "title": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
