@@ -641,10 +641,28 @@
     ]
   },
   {
-    "id": "S16",
+    "id": "OFF",
     "week": 9,
     "date": "1405-08-25",
     "day": "Monday",
+    "type": "buffer",
+    "type_title": "No Class",
+    "title": "Class Cancelled (No Session Held / جلسه برگزار نشد)",
+    "presenter": "—",
+    "cmu_ref": "—",
+    "cmu_link": "",
+    "stanford_ref": "—",
+    "stanford_link": "",
+    "ministry_topic": "",
+    "notes": "جلسه دوشنبه ۲۵ آبان به علت لغو کلاس برگزار نشد و مباحث مربوطه به جلسات بعدی منتقل گردید.",
+    "slides_url": "",
+    "papers": []
+  },
+  {
+    "id": "S16",
+    "week": 10,
+    "date": "1405-08-30",
+    "day": "Saturday",
     "type": "lecture",
     "type_title": "Lecture",
     "title": "Graph Neural Networks for Natural Language Processing (GNN for NLP)",
@@ -680,45 +698,45 @@
   {
     "id": "S17",
     "week": 10,
-    "date": "1405-08-30",
-    "day": "Saturday",
+    "date": "1405-09-02",
+    "day": "Monday",
     "type": "lecture",
     "type_title": "Lecture",
-    "title": "Diffusion Models & Flow Matching for Natural Language Generation",
-    "presenter": "Poorya Saneei",
-    "cmu_ref": "Lecture 15 – Modeling IV: Diffusion and Flows (03/10)",
-    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "title": "Knowledge Graphs for Natural Language Processing (گراف دانش)",
+    "presenter": "Poorya Saneei, Setare Kahnamuee",
+    "cmu_ref": "— (Not Covered in CMU)",
+    "cmu_link": "",
     "stanford_ref": "— (Not Covered in Stanford)",
     "stanford_link": "",
-    "ministry_topic": "Module 10: Natural Language Generation Tasks with LLMs",
+    "ministry_topic": "Module 11: Knowledge Graphs for NLP",
     "notes": "",
     "slides_url": "slides/session_s17.pdf",
     "papers": [
       {
-        "title": "Diffusion-LM Improves Controllable Text Generation",
-        "authors": "Xiang Lisa Li, John Thickstun, Ishaan Gulrajani, Percy Liang, Tatsunori B. Hashimoto (NeurIPS 2022)",
-        "url": "https://arxiv.org/abs/2205.14217",
-        "source": "CMU ANLP / Stanford"
+        "title": "Translating Embeddings for Modeling Multi-relational Data (TransE)",
+        "authors": "Antoine Bordes, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, Oksana Yakhnenko (NeurIPS 2013)",
+        "url": "https://proceedings.neurips.cc/paper/2013/file/1cecc7a77928ca34c3418c8655d644dd-Paper.pdf",
+        "source": "Landmark Reference"
       },
       {
-        "title": "Flow Matching for Generative Modeling",
-        "authors": "Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu, Maximilian Nicklas, Matt Le (ICLR 2023)",
-        "url": "https://arxiv.org/abs/2210.02747",
-        "source": "CMU ANLP"
+        "title": "A Survey on Knowledge Graphs: Representation, Acquisition, and Applications",
+        "authors": "Shaoxiong Ji, Shirui Pan, Erik Cambria, Pekka Marttinen, Philip S. Yu (IEEE TNNLS 2021)",
+        "url": "https://arxiv.org/abs/2002.00388",
+        "source": "Foundations Survey"
       },
       {
-        "title": "Denoising Diffusion Probabilistic Models (DDPM)",
-        "authors": "Jonathan Ho, Ajay Jain, Pieter Abbeel (NeurIPS 2020)",
-        "url": "https://arxiv.org/abs/2006.11239",
-        "source": "CMU ANLP"
+        "title": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+        "authors": "Shirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, Xindong Wu (IEEE TKDE 2024)",
+        "url": "https://arxiv.org/abs/2306.08302",
+        "source": "KG & LLM Integration"
       }
     ]
   },
   {
     "id": "S18",
-    "week": 10,
-    "date": "1405-09-02",
-    "day": "Monday",
+    "week": 11,
+    "date": "1405-09-07",
+    "day": "Saturday",
     "type": "lecture",
     "type_title": "Lecture",
     "title": "Reinforcement Learning Fundamentals in Natural Language Processing",
@@ -748,26 +766,26 @@
   {
     "id": "Q3",
     "week": 11,
-    "date": "1405-09-07",
-    "day": "Saturday",
+    "date": "1405-09-09",
+    "day": "Monday",
     "type": "quiz",
     "type_title": "Quiz",
-    "title": "Quiz 3 (Covers Sessions S12–S18)",
+    "title": "Quiz 3 (Covers Sessions S13–S18)",
     "presenter": "Teaching Staff",
     "cmu_ref": "—",
     "cmu_link": "",
     "stanford_ref": "—",
     "stanford_link": "",
     "ministry_topic": "",
-    "notes": "Covers Sessions S12–S18 (including Advanced Reasoning & Mathematical Planning from S12)",
+    "notes": "Covers Sessions S13–S18 (RAG, VLMs, LLM Evaluation, GNNs, Knowledge Graphs & RL Fundamentals)",
     "slides_url": "",
     "papers": []
   },
   {
     "id": "S19",
-    "week": 11,
-    "date": "1405-09-09",
-    "day": "Monday",
+    "week": 12,
+    "date": "1405-09-14",
+    "day": "Saturday",
     "type": "lecture",
     "type_title": "Lecture",
     "title": "Post-Training with Human Feedback & Preference Alignment (RLHF & DPO)",
@@ -797,8 +815,8 @@
   {
     "id": "S20",
     "week": 12,
-    "date": "1405-09-14",
-    "day": "Saturday",
+    "date": "1405-09-16",
+    "day": "Monday",
     "type": "lecture",
     "type_title": "Lecture",
     "title": "Language Model-Based Autonomous Agents, Function Calling & Tool Use (ReAct)",
@@ -833,9 +851,9 @@
   },
   {
     "id": "S21",
-    "week": 12,
-    "date": "1405-09-16",
-    "day": "Monday",
+    "week": 13,
+    "date": "1405-09-21",
+    "day": "Saturday",
     "type": "lecture",
     "type_title": "Lecture",
     "title": "Model Quantization (AWQ, GPTQ, FP8/INT4) & Efficient Inference",
@@ -871,43 +889,6 @@
   {
     "id": "S22",
     "week": 13,
-    "date": "1405-09-21",
-    "day": "Saturday",
-    "type": "lecture",
-    "type_title": "Lecture",
-    "title": "Mixture of Experts (MoE) & Efficient Attention (FlashAttention-2)",
-    "presenter": "Mohadeseh Emadi",
-    "cmu_ref": "Lecture 21 – Mixture of Experts (04/02) + Lecture 22 – Scaling Sequence Length",
-    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
-    "stanford_ref": "— (Not Covered in Stanford)",
-    "stanford_link": "",
-    "ministry_topic": "Module 7: Scalable LLM Architectures (MoE & FlashAttention)",
-    "notes": "",
-    "slides_url": "slides/session_s22.pdf",
-    "papers": [
-      {
-        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
-        "authors": "Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean (ICLR 2017)",
-        "url": "https://arxiv.org/abs/1701.06538",
-        "source": "CMU ANLP"
-      },
-      {
-        "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
-        "authors": "Tri Dao (ICLR 2024)",
-        "url": "https://arxiv.org/abs/2307.08691",
-        "source": "CMU ANLP"
-      },
-      {
-        "title": "Mixtral of Experts",
-        "authors": "Albert Q. Jiang et al. (Mistral AI 2024)",
-        "url": "https://arxiv.org/abs/2401.04088",
-        "source": "CMU ANLP"
-      }
-    ]
-  },
-  {
-    "id": "S23",
-    "week": 13,
     "date": "1405-09-23",
     "day": "Monday",
     "type": "lecture",
@@ -920,7 +901,7 @@
     "stanford_link": "",
     "ministry_topic": "Module 9: Process Supervision & Test-Time Compute Scaling",
     "notes": "",
-    "slides_url": "slides/session_s23.pdf",
+    "slides_url": "slides/session_s22.pdf",
     "papers": [
       {
         "title": "Let's Verify Step by Step (PRM800K & Process Supervision)",
@@ -943,10 +924,47 @@
     ]
   },
   {
-    "id": "S24",
+    "id": "S23",
     "week": 14,
     "date": "1405-09-28",
     "day": "Saturday",
+    "type": "lecture",
+    "type_title": "Lecture",
+    "title": "Mixture of Experts (MoE) & Efficient Attention (FlashAttention-2)",
+    "presenter": "Mohadeseh Emadi",
+    "cmu_ref": "Lecture 21 – Mixture of Experts (04/02) + Lecture 22 – Scaling Sequence Length",
+    "cmu_link": "https://cmu-l3.github.io/anlp-spring2026/#schedule",
+    "stanford_ref": "— (Not Covered in Stanford)",
+    "stanford_link": "",
+    "ministry_topic": "Module 7: Scalable LLM Architectures (MoE & FlashAttention)",
+    "notes": "",
+    "slides_url": "slides/session_s23.pdf",
+    "papers": [
+      {
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "authors": "Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean (ICLR 2017)",
+        "url": "https://arxiv.org/abs/1701.06538",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+        "authors": "Tri Dao (ICLR 2024)",
+        "url": "https://arxiv.org/abs/2307.08691",
+        "source": "CMU ANLP"
+      },
+      {
+        "title": "Mixtral of Experts",
+        "authors": "Albert Q. Jiang et al. (Mistral AI 2024)",
+        "url": "https://arxiv.org/abs/2401.04088",
+        "source": "CMU ANLP"
+      }
+    ]
+  },
+  {
+    "id": "S24",
+    "week": 14,
+    "date": "1405-09-30",
+    "day": "Monday",
     "type": "lecture",
     "type_title": "Lecture",
     "title": "Mechanistic Interpretability, Safety, Bias & Adversarial Attacks in LLMs",
@@ -981,9 +999,9 @@
   },
   {
     "id": "S25",
-    "week": 14,
-    "date": "1405-09-30",
-    "day": "Monday",
+    "week": 15,
+    "date": "1405-10-05",
+    "day": "Saturday",
     "type": "lecture",
     "type_title": "Lecture",
     "title": "Research Skills, ACL Experimental Design & Open Research Frontiers in NLP",
@@ -1011,38 +1029,20 @@
     ]
   },
   {
-    "id": "BUF1",
-    "week": 15,
-    "date": "1405-10-05",
-    "day": "Saturday",
-    "type": "buffer",
-    "type_title": "Buffer Session",
-    "title": "Reserve & Buffer Session (Overflow / Make-Up Class – Part 1)",
-    "presenter": "Teaching Staff",
-    "cmu_ref": "—",
-    "cmu_link": "",
-    "stanford_ref": "—",
-    "stanford_link": "",
-    "ministry_topic": "",
-    "notes": "Reserved buffer session for syllabus catch-up, make-up lectures, or student project consultations in case of delays or unforeseen cancellations.",
-    "slides_url": "",
-    "papers": []
-  },
-  {
-    "id": "BUF2",
+    "id": "Extra",
     "week": 15,
     "date": "1405-10-07",
     "day": "Monday",
     "type": "buffer",
-    "type_title": "Buffer Session",
-    "title": "Reserve & Buffer Session (Overflow / Make-Up Class – Part 2)",
+    "type_title": "Extra Session",
+    "title": "Extra Session: Course Wrap-Up, Project Review & Q&A (جلسه اضافی)",
     "presenter": "Teaching Staff",
     "cmu_ref": "—",
     "cmu_link": "",
     "stanford_ref": "—",
     "stanford_link": "",
-    "ministry_topic": "",
-    "notes": "Reserved buffer session for syllabus catch-up, make-up lectures, or student project consultations in case of delays or unforeseen cancellations.",
+    "ministry_topic": "Course Wrap-Up, Project Review & Office Hours",
+    "notes": "جلسه اضافی جهت بررسی پروژه‌ها، رفع اشکال و مرور مباحث پیش از امتحانات پایان‌ترم",
     "slides_url": "",
     "papers": []
   },

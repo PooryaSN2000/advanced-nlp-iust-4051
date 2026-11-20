@@ -154,10 +154,10 @@
     },
     {
       "session": "S17",
-      "title": "Diffusion Models & Flow Matching for Natural Language Generation",
+      "title": "Knowledge Graphs for Natural Language Processing (گراف دانش)",
       "category": "Lecture Slide",
       "file": "slides/session_s17.pdf",
-      "cmu_ref": "Lecture 15 – Modeling IV: Diffusion and Flows (03/10)",
+      "cmu_ref": "— (Not Covered in CMU)",
       "stanford_ref": "— (Not Covered in Stanford)"
     },
     {
@@ -194,19 +194,19 @@
     },
     {
       "session": "S22",
-      "title": "Mixture of Experts (MoE) & Efficient Attention (FlashAttention-2)",
+      "title": "Process Supervision & Test-Time Compute Scaling",
       "category": "Lecture Slide",
       "file": "slides/session_s22.pdf",
-      "cmu_ref": "Lecture 21 – Mixture of Experts (04/02) + Lecture 22 – Scaling Sequence Length",
-      "stanford_ref": "— (Not Covered in Stanford)"
+      "cmu_ref": "Lecture 23 – Test-Time Scaling (04/14)",
+      "stanford_ref": "—"
     },
     {
       "session": "S23",
-      "title": "Process Supervision & Test-Time Compute Scaling",
+      "title": "Mixture of Experts (MoE) & Efficient Attention (FlashAttention-2)",
       "category": "Lecture Slide",
       "file": "slides/session_s23.pdf",
-      "cmu_ref": "Lecture 23 – Test-Time Scaling (04/14)",
-      "stanford_ref": "—"
+      "cmu_ref": "Lecture 21 – Mixture of Experts (04/02) + Lecture 22 – Scaling Sequence Length",
+      "stanford_ref": "— (Not Covered in Stanford)"
     },
     {
       "session": "S24",
@@ -619,25 +619,25 @@
       "link": "https://arxiv.org/abs/1609.02907"
     },
     {
-      "title": "Diffusion-LM Improves Controllable Text Generation",
-      "authors": "Xiang Lisa Li, John Thickstun, Ishaan Gulrajani, Percy Liang, Tatsunori B. Hashimoto (NeurIPS 2022)",
-      "tag": "CMU Assigned",
+      "title": "Translating Embeddings for Modeling Multi-relational Data (TransE)",
+      "authors": "Antoine Bordes, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, Oksana Yakhnenko (NeurIPS 2013)",
+      "tag": "Landmark Reference",
       "session": "S17",
-      "link": "https://arxiv.org/abs/2205.14217"
+      "link": "https://proceedings.neurips.cc/paper/2013/file/1cecc7a77928ca34c3418c8655d644dd-Paper.pdf"
     },
     {
-      "title": "Flow Matching for Generative Modeling",
-      "authors": "Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu, Maximilian Nicklas, Matt Le (ICLR 2023)",
-      "tag": "CMU Assigned",
+      "title": "A Survey on Knowledge Graphs: Representation, Acquisition, and Applications",
+      "authors": "Shaoxiong Ji, Shirui Pan, Erik Cambria, Pekka Marttinen, Philip S. Yu (IEEE TNNLS 2021)",
+      "tag": "Foundations Survey",
       "session": "S17",
-      "link": "https://arxiv.org/abs/2210.02747"
+      "link": "https://arxiv.org/abs/2002.00388"
     },
     {
-      "title": "Denoising Diffusion Probabilistic Models (DDPM)",
-      "authors": "Jonathan Ho, Ajay Jain, Pieter Abbeel (NeurIPS 2020)",
-      "tag": "CMU Assigned",
+      "title": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+      "authors": "Shirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, Xindong Wu (IEEE TKDE 2024)",
+      "tag": "KG & LLM Integration",
       "session": "S17",
-      "link": "https://arxiv.org/abs/2006.11239"
+      "link": "https://arxiv.org/abs/2306.08302"
     },
     {
       "title": "Deep Reinforcement Learning from Human Preferences",
@@ -720,35 +720,35 @@
       "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
       "authors": "Tri Dao (ICLR 2024)",
       "tag": "CMU Assigned",
-      "session": "S22",
+      "session": "S23",
       "link": "https://arxiv.org/abs/2307.08691"
     },
     {
       "title": "Mixtral of Experts",
       "authors": "Albert Q. Jiang et al. (Mistral AI 2024)",
       "tag": "CMU Assigned",
-      "session": "S22",
+      "session": "S23",
       "link": "https://arxiv.org/abs/2401.04088"
     },
     {
       "title": "Let's Verify Step by Step (PRM800K & Process Supervision)",
       "authors": "Hunter Lightman et al. (OpenAI 2023)",
       "tag": "CMU Assigned",
-      "session": "S23",
+      "session": "S22",
       "link": "https://arxiv.org/abs/2305.20050"
     },
     {
       "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
       "authors": "Charlie Snell et al. (Google DeepMind / UC Berkeley 2024)",
       "tag": "CMU Assigned",
-      "session": "S23",
+      "session": "S22",
       "link": "https://arxiv.org/abs/2408.03314"
     },
     {
       "title": "Quiet-STaR: Language Models Can Teach Themselves to Think Before Speaking",
       "authors": "Eric Zelikman et al. (Stanford 2024)",
       "tag": "CMU Assigned",
-      "session": "S23",
+      "session": "S22",
       "link": "https://arxiv.org/abs/2403.09629"
     },
     {
