@@ -148,15 +148,15 @@
       "session": "S16",
       "title": "Graph Neural Networks for Natural Language Processing (GNN for NLP)",
       "category": "Lecture Slide",
-      "file": "slides/session_s16.pdf",
+      "file": "slides/Advanced NLP - Session 16 - Foundations of Graph Neural Networks.pdf",
       "cmu_ref": "— (Not Covered in CMU)",
       "stanford_ref": "— (Not Covered in Stanford)"
     },
     {
       "session": "S17",
-      "title": "Knowledge Graphs for Natural Language Processing (KG for NLP)",
+      "title": "Knowledge Graphs & LLMs for Natural Language Processing (KG for NLP)",
       "category": "Lecture Slide",
-      "file": "slides/session_s17.pdf",
+      "file": "slides/Advanced NLP - Session 17 - Knowledge Graphs & LLMs.pdf",
       "cmu_ref": "— (Not Covered in CMU)",
       "stanford_ref": "— (Not Covered in Stanford)"
     },

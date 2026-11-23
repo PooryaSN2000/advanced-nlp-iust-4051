@@ -673,7 +673,7 @@
     "stanford_link": "",
     "ministry_topic": "Module 11: Graph Neural Networks for NLP",
     "notes": "",
-    "slides_url": "slides/session_s16.pdf",
+    "slides_url": "slides/Advanced NLP - Session 16 - Foundations of Graph Neural Networks.pdf",
     "papers": [
       {
         "title": "Graph Neural Networks for Natural Language Processing: A Survey",
@@ -702,7 +702,7 @@
     "day": "Monday",
     "type": "lecture",
     "type_title": "Lecture",
-    "title": "Knowledge Graphs for Natural Language Processing (KG for NLP)",
+    "title": "Knowledge Graphs & LLMs for Natural Language Processing (KG for NLP)",
     "presenter": "Poorya Saneei, Setare Kahnamuee",
     "cmu_ref": "— (Not Covered in CMU)",
     "cmu_link": "",
@@ -710,7 +710,7 @@
     "stanford_link": "",
     "ministry_topic": "Module 11: Knowledge Graphs for NLP",
     "notes": "",
-    "slides_url": "slides/session_s17.pdf",
+    "slides_url": "slides/Advanced NLP - Session 17 - Knowledge Graphs & LLMs.pdf",
     "papers": [
       {
         "title": "Translating Embeddings for Modeling Multi-relational Data (TransE)",
@@ -770,14 +770,14 @@
     "day": "Monday",
     "type": "quiz",
     "type_title": "Quiz",
-    "title": "Quiz 3 (Covers Sessions S13–S18)",
+    "title": "Quiz 3 (Covers Sessions S12–S17)",
     "presenter": "Teaching Staff",
     "cmu_ref": "—",
     "cmu_link": "",
     "stanford_ref": "—",
     "stanford_link": "",
     "ministry_topic": "",
-    "notes": "Covers Sessions S13–S18 (RAG, VLMs, LLM Evaluation, GNNs, Knowledge Graphs & RL Fundamentals)",
+    "notes": "Covers Sessions S12–S17 (Reasoning & Planning, RAG, VLMs, LLM Evaluation, GNNs & Knowledge Graphs)",
     "slides_url": "",
     "papers": []
   },
