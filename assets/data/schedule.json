@@ -618,7 +618,7 @@
     "stanford_link": "https://web.stanford.edu/class/cs224n/",
     "ministry_topic": "Module 5: Evaluation Methodologies for Large Language Models",
     "notes": "",
-    "slides_url": "slides/session_s15.pdf",
+    "slides_url": "slides/Advanced NLP - Session 15 – Evaluation Techniques, Benchmarks & LLM.pdf",
     "papers": [
       {
         "title": "Measuring Massive Multitask Language Understanding (MMLU)",
