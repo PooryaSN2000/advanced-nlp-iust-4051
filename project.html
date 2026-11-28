@@ -44,652 +44,371 @@
   </header>
 
   <main>
-    <section class="section" style="padding-top: 3.5rem;">
-      <div class="container">
-        <!-- Hero Header -->
-        <div class="section-header">
-          <div class="hero-pills">
-            <span class="pill-badge primary">Master of Science (M.Sc.)</span>
-            <span class="pill-badge term">Semester: 4051</span>
-            <span class="pill-badge">45% Total Weight</span>
-            <span class="pill-badge">5 Guided Phases</span>
-            <span class="pill-badge">Kaggle Dual T4 Ready</span>
-          </div>
-          <h1 class="section-title">Course Project: Multi-Hop Question Answering with RAG &amp; GraphRAG</h1>
-          <p class="section-subtitle">
-            An end-to-end graduate research engineering project building state-of-the-art Multi-Hop Retrieval-Augmented Generation (RAG) and Knowledge Graph (GraphRAG) systems with exact IR evaluation, hybrid retrieval, graph traversal, and Dual-GPU acceleration on Kaggle.
+    <section class="section" style="padding-top: 3rem;">
+      <div class="container project-minimal-wrap">
+
+        <!-- Minimal Header -->
+        <header class="project-minimal-header">
+          <div class="project-meta-line">M.Sc. Advanced NLP &middot; Semester 4051 &middot; 45% of Course Grade &middot; Individual Project</div>
+          <h1 class="section-title" style="margin-bottom: 0.55rem;">Course Project: Multi-Hop QA with RAG &amp; GraphRAG</h1>
+          <p style="font-size: 0.98rem; color: var(--text-secondary); line-height: 1.65; max-width: 760px; margin: 0;">
+            Build and evaluate an end-to-end multi-hop question answering pipeline across dense retrieval, BM25 + RRF hybrid fusion, Silver Knowledge Graph traversal (GraphRAG), and multi-hop reasoning on Kaggle Dual T4 GPUs.
           </p>
+          <nav class="project-inline-nav" aria-label="Project sections">
+            <a href="#resources">Files &amp; Resources</a>
+            <a href="#schedule-table">Milestones &amp; Schedule</a>
+            <a href="#mentors">Mentorship Team</a>
+            <a href="#deliverables">Submission &amp; Evaluation</a>
+            <a href="#policies">Late Policy &amp; Bonus</a>
+          </nav>
+        </header>
 
-          <!-- Important Handout & Incremental Updates Notice -->
-          <div style="margin: 1.75rem auto 1.5rem; max-width: 860px; background: rgba(2, 132, 199, 0.06); border: 1.5px solid rgba(2, 132, 199, 0.35); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; text-align: left;">
-            <div style="display: flex; align-items: flex-start; gap: 0.85rem;">
-              <span style="font-size: 1.5rem; line-height: 1; flex-shrink: 0; margin-top: 2px;">📘</span>
-              <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary);">
-                <strong style="color: var(--accent-primary); display: block; font-size: 1rem; margin-bottom: 0.35rem;">Project Handout &amp; Technical Specifications:</strong>
-                All complete technical specifications, baseline implementations, mathematical formulas, and evaluation protocols are thoroughly documented in the <strong><a href="project/handout.pdf" target="_blank" rel="noopener" style="color: var(--accent-primary); text-decoration: underline;">Project Handout (PDF)</a></strong>.
-                <div style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px dashed rgba(2, 132, 199, 0.25);">
-                  📌 <strong>Notice on Scope &amp; Incremental Updates:</strong> The handout currently provides complete specifications for <strong>Phase 1, Phase 2, and Phase 3</strong>. As the course progresses, this document will be updated and expanded with the detailed instructions for subsequent phases. Please download and consult the PDF for your implementation!
-                </div>
-              </div>
-            </div>
+        <!-- 1. FILES & RESOURCES -->
+        <section id="resources" class="project-section">
+          <div class="project-section-head">
+            <h2 class="project-section-title">Files &amp; Resources</h2>
+            <p class="project-section-sub">Handout specs currently cover Phases 1&ndash;3</p>
           </div>
 
-          <!-- Primary Downloads & Starter Kit Grid -->
-          <div style="margin: 1.75rem 0 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; text-align: left;">
-            <!-- Handout PDF -->
-            <a href="project/handout.pdf" target="_blank" rel="noopener" download="Advanced_NLP_Project_Handout_Phases1_3.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md);">
-              <div style="display: flex; align-items: center; gap: 0.85rem;">
-                <span style="font-size: 1.65rem; line-height: 1;">📄</span>
-                <div>
-                  <div style="font-weight: 700; font-size: 0.96rem; line-height: 1.3;">Project Handout (PDF)</div>
-                  <div style="font-size: 0.76rem; opacity: 0.9; margin-top: 2px;">Specs up to Phase 3 (Updated per phase)</div>
-                </div>
-              </div>
-              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">304 KB</span>
-            </a>
-
-            <!-- Starter Kit Zip -->
-            <a href="project/starter.zip" target="_blank" rel="noopener" download="starter.zip" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md); background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
-              <div style="display: flex; align-items: center; gap: 0.85rem;">
-                <span style="font-size: 1.65rem; line-height: 1;">⚡</span>
-                <div>
-                  <div style="font-weight: 700; font-size: 0.96rem; line-height: 1.3;">Starter Kit (.ZIP)</div>
-                  <div style="font-size: 0.76rem; opacity: 0.9; margin-top: 2px;">score.py, example_predict.py &amp; config</div>
-                </div>
-              </div>
-              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">6 KB</span>
-            </a>
-
-            <!-- Course Pack Zip -->
-            <a href="project/course_pack_v1.zip" target="_blank" rel="noopener" download="course_pack_v1.zip" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md);">
-              <div style="display: flex; align-items: center; gap: 0.85rem;">
-                <span style="font-size: 1.65rem; line-height: 1;">📦</span>
-                <div>
-                  <div style="font-weight: 700; font-size: 0.96rem; line-height: 1.3;">Course Pack v1 (.ZIP)</div>
-                  <div style="font-size: 0.76rem; opacity: 0.9; margin-top: 2px;">Corpus, Dev, Hidden &amp; Labels</div>
-                </div>
-              </div>
-              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">854 KB</span>
-            </a>
-
-            <!-- Silver Knowledge Graph JSONL -->
-            <a href="project/silver_kg.jsonl" target="_blank" rel="noopener" download="silver_kg.jsonl" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md); background: linear-gradient(135deg, #059669 0%, #047857 100%);">
-              <div style="display: flex; align-items: center; gap: 0.85rem;">
-                <span style="font-size: 1.65rem; line-height: 1;">🕸️</span>
-                <div>
-                  <div style="font-weight: 700; font-size: 0.96rem; line-height: 1.3;">Silver KG (.JSONL)</div>
-                  <div style="font-size: 0.76rem; opacity: 0.9; margin-top: 2px;">19,940 Corpus Triples (Phase 3)</div>
-                </div>
-              </div>
-              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">2.3 MB</span>
-            </a>
-
-            <!-- Kaggle HowTo PDF -->
-            <a href="project/kaggle_howto.pdf" target="_blank" rel="noopener" download="Advanced_NLP_Kaggle_HowTo.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md);">
-              <div style="display: flex; align-items: center; gap: 0.85rem;">
-                <span style="font-size: 1.65rem; line-height: 1;">📘</span>
-                <div>
-                  <div style="font-weight: 700; font-size: 0.96rem; line-height: 1.3;">Kaggle &amp; GPU Guide (PDF)</div>
-                  <div style="font-size: 0.76rem; opacity: 0.9; margin-top: 2px;">Dual T4, vLLM &amp; Secrets</div>
-                </div>
-              </div>
-              <span class="badge" style="background: rgba(255,255,255,0.22); color: #fff; font-size: 0.75rem;">131 KB</span>
-            </a>
-
-            <!-- Kaggle Hub Link -->
-            <a href="https://www.kaggle.com/datasets/aminheari/anlp-course-pack" target="_blank" rel="noopener" class="btn btn-secondary" style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; text-decoration: none; border-radius: var(--radius-md); border-color: var(--accent-primary);">
-              <div style="display: flex; align-items: center; gap: 0.85rem;">
-                <span style="font-size: 1.65rem; line-height: 1;">🌐</span>
-                <div>
-                  <div style="font-weight: 700; font-size: 0.96rem; line-height: 1.3; color: var(--text-primary);">Kaggle Dataset Hub</div>
-                  <div style="font-size: 0.76rem; color: var(--text-muted); margin-top: 2px;">Direct Kaggle Hub Repository</div>
-                </div>
-              </div>
-              <span class="badge badge-presentation" style="font-size: 0.75rem;">Online ↗</span>
-            </a>
-          </div>
-
-          <!-- Section Jump Navigation -->
-          <div class="project-quick-nav" style="justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
-            <a href="#mentors" class="btn btn-secondary btn-sm">Mentorship Team</a>
-            <a href="#schedule-table" class="btn btn-secondary btn-sm">Milestones &amp; Defense</a>
-            <a href="#deliverables" class="btn btn-secondary btn-sm">Deliverables &amp; Format</a>
-            <a href="#evaluation" class="btn btn-secondary btn-sm">Evaluation &amp; Defense</a>
-            <a href="#late-policy" class="btn btn-secondary btn-sm">Deadlines &amp; Late Policy</a>
-          </div>
-        </div>
-
-        <!-- 1. TEACHING ASSISTANTS & MENTORSHIP TEAM (MOVED BEFORE SCHEDULE) -->
-        <div id="mentors" class="card project-card" style="border-left: 4px solid var(--accent-primary); scroll-margin-top: 5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
-              👥
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span class="badge badge-head">Project Team</span>
-                <span class="pill-badge">Mentors &amp; Assessment</span>
-              </div>
-              <h2 class="card-section-title" style="margin-top: 0.25rem;">Project Mentorship Team (Teaching Assistants)</h2>
-            </div>
-          </div>
-
-          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
-            The project teaching assistants guide students through implementation, host office hours, and conduct individual oral defense evaluations:
-          </p>
-
-          <div class="mentors-grid">
-            <!-- Poorya Saneei -->
-            <div class="mentor-box" style="border: 1.5px solid var(--accent-primary); background: rgba(2, 132, 199, 0.04);">
-              <div class="mentor-avatar">
-                <img src="assets/images/team/poorya_saneei.jpg" alt="Poorya Saneei">
-              </div>
+          <div class="minimal-resource-grid">
+            <a href="project/handout.pdf" target="_blank" rel="noopener" download="Advanced_NLP_Project_Handout_Phases1_3.pdf" class="minimal-resource-card">
               <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Poorya Saneei</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Head TA &amp; Phase 2 Lead TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/pooryasn" target="_blank" rel="noopener">@pooryasn</a>
-                </div>
+                <div class="minimal-resource-title">Project Handout (Phases 1&ndash;3)</div>
+                <div class="minimal-resource-meta">Full specifications, math formulas &amp; Phase 3 KG guide</div>
               </div>
-            </div>
+              <span class="minimal-resource-action">PDF &middot; 304 KB &#8595;</span>
+            </a>
 
-            <!-- Mohammad Amin Haeri -->
-            <div class="mentor-box" style="border: 1.5px solid var(--accent-primary); background: rgba(2, 132, 199, 0.04);">
-              <div class="mentor-avatar-fallback" style="background: var(--accent-primary);">H</div>
+            <a href="project/silver_kg.jsonl" target="_blank" rel="noopener" download="silver_kg.jsonl" class="minimal-resource-card">
               <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Amin Haeri</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Phase 1 Lead TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/RST_LSS" target="_blank" rel="noopener">@RST_LSS</a>
-                </div>
+                <div class="minimal-resource-title">Silver Knowledge Graph</div>
+                <div class="minimal-resource-meta">19,940 corpus triples with provenance (Phase 3)</div>
               </div>
-            </div>
+              <span class="minimal-resource-action">JSONL &middot; 2.3 MB &#8595;</span>
+            </a>
 
-            <!-- Mohammad Khaki -->
-            <div class="mentor-box">
-              <div class="mentor-avatar">
-                <img src="assets/images/team/mohammad_khaki.jpg" alt="Mohammad Khaki">
-              </div>
+            <a href="project/course_pack_v1.zip" target="_blank" rel="noopener" download="course_pack_v1.zip" class="minimal-resource-card">
               <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mohammad Khaki</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Project Mentor &amp; TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/khaki_mim" target="_blank" rel="noopener">@khaki_mim</a>
-                </div>
+                <div class="minimal-resource-title">Course Pack v1</div>
+                <div class="minimal-resource-meta">3,882 passages, dev/hidden splits, labels &amp; 200-doc subset</div>
               </div>
-            </div>
+              <span class="minimal-resource-action">ZIP &middot; 854 KB &#8595;</span>
+            </a>
 
-            <!-- Maryam Mortazavi Nik -->
-            <div class="mentor-box" style="border: 1.5px solid var(--accent-primary); background: rgba(2, 132, 199, 0.04);">
-              <div class="mentor-avatar">
-                <img src="assets/images/team/maryam_mortazavi.jpg" alt="Maryam Mortazavi Nik">
-              </div>
+            <a href="project/starter.zip" target="_blank" rel="noopener" download="starter.zip" class="minimal-resource-card">
               <div>
-                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Maryam Mortazavi Nik</div>
-                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 700;">Phase 3 Lead TA</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-                  Telegram: <a href="https://t.me/thisisnikk" target="_blank" rel="noopener">@thisisnikk</a>
-                </div>
+                <div class="minimal-resource-title">Starter Kit</div>
+                <div class="minimal-resource-meta"><code>score.py</code>, <code>example_predict.py</code> &amp; schemas</div>
               </div>
-            </div>
+              <span class="minimal-resource-action">ZIP &middot; 6 KB &#8595;</span>
+            </a>
+
+            <a href="project/kaggle_howto.pdf" target="_blank" rel="noopener" download="Advanced_NLP_Kaggle_HowTo.pdf" class="minimal-resource-card">
+              <div>
+                <div class="minimal-resource-title">Kaggle &amp; Dual T4 Guide</div>
+                <div class="minimal-resource-meta">vLLM setup, GPU secrets &amp; MLflow persistence</div>
+              </div>
+              <span class="minimal-resource-action">PDF &middot; 131 KB &#8595;</span>
+            </a>
+
+            <a href="https://www.kaggle.com/datasets/aminheari/anlp-course-pack" target="_blank" rel="noopener" class="minimal-resource-card">
+              <div>
+                <div class="minimal-resource-title">Kaggle Dataset Hub</div>
+                <div class="minimal-resource-meta">Mount <code>anlp-course-pack</code> directly inside notebooks</div>
+              </div>
+              <span class="minimal-resource-action">Kaggle &#8599;</span>
+            </a>
           </div>
-        </div>
+        </section>
 
-        <!-- 2. SCHEDULE & MILESTONES (RESPONSIVE TABLE + MOBILE CARDS) -->
-        <div id="schedule-table" class="card project-card" style="scroll-margin-top: 5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(2, 132, 199, 0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
-              🗓️
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span class="badge badge-head">Semester Schedule</span>
-                <span class="pill-badge">5 Progressive Phases</span>
-              </div>
-              <h2 class="card-section-title" style="margin-top: 0.25rem;">Milestones &amp; Oral Defense Schedule</h2>
-            </div>
+        <!-- 2. MILESTONES & ORAL DEFENSE SCHEDULE -->
+        <section id="schedule-table" class="project-section">
+          <div class="project-section-head">
+            <h2 class="project-section-title">Milestones &amp; Oral Defense Schedule</h2>
+            <p class="project-section-sub">5 progressive phases &middot; Individual 10&ndash;15 min defense per milestone</p>
           </div>
 
-          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.25rem;">
-            The capstone project is organized into 5 progressive milestones. Following code and report submissions for each milestone, students participate in an individual oral defense check-in with the assigned teaching assistants:
-          </p>
-
-          <!-- Desktop Table View (Hidden on mobile via CSS) -->
-          <div class="desktop-milestones table-responsive-wrapper" style="margin-bottom: 1.25rem;">
-            <table class="schedule-table" style="width: 100%; font-size: 0.9rem;">
+          <!-- Desktop Table -->
+          <div class="desktop-milestones minimal-surface table-responsive-wrapper">
+            <table class="schedule-table" style="width: 100%; font-size: 0.88rem; margin: 0;">
               <thead>
                 <tr>
-                  <th style="min-width: 140px;">Phase</th>
+                  <th style="min-width: 105px;">Phase</th>
                   <th>Topic &amp; Scope</th>
-                  <th style="min-width: 175px;">Submission Due Date</th>
-                  <th style="min-width: 185px;">Oral Defense Window</th>
-                  <th>Lead TA / Status</th>
+                  <th style="min-width: 170px;">Due Date</th>
+                  <th style="min-width: 185px;">Oral Defense</th>
+                  <th style="min-width: 180px;">Lead TA</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Release</strong></td>
                   <td>
-                    <strong>Project Specification &amp; Dataset Release</strong>
-                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
-                      Release of <code>handout.pdf</code>, <code>course_pack_v1.zip</code>, and <code>starter.zip</code>
-                    </div>
+                    <strong>Specification &amp; Dataset Release</strong>
+                    <div style="font-size: 0.79rem; color: var(--text-muted); margin-top: 2px;"><code>handout.pdf</code>, <code>course_pack_v1.zip</code>, and <code>starter.zip</code></div>
                   </td>
-                  <td>Saturday, 1405-07-18</td>
-                  <td>—</td>
-                  <td><span style="font-size: 0.8rem; color: var(--accent-emerald);">● Released</span></td>
+                  <td>Sat, 1405-07-18</td>
+                  <td>&mdash;</td>
+                  <td><span style="color: var(--text-muted); font-size: 0.82rem;">Released</span></td>
                 </tr>
                 <tr>
                   <td><strong>Phase 1</strong></td>
                   <td>
                     <strong>Dense Retrieval &amp; Evaluation</strong>
-                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
-                      Handcrafted IR metrics (Recall@k, HitAll@k, MRR, nDCG@10), document masking, and 3 baselines (Closed-Book, Oracle-Context, Dense RAG)
-                    </div>
+                    <div style="font-size: 0.79rem; color: var(--text-muted); margin-top: 2px;">Handcrafted IR metrics, document masking &amp; 3 baselines (Closed-Book, Oracle, Dense RAG)</div>
                   </td>
-                  <td>Thursday, 1405-07-30 (23:59)</td>
-                  <td><span class="badge badge-presentation" style="font-size: 0.78rem;">Jointly with Phase 2 (1405-09-11 to 1405-09-13)</span></td>
+                  <td>Thu, 1405-07-30 (23:59)</td>
+                  <td>Jointly with Phase 2<br><span style="font-size: 0.78rem; color: var(--text-muted);">1405-09-11 to 1405-09-13</span></td>
                   <td>
-                    <strong style="color: var(--accent-primary);">Mohammad Amin Haeri (@RST_LSS)</strong>
-                    <div style="font-size: 0.78rem; color: var(--text-muted);">● Handout Specs Released</div>
+                    Mohammad Amin Haeri<br>
+                    <a href="https://t.me/RST_LSS" target="_blank" rel="noopener" style="font-size: 0.79rem;">@RST_LSS</a>
                   </td>
                 </tr>
                 <tr>
                   <td><strong>Phase 2</strong></td>
                   <td>
                     <strong>Hybrid Retrieval &amp; Grounded Generation</strong>
-                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
-                      Handcrafted BM25 lexical retrieval, Reciprocal Rank Fusion (RRF), Context Packing within token budgets, Citation generation, and Gold-Masked Abstention evaluation
-                    </div>
+                    <div style="font-size: 0.79rem; color: var(--text-muted); margin-top: 2px;">Handcrafted BM25, RRF fusion, token-budget packing, citations &amp; abstention</div>
                   </td>
-                  <td>Friday, 1405-08-29 (23:59)</td>
-                  <td><span class="badge badge-presentation">Wed, 1405-09-11 to Fri, 1405-09-13</span></td>
+                  <td>Fri, 1405-08-29 (23:59)</td>
+                  <td>Wed&ndash;Fri, 1405-09-11 to 1405-09-13</td>
                   <td>
-                    <strong style="color: var(--accent-primary);">Poorya Saneei (@pooryasn)</strong>
-                    <div style="font-size: 0.78rem; color: var(--text-muted);">● Handout Specs Released</div>
+                    Poorya Saneei<br>
+                    <a href="https://t.me/pooryasn" target="_blank" rel="noopener" style="font-size: 0.79rem;">@pooryasn</a>
                   </td>
                 </tr>
                 <tr style="background: rgba(2, 132, 199, 0.04);">
-                  <td><strong style="color: var(--accent-primary);">Phase 3</strong></td>
+                  <td>
+                    <strong style="color: var(--accent-primary);">Phase 3</strong>
+                    <div><span class="badge badge-head" style="font-size: 0.68rem; margin-top: 3px;">Active</span></div>
+                  </td>
                   <td>
                     <strong>Knowledge Graph &amp; GraphRAG</strong>
-                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
-                      LLM triple extraction on 200 passages (with groundedness filter), k-hop BFS traversal with provenance on <code>silver_kg.jsonl</code>, verbalization, and GraphRAG fusion
-                    </div>
+                    <div style="font-size: 0.79rem; color: var(--text-muted); margin-top: 2px;">LLM triple extraction on 200 passages, groundedness filter, <i>k</i>-hop BFS with provenance on <code>silver_kg.jsonl</code> &amp; RRF fusion</div>
                   </td>
-                  <td><span class="badge badge-quiz" style="font-weight: 700;">Friday, 1405-09-20 (23:59)</span></td>
-                  <td><span style="font-size: 0.8rem; color: var(--text-muted);">To be announced</span></td>
+                  <td><strong style="color: var(--accent-primary);">Fri, 1405-09-20 (23:59)</strong></td>
+                  <td><span style="color: var(--text-muted);">To be announced</span></td>
                   <td>
-                    <strong style="color: var(--accent-primary);">Maryam Mortazavi Nik (@thisisnikk)</strong>
-                    <div style="font-size: 0.78rem; color: var(--accent-emerald);">● Active (Detailed in Handout)</div>
+                    Maryam Mortazavi Nik<br>
+                    <a href="https://t.me/thisisnikk" target="_blank" rel="noopener" style="font-size: 0.79rem;">@thisisnikk</a>
                   </td>
                 </tr>
                 <tr>
                   <td><strong>Phase 4</strong></td>
                   <td>
                     <strong>Multi-Hop Routing &amp; Final Evaluation</strong>
-                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
-                      Adaptive query routing, iterative step-by-step reasoning, query reformulation, and predictions on hidden benchmark
-                    </div>
+                    <div style="font-size: 0.79rem; color: var(--text-muted); margin-top: 2px;">Adaptive routing, iterative reasoning, query reformulation &amp; hidden evaluation</div>
                   </td>
-                  <td><span style="font-size: 0.8rem; color: var(--text-muted);">To be announced</span></td>
-                  <td><span style="font-size: 0.8rem; color: var(--text-muted);">To be announced</span></td>
-                  <td><span style="font-size: 0.8rem; color: var(--text-muted);">To be announced</span></td>
+                  <td><span style="color: var(--text-muted);">To be announced</span></td>
+                  <td><span style="color: var(--text-muted);">To be announced</span></td>
+                  <td><span style="color: var(--text-muted);">To be announced</span></td>
                 </tr>
                 <tr>
                   <td><strong>Phase 5</strong></td>
                   <td>
                     <strong>Supplementary Phase (TBD)</strong>
-                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
-                      Supplementary details and specifications will be announced in future updates.
-                    </div>
+                    <div style="font-size: 0.79rem; color: var(--text-muted); margin-top: 2px;">Supplementary details will be announced in future handout updates</div>
                   </td>
-                  <td><span style="font-size: 0.8rem; color: var(--text-muted);">To be announced</span></td>
-                  <td><span style="font-size: 0.8rem; color: var(--text-muted);">To be announced</span></td>
-                  <td><span style="font-size: 0.8rem; color: var(--text-muted);">To be announced</span></td>
+                  <td><span style="color: var(--text-muted);">To be announced</span></td>
+                  <td><span style="color: var(--text-muted);">To be announced</span></td>
+                  <td><span style="color: var(--text-muted);">To be announced</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <!-- Mobile Cards View (Optimized for Phones, visible <=768px via CSS) -->
+          <!-- Mobile Cards -->
           <div class="mobile-milestones">
-            <!-- Project Release Banner -->
-            <div style="background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 0.85rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; font-size: 0.84rem;">
-              <span style="font-weight: 700; color: var(--text-primary);">📦 Project &amp; Dataset Release</span>
-              <span class="badge badge-presentation" style="font-size: 0.76rem;">Sat, 1405-07-18</span>
+            <div class="minimal-panel" style="padding: 0.85rem 1rem; display: flex; justify-content: space-between; align-items: center;">
+              <strong style="font-size: 0.88rem;">Project &amp; Dataset Release</strong>
+              <span style="font-size: 0.82rem; color: var(--text-muted);">Sat, 1405-07-18</span>
             </div>
 
-            <!-- Phase 1 Mobile Card -->
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
-              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                <span class="badge badge-lecture">Phase 1</span>
-                <span class="badge badge-presentation" style="font-size: 0.72rem;">Handout Released</span>
+            <div class="minimal-panel" style="padding: 1rem;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.35rem;">
+                <strong style="font-size: 0.92rem;">Phase 1: Dense Retrieval &amp; Evaluation</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Released</span>
               </div>
-              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
-                Dense Retrieval &amp; Evaluation
-              </h3>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
-                Handcrafted IR metrics (Recall@k, HitAll@k, MRR, nDCG@10), document masking, and 3 baselines (Closed-Book, Oracle-Context, Dense RAG).
+              <p style="font-size: 0.83rem; color: var(--text-secondary); margin: 0 0 0.65rem; line-height: 1.5;">
+                Handcrafted IR metrics, document masking &amp; 3 baselines.
               </p>
-              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
-                  <span style="color: var(--text-primary); font-weight: 600;">Thu, 1405-07-30 (23:59)</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
-                  <span class="badge badge-presentation" style="font-size: 0.78rem;">Jointly with Phase 2 (1405-09-11 to 1405-09-13)</span>
-                </div>
-              </div>
-              <div style="font-size: 0.82rem; color: var(--accent-primary); font-weight: 600; display: flex; align-items: center; gap: 0.35rem;">
-                <span>👤</span> Lead TA: Mohammad Amin Haeri (<a href="https://t.me/RST_LSS" target="_blank" rel="noopener">@RST_LSS</a>)
+              <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+                <div><strong>Due:</strong> Thu, 1405-07-30 (23:59)</div>
+                <div><strong>Defense:</strong> Jointly with Phase 2 (1405-09-11 to 1405-09-13)</div>
+                <div><strong>Lead TA:</strong> Mohammad Amin Haeri (<a href="https://t.me/RST_LSS" target="_blank" rel="noopener">@RST_LSS</a>)</div>
               </div>
             </div>
 
-            <!-- Phase 2 Mobile Card -->
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
-              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                <span class="badge badge-lecture">Phase 2</span>
-                <span class="badge badge-presentation" style="font-size: 0.72rem;">Handout Released</span>
+            <div class="minimal-panel" style="padding: 1rem;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.35rem;">
+                <strong style="font-size: 0.92rem;">Phase 2: Hybrid Retrieval &amp; Grounded Generation</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Released</span>
               </div>
-              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
-                Hybrid Retrieval &amp; Grounded Generation
-              </h3>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
-                Handcrafted BM25 lexical retrieval, Reciprocal Rank Fusion (RRF), Context Packing within token budgets, Citation generation, and Gold-Masked Abstention evaluation.
+              <p style="font-size: 0.83rem; color: var(--text-secondary); margin: 0 0 0.65rem; line-height: 1.5;">
+                Handcrafted BM25, RRF fusion, token-budget packing, citations &amp; abstention.
               </p>
-              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
-                  <span style="color: var(--text-primary); font-weight: 600;">Fri, 1405-08-29 (23:59)</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
-                  <span class="badge badge-presentation">Wed, 1405-09-11 to Fri, 1405-09-13</span>
-                </div>
-              </div>
-              <div style="font-size: 0.82rem; color: var(--accent-primary); font-weight: 600; display: flex; align-items: center; gap: 0.35rem;">
-                <span>👤</span> Lead TA: Poorya Saneei (<a href="https://t.me/pooryasn" target="_blank" rel="noopener">@pooryasn</a>)
+              <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+                <div><strong>Due:</strong> Fri, 1405-08-29 (23:59)</div>
+                <div><strong>Defense:</strong> Wed&ndash;Fri, 1405-09-11 to 1405-09-13</div>
+                <div><strong>Lead TA:</strong> Poorya Saneei (<a href="https://t.me/pooryasn" target="_blank" rel="noopener">@pooryasn</a>)</div>
               </div>
             </div>
 
-            <!-- Phase 3 Mobile Card -->
-            <div style="background: var(--bg-secondary); border: 1.5px solid var(--accent-primary); border-radius: var(--radius-md); padding: 1.15rem; box-shadow: var(--shadow-sm);">
-              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                <span class="badge badge-head" style="font-weight: 700;">Phase 3 • Active</span>
-                <span class="badge badge-presentation" style="font-size: 0.72rem;">Detailed in Handout</span>
+            <div class="minimal-panel" style="padding: 1rem; border-color: var(--accent-primary);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                <strong style="font-size: 0.92rem; color: var(--accent-primary);">Phase 3: Knowledge Graph &amp; GraphRAG</strong>
+                <span class="badge badge-head" style="font-size: 0.7rem;">Active</span>
               </div>
-              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
-                Knowledge Graph &amp; GraphRAG
-              </h3>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
-                LLM triple extraction on 200 passages (with groundedness filter), k-hop BFS traversal with provenance on <code>silver_kg.jsonl</code>, verbalization, and GraphRAG fusion.
+              <p style="font-size: 0.83rem; color: var(--text-secondary); margin: 0 0 0.65rem; line-height: 1.5;">
+                LLM triple extraction on 200 passages, groundedness filter, <i>k</i>-hop BFS with provenance on <code>silver_kg.jsonl</code> &amp; RRF fusion.
               </p>
-              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
-                  <span class="badge badge-quiz" style="font-weight: 700;">Fri, 1405-09-20 (23:59)</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
-                  <span style="color: var(--text-muted); font-weight: 600;">To be announced</span>
-                </div>
-              </div>
-              <div style="font-size: 0.82rem; color: var(--accent-primary); font-weight: 600; display: flex; align-items: center; gap: 0.35rem;">
-                <span>👤</span> Lead TA: Maryam Mortazavi Nik (<a href="https://t.me/thisisnikk" target="_blank" rel="noopener">@thisisnikk</a>)
+              <div style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+                <div><strong>Due:</strong> <strong style="color: var(--text-primary);">Fri, 1405-09-20 (23:59)</strong></div>
+                <div><strong>Defense:</strong> To be announced</div>
+                <div><strong>Lead TA:</strong> Maryam Mortazavi Nik (<a href="https://t.me/thisisnikk" target="_blank" rel="noopener">@thisisnikk</a>)</div>
               </div>
             </div>
 
-            <!-- Phase 4 Mobile Card -->
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
-              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                <span class="badge badge-quiz">Phase 4</span>
-                <span class="badge" style="background: var(--bg-tertiary); color: var(--text-muted); font-size: 0.72rem;">Upcoming</span>
-              </div>
-              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
-                Multi-Hop Routing &amp; Final Evaluation
-              </h3>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
-                Adaptive query routing, iterative step-by-step reasoning, query reformulation, and predictions on hidden benchmark.
+            <div class="minimal-panel" style="padding: 1rem;">
+              <strong style="font-size: 0.92rem; display: block; margin-bottom: 0.35rem;">Phase 4: Multi-Hop Routing &amp; Final Evaluation</strong>
+              <p style="font-size: 0.83rem; color: var(--text-secondary); margin: 0 0 0.5rem; line-height: 1.5;">
+                Adaptive routing, iterative reasoning, query reformulation &amp; hidden evaluation.
               </p>
-              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 0.75rem; font-size: 0.84rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
-                  <span style="color: var(--text-muted); font-weight: 600;">To be announced</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
-                  <span style="color: var(--text-muted); font-weight: 600;">To be announced</span>
-                </div>
-              </div>
-              <div style="font-size: 0.8rem; color: var(--text-muted);">
-                📌 Will be released in Handout update
-              </div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Due, defense &amp; Lead TA: To be announced</div>
             </div>
 
-            <!-- Phase 5 Mobile Card -->
-            <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem;">
-              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                <span class="badge badge-review">Phase 5</span>
-                <span class="badge" style="background: var(--bg-tertiary); color: var(--text-muted); font-size: 0.72rem;">To Be Announced</span>
-              </div>
-              <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.45rem; line-height: 1.35;">
-                Supplementary Phase (TBD)
-              </h3>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 0.85rem;">
-                Supplementary details and specifications will be announced in future updates.
-              </p>
-              <div style="display: flex; flex-direction: column; gap: 0.45rem; background: var(--bg-tertiary); padding: 0.75rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-size: 0.84rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Due Date:</span>
-                  <span style="color: var(--text-muted); font-weight: 600;">To be announced</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: var(--text-muted); font-weight: 600;">Oral Defense:</span>
-                  <span style="color: var(--text-muted); font-weight: 600;">To be announced</span>
-                </div>
-              </div>
-              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.65rem;">
-                📌 Details will be released if required
-              </div>
+            <div class="minimal-panel" style="padding: 1rem;">
+              <strong style="font-size: 0.92rem; display: block; margin-bottom: 0.35rem;">Phase 5: Supplementary Phase (TBD)</strong>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Schedule, specifications &amp; Lead TA: To be announced</div>
             </div>
           </div>
 
-          <!-- Timing & Defense Notes from Handout -->
-          <div style="background: rgba(2, 132, 199, 0.05); border: 1px solid rgba(2, 132, 199, 0.2); border-radius: var(--radius-sm); padding: 0.95rem 1.15rem; font-size: 0.86rem; color: var(--text-secondary); line-height: 1.65; margin-top: 1.25rem;">
-            <div style="font-weight: 700; color: var(--accent-primary); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.35rem;">
-              <span>ℹ️</span> Important Scheduling &amp; Defense Notes:
-            </div>
-            <ul style="margin: 0; padding-left: 1.25rem;">
-              <li>The exact individual oral defense check-in slots for each milestone are scheduled and communicated by the assigned Lead TA. <strong>The oral defense check-in for Phase 1 will be conducted jointly with Phase 2 during the December 2–4, 2026 (Wed–Fri, 1405-09-11 to 1405-09-13) window.</strong></li>
-              <li>Oral defense dates for Phase 3, along with schedules and Lead TAs for Phases 4 and 5 and supplementary specifications for Phase 5, will be announced through the official course channels and subsequent handout updates.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 3. DELIVERABLES & SUBMISSION FORMAT -->
-        <div id="deliverables" class="card project-card" style="scroll-margin-top: 5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
-              📦
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span class="badge badge-head">Submission Format</span>
-                <span class="pill-badge">Engineering Standards</span>
-              </div>
-              <h2 class="card-section-title" style="margin-top: 0.25rem;">Submission Requirements &amp; Delivery Format</h2>
-            </div>
-          </div>
-
-          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.25rem;">
-            For each milestone, students submit their work via the course portal. Please refer to the official <strong><a href="project/handout.pdf" target="_blank" rel="noopener" style="color: var(--accent-primary);">Project Handout (PDF)</a></strong> and files in the <strong><a href="project/starter.zip" download="starter.zip" style="color: var(--accent-primary);">Starter Kit</a></strong> for exact mathematical formulas, baseline requirements, and output schemas:
+          <p class="minimal-note">
+            Phase 1 oral defense check-ins run jointly with Phase 2 during <strong>Dec 2&ndash;4, 2026 (Wed&ndash;Fri, 1405-09-11 to 1405-09-13)</strong>. Phase 3 oral defense slots and Phase 4&ndash;5 schedules will be announced via official course channels.
           </p>
+        </section>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
-            <div class="phase-subbox">
-              <strong style="color: var(--accent-primary); display: flex; align-items: center; gap: 0.35rem; margin-bottom: 0.4rem;">
-                <span>💻</span> 1. GitHub Repository
-              </strong>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                A clean, modular private repository containing pinned dependencies in <code>requirements.txt</code>, and a comprehensive <code>README.md</code> detailing environment setup and exact reproduction commands.
-              </p>
-            </div>
-
-            <div class="phase-subbox">
-              <strong style="color: var(--accent-emerald); display: flex; align-items: center; gap: 0.35rem; margin-bottom: 0.4rem;">
-                <span>📊</span> 2. Output Prediction Files (JSONL)
-              </strong>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Prediction files formatted strictly according to <code>predictions_format.md</code> (provided in <code>starter.zip</code>), ready for automated scoring via the official <code>score.py</code> evaluation script.
-              </p>
-            </div>
-
-            <div class="phase-subbox">
-              <strong style="color: var(--accent-amber); display: flex; align-items: center; gap: 0.35rem; margin-bottom: 0.4rem;">
-                <span>📄</span> 3. Concise Technical Report (Max 3 Pages PDF)
-              </strong>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                A concise engineering report covering model selection, comparative metric tables with confidence intervals, baseline evaluations, and qualitative error analysis.
-              </p>
-            </div>
+        <!-- 3. MENTORSHIP TEAM -->
+        <section id="mentors" class="project-section">
+          <div class="project-section-head">
+            <h2 class="project-section-title">Project Mentorship Team</h2>
+            <p class="project-section-sub">Phase lead TAs for office hours &amp; oral defense</p>
           </div>
 
-          <div style="background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.1rem 1.25rem;">
-            <strong style="color: var(--text-primary); font-size: 0.92rem;">💡 Official Evaluator (score.py):</strong>
-            <p style="font-size: 0.86rem; color: var(--text-secondary); margin: 0.35rem 0 0.5rem; line-height: 1.6;">
-              The official <code>score.py</code> script in <code>starter.zip</code> computes Exact Match (EM), Token F1, and IR retrieval metrics along with 95% bootstrap confidence intervals ($B=1000$):
-            </p>
-            <div style="font-family: var(--font-mono); font-size: 0.82rem; background: var(--bg-secondary); padding: 0.5rem 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle); overflow-x: auto;">
-              python score.py &lt;predictions_file.jsonl&gt; --pack course_pack_v1 --split dev
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. EVALUATION METHOD -->
-        <div id="evaluation" class="card project-card" style="scroll-margin-top: 5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-amber); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
-              ⚖️
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span class="badge badge-head">Assessment Protocol</span>
-                <span class="pill-badge">Oral Defense</span>
+          <div class="mentors-grid">
+            <div class="mentor-box">
+              <div class="mentor-avatar">
+                <img src="assets/images/team/poorya_saneei.jpg" alt="Poorya Saneei">
               </div>
-              <h2 class="card-section-title" style="margin-top: 0.25rem;">Evaluation Protocol &amp; Oral Defense Structure</h2>
-            </div>
-          </div>
-
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
-            <div class="policy-box">
-              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📊</div>
-              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Grade Weighting</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Approximately <strong>40%</strong> of each phase grade is assigned to code correctness, prediction quality, and the written report; <strong>60%</strong> is determined by the live oral defense and technical comprehension.
-              </p>
-            </div>
-
-            <div class="policy-box">
-              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎙️</div>
-              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Oral Defense Check-In (10–15 Mins)</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                A 10–15 minute check-in with the phase lead TA: live pipeline execution on 3–5 random queries, inspecting retrieved passages, prompt templates, and testing live parameter adjustments.
-              </p>
-            </div>
-
-            <div class="policy-box">
-              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💡</div>
-              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Conceptual &amp; Analytical Q&amp;A</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                In-depth discussion on metric trade-offs, empirical effects of hyperparameters (e.g. $k$, document masking, prompt design), and failure mode diagnosis.
-              </p>
-            </div>
-          </div>
-
-          <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); padding: 1.15rem 1.35rem; border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 0.85rem;">
-            <div style="font-size: 1.25rem; line-height: 1; flex-shrink: 0; margin-top: 2px;">🤝</div>
-            <div style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
-              <strong style="color: var(--accent-emerald);">Academic Integrity &amp; AI Assistance Policy:</strong>
-              Brainstorming with peers and utilizing modern AI coding assistants as productivity aids is welcomed; however, every student must personally understand all submitted code and be prepared to explain and modify it live during oral defense.
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. LATE POLICY & GRACE BUDGET -->
-        <div id="late-policy" class="card project-card" style="scroll-margin-top: 5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(239, 68, 68, 0.1); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
-              ⏱️
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span class="badge badge-head">Course Policies</span>
-                <span class="pill-badge">Grace Budget &amp; Bonus</span>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.92rem;">Poorya Saneei</div>
+                <div style="font-size: 0.78rem; color: var(--text-secondary);">Head TA &middot; Phase 2 Lead</div>
+                <div style="font-size: 0.76rem; margin-top: 2px;"><a href="https://t.me/pooryasn" target="_blank" rel="noopener">@pooryasn</a></div>
               </div>
-              <h2 class="card-section-title" style="margin-top: 0.25rem;">Deadlines, Grace Policy &amp; Software Engineering Bonus</h2>
-            </div>
-          </div>
-
-          <div class="policy-grid" style="margin-bottom: 1.5rem;">
-            <div class="policy-box">
-              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⏳</div>
-              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">48-Hour Grace Budget</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Each student receives <strong>48 free grace hours</strong> across the entire semester to accommodate unexpected delays without penalty.
-              </p>
             </div>
 
-            <div class="policy-box">
-              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📉</div>
-              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Late Deduction Rate</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Submissions beyond the 48 grace hours incur a <strong>0.5-point deduction per hour</strong> (out of 100 for the phase).
-              </p>
-            </div>
-
-            <div class="policy-box">
-              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🚪</div>
-              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Extended LMS Window</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                The submission portal remains open for <strong>96 hours (4 days)</strong> after the deadline to handle unforeseen technical issues.
-              </p>
-            </div>
-
-            <div class="policy-box">
-              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎁</div>
-              <h3 style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.35rem;">Early Submission Bonus</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
-                Submitting early with strong performance (&gt;80%) awards bonus hours (up to <strong>24 hours</strong>) back into your semester grace quota.
-              </p>
-            </div>
-          </div>
-
-          <!-- Bonus Engineering Practices -->
-          <div style="background: rgba(2, 132, 199, 0.04); border: 1px solid rgba(2, 132, 199, 0.2); border-radius: var(--radius-md); padding: 1.35rem; margin-top: 1rem;">
-            <h3 style="font-size: 1.05rem; color: var(--accent-primary); margin: 0 0 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
-              <span>🏆</span> Software Engineering &amp; MLOps Extra Credit
-            </h3>
-            <p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 0.85rem;">
-              Adopting production-grade software engineering practices earns extra credit, evaluated in 1–2 minutes during the oral defense:
-            </p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; font-size: 0.84rem;">
-              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
-                <strong>Configuration Management:</strong> Centralized hyperparameters in structured YAML (e.g., <code>run_config.yaml</code>).
+            <div class="mentor-box">
+              <div class="mentor-avatar-fallback" style="background: var(--accent-primary);">H</div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.92rem;">Mohammad Amin Haeri</div>
+                <div style="font-size: 0.78rem; color: var(--text-secondary);">Phase 1 Lead</div>
+                <div style="font-size: 0.76rem; margin-top: 2px;"><a href="https://t.me/RST_LSS" target="_blank" rel="noopener">@RST_LSS</a></div>
               </div>
-              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
-                <strong>Unit Testing:</strong> Automated unit tests with <code>pytest</code> verifying IR metrics and document masking.
+            </div>
+
+            <div class="mentor-box">
+              <div class="mentor-avatar">
+                <img src="assets/images/team/maryam_mortazavi.jpg" alt="Maryam Mortazavi Nik">
               </div>
-              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
-                <strong>Continuous Integration:</strong> Automated GitHub Actions running tests on every push.
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.92rem;">Maryam Mortazavi Nik</div>
+                <div style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 600;">Phase 3 Lead</div>
+                <div style="font-size: 0.76rem; margin-top: 2px;"><a href="https://t.me/thisisnikk" target="_blank" rel="noopener">@thisisnikk</a></div>
               </div>
-              <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
-                <strong>Experiment Tracking:</strong> Tracking metric curves and runs using MLflow or Weights &amp; Biases.
+            </div>
+
+            <div class="mentor-box">
+              <div class="mentor-avatar">
+                <img src="assets/images/team/mohammad_khaki.jpg" alt="Mohammad Khaki">
+              </div>
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.92rem;">Mohammad Khaki</div>
+                <div style="font-size: 0.78rem; color: var(--text-secondary);">Project Mentor &amp; TA</div>
+                <div style="font-size: 0.76rem; margin-top: 2px;"><a href="https://t.me/khaki_mim" target="_blank" rel="noopener">@khaki_mim</a></div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <!-- 4. SUBMISSION & EVALUATION -->
+        <section id="deliverables" class="project-section">
+          <div class="project-section-head">
+            <h2 class="project-section-title">Submission &amp; Evaluation</h2>
+          </div>
+
+          <div class="minimal-two-col">
+            <div class="minimal-panel">
+              <h3>Submission Package (<code>P&lt;N&gt;_&lt;StdID&gt;.zip</code>)</h3>
+              <ul class="minimal-list">
+                <li><strong>Private GitHub Repo:</strong> Modular codebase with <code>requirements.txt</code>, <code>README.md</code>, and the exact submission commit hash on page 1 of your report.</li>
+                <li><strong>Run Outputs:</strong> One folder per run containing <code>predictions.jsonl</code> and <code>run_config.yaml</code> following <code>predictions_format.md</code>.</li>
+                <li><strong>Technical Report:</strong> Concise PDF (max 3 pages) covering implementation choices, metric tables, comparisons, and error analysis.</li>
+              </ul>
+              <div class="minimal-code-bar">python score.py &lt;predictions_file.jsonl&gt; --pack course_pack_v1 --split dev</div>
+            </div>
+
+            <div class="minimal-panel">
+              <h3>Grading &amp; Oral Defense</h3>
+              <ul class="minimal-list">
+                <li><strong>Grade Split:</strong> ~40% for code correctness, predictions, and report; <strong>60%</strong> for the live oral defense and technical comprehension.</li>
+                <li><strong>Oral Check-In (10&ndash;15 mins):</strong> Live pipeline run on 3&ndash;5 queries, inspection of handcrafted core mechanisms, and live parameter/prompt adjustments.</li>
+                <li><strong>Academic Integrity:</strong> Peer discussion and AI coding assistants are permitted, provided you personally understand and can modify all submitted code live.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. LATE POLICY & EXTRA CREDIT -->
+        <section id="policies" class="project-section" style="margin-bottom: 1rem;">
+          <div class="project-section-head">
+            <h2 class="project-section-title">Late Policy &amp; Engineering Bonus</h2>
+          </div>
+
+          <div class="minimal-two-col">
+            <div class="minimal-panel">
+              <h3>Deadlines &amp; Grace Budget</h3>
+              <div class="minimal-kv-list">
+                <div class="minimal-kv-item">
+                  <strong>48-Hour Grace Budget</strong>
+                  48 free grace hours across the semester without penalty.
+                </div>
+                <div class="minimal-kv-item">
+                  <strong>Late Deduction</strong>
+                  0.5 points deducted per hour (out of 100) after grace hours are exhausted.
+                </div>
+                <div class="minimal-kv-item">
+                  <strong>96-Hour LMS Window</strong>
+                  Submission portal stays open 4 days past the deadline for late submissions.
+                </div>
+                <div class="minimal-kv-item">
+                  <strong>Early Bonus</strong>
+                  Up to 24 bonus grace hours restored for early submissions scoring &gt;80%.
+                </div>
+              </div>
+            </div>
+
+            <div class="minimal-panel">
+              <h3>Software Engineering Extra Credit</h3>
+              <ul class="minimal-list">
+                <li><strong>Structured Configs:</strong> Centralize hyperparameters in YAML generating <code>run_config.yaml</code>.</li>
+                <li><strong>Unit Tests:</strong> Lightweight <code>pytest</code> suite verifying handcrafted metrics, masking, RRF, and parsers.</li>
+                <li><strong>CI Workflow:</strong> GitHub Actions running unit tests automatically on every push.</li>
+                <li><strong>Experiment Tracking:</strong> Clean MLflow (SQLite) or Weights &amp; Biases run logs linked to report tables.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
       </div>
     </section>
   </main>
