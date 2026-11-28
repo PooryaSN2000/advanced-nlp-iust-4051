@@ -979,6 +979,11 @@
       "name": "ANLP Project Starter Kit (score.py, config & baseline)",
       "description": "Official starter kit archive containing score.py with bootstrap CI, example_predict.py, and predictions format specification.",
       "link": "project/starter.zip"
+    },
+    {
+      "name": "ANLP Phase 3 Silver Knowledge Graph (silver_kg.jsonl)",
+      "description": "19,940 corpus-wide (subject, relation, object, source_doc_id) triples extracted by the teaching team for Phase 3 GraphRAG retrieval.",
+      "link": "project/silver_kg.jsonl"
     }
   ]
 }
